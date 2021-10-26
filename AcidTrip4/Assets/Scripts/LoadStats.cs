@@ -35,7 +35,6 @@ public class LoadStats : MonoBehaviour
         defenseText.text = "Defense: " + charStat.defense;
         speedText.text = "Speed: " + charStat.speed;
         maxHealthText.text = "Max Health: " + charStat.maxHealth;
-        currentColor.material = charStat.newColor;
     }
 
     

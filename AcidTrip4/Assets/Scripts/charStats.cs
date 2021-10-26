@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Character", menuName = "Character Creation")]
-public class charStats : MonoBehaviour
+public class CharStats : ScriptableObject
 {
     public string charName;
     public int attack;
@@ -14,7 +14,7 @@ public class charStats : MonoBehaviour
     // test method to debug
     public void PrintMessage()
     {
-        Debug.Log("The " + charName)
+        Debug.Log("The " + charName);
     }
 
     // Randomizes stats 	
@@ -24,5 +24,14 @@ public class charStats : MonoBehaviour
         defense = Random.Range(1, 20);
         speed = Random.Range(1, 20);
         maxHealth = Random.Range(1, 20);
+    }
+
+    // Adds specified ints to stats
+    public void ChangeStats(int att, int def, int spd, int hp)
+    {
+        attack += att;
+        defense += def;
+        speed += spd;
+        maxHealth += hp;
     }
 }
