@@ -10,7 +10,7 @@ public class MenuButtonController : MonoBehaviour
     public int maxIndex;
     [SerializeField] bool keyDown;
     [SerializeField] RectTransform rectTransform;
-    bool isPressUp, isPressDown, isPressConfirm;
+    public bool isPressUp, isPressDown, isPressConfirm;
     int VerticalMovement;
     // Start is called before the first frame update
     void Start()
