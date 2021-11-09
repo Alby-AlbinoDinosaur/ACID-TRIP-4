@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{3A0D77EB-21DC-2AB2-53E0-F693EB9B481E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -54,52 +53,55 @@
     <UnityVersion>2021.1.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
     <Compile Include="Assets\Scripts\Equipment.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
     <Compile Include="Assets\Scripts\LoadStats.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\MenuButtonController.cs" />
     <Compile Include="Assets\Scripts\charStats.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
-    <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
