@@ -4,8 +4,8 @@ using UnityEngine;
 using Random=UnityEngine.Random;
 using System;
 
-[CreateAssetMenu(fileName = "CharStats", menuName = "Character Creation")]
-public class CharStats : ScriptableObject
+// Used for non-scripatble objects
+public class CharStats2 : MonoBehaviour, IComparable 
 {
     public string charName;
     public int attack;

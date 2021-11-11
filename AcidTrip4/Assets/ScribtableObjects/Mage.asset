@@ -17,3 +17,5 @@ MonoBehaviour:
   defense: 3
   speed: 8
   maxHealth: 18
+  currHealth: 18
+  nextActTurn: 0

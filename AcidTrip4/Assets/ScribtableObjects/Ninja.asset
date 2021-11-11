@@ -17,3 +17,4 @@ MonoBehaviour:
   defense: 4
   speed: 10
   maxHealth: 20
+  currHealth: 20

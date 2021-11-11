@@ -34,7 +34,7 @@ public class LoadStats : MonoBehaviour
         attackText.text = "Attack: " + charStat.attack;
         defenseText.text = "Defense: " + charStat.defense;
         speedText.text = "Speed: " + charStat.speed;
-        maxHealthText.text = "Max Health: " + charStat.maxHealth;
+        maxHealthText.text = "Max Health: " + charStat.currHealth + " / " + charStat.maxHealth;
     }
 
     
