@@ -30,7 +30,7 @@ public class AttackTarget : MonoBehaviour
             float damage = (this.magicAttack) ? attackMultiplier * ownerStats.magic : attackMultiplier * ownerStats.attack;
             float defenseMultiplier = (Random.value * (this.maxDefenseMultiplier - this.minDefenseMultiplier)) + this.minDefenseMultiplier;
             damage = Mathf.Max(0, damage - (defenseMultiplier * targetStats.defense));
-            this.owner.GetComponent<Animator>().Play(this.attackAnimation);
+            // this.owner.GetComponent<Animator>().Play(this.attackAnimation);
             targetStats.receiveDamage(damage);
             ownerStats.mana -= this.manaCost;
         }

@@ -9,6 +9,11 @@ public class PlayerUnitAction : MonoBehaviour
     [SerializeField]
     private GameObject magicalAttack;
     private GameObject currentAttack;
+    
+    public void selectAttack (bool physical) 
+    {
+        this.currentAttack = (physical) ? this.physicalAttack : this.magicalAttack;
+    }
     void Awake () 
     {
         this.physicalAttack = Instantiate(this.physicalAttack, this.transform) as GameObject;

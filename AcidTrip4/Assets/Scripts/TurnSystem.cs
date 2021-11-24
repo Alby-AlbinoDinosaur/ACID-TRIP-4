@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TurnSystem : MonoBehaviour 
 {
+    // Need to get rid of this variable later when connecting this sceen w/ other scenes
+    public GameObject playerParty;
+    
     private List<UnitStats> unitsStats;
     [SerializeField]
     private GameObject actionsMenu, enemyUnitsMenu;
@@ -34,19 +37,20 @@ public class TurnSystem : MonoBehaviour
     {
         UnitStats currentUnitStats = unitsStats [0];
         unitsStats.Remove(currentUnitStats);
-        if(!currentUnitStats.isDead()) 
+        if(!currentUnitStats.isDead ()) 
         {
             GameObject currentUnit = currentUnitStats.gameObject;
             currentUnitStats.calculateNextActTurn(currentUnitStats.nextActTurn);
             unitsStats.Add(currentUnitStats);
             unitsStats.Sort();
-            if(currentUnit.tag == "PlayerUnit")
+            if(currentUnit.tag == "PlayerUnit") 
             {
                 Debug.Log("Player unit acting");
+                this.playerParty.GetComponent<SelectUnit>().selectCurrentUnit(currentUnit.gameObject);
             } 
             else 
             {
-                Debug.Log("Enemy unit acting");
+                currentUnit.GetComponent<EnemyUnitAction>().act();
             }
         } 
         else 
