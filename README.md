@@ -1,10 +1,8 @@
 # ACID-TRIP-4
 YE BOI
 
-your mom
+your mom looks nice
 
-kevin chou is dumb
-kabam sucks
-nfts are for fucking dumbasses
+kevin is da best
 
 hah goteem
