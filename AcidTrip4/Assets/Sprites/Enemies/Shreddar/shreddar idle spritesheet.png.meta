@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 078cda350c896e04fbe74cfa442fd62d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4580236838513736271
+    second: shreddar idle spritesheet_0
+  - first:
+      213: 387011778765603175
+    second: shreddar idle spritesheet_1
+  - first:
+      213: -4631512596332303932
+    second: shreddar idle spritesheet_2
+  - first:
+      213: 4979371572060612492
+    second: shreddar idle spritesheet_3
+  - first:
+      213: 5034289490737954725
+    second: shreddar idle spritesheet_4
+  - first:
+      213: 1265937527720611654
+    second: shreddar idle spritesheet_5
+  - first:
+      213: 3330905975473048263
+    second: shreddar idle spritesheet_6
+  - first:
+      213: 6728944025785374038
+    second: shreddar idle spritesheet_7
+  - first:
+      213: 3697677826079194926
+    second: shreddar idle spritesheet_8
+  - first:
+      213: -9103584023243931068
+    second: shreddar idle spritesheet_9
+  - first:
+      213: -7582925305385562549
+    second: shreddar idle spritesheet_10
+  - first:
+      213: 7061669739479393661
+    second: shreddar idle spritesheet_11
+  - first:
+      213: 5077026905887768740
+    second: shreddar idle spritesheet_12
+  - first:
+      213: 1362387775996226461
+    second: shreddar idle spritesheet_13
+  - first:
+      213: -7345021573251544653
+    second: shreddar idle spritesheet_14
+  - first:
+      213: -2003235376631094753
+    second: shreddar idle spritesheet_15
+  - first:
+      213: -9194310775995663139
+    second: shreddar idle spritesheet_16
+  - first:
+      213: 5601588019954128173
+    second: shreddar idle spritesheet_17
+  - first:
+      213: -2755655673365556545
+    second: shreddar idle spritesheet_18
+  - first:
+      213: -1498768388971220436
+    second: shreddar idle spritesheet_19
+  - first:
+      213: 84715929423759935
+    second: shreddar idle spritesheet_20
+  - first:
+      213: -1033294105097206131
+    second: shreddar idle spritesheet_21
+  - first:
+      213: -6106217222296244102
+    second: shreddar idle spritesheet_22
+  - first:
+      213: -8550104326171605691
+    second: shreddar idle spritesheet_23
+  - first:
+      213: -71714919872687381
+    second: shreddar idle spritesheet_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2752
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b50b3dccdabf60c0800000000000000
+      internalID: -4580236838513736271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 2752
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761473d8921fe5500800000000000000
+      internalID: 387011778765603175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 2752
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9adda15df89bfb0800000000000000
+      internalID: -4631512596332303932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 2752
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87e95d10184a1540800000000000000
+      internalID: 4979371572060612492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 2752
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5affae77e936dd540800000000000000
+      internalID: 5034289490737954725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2064
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f8f976973819110800000000000000
+      internalID: 1265937527720611654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 2064
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca0c483651c93e20800000000000000
+      internalID: 3330905975473048263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 2064
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6559c62a0f2026d50800000000000000
+      internalID: 6728944025785374038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 2064
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ff945446ac05330800000000000000
+      internalID: 3697677826079194926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 2064
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442cf9f409299a180800000000000000
+      internalID: -9103584023243931068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1376
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e4c2e5c9904c690800000000000000
+      internalID: -7582925305385562549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1376
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d756bc6b637100260800000000000000
+      internalID: 7061669739479393661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1376
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a08a885219357640800000000000000
+      internalID: 5077026905887768740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 1376
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9be69ac67c28e210800000000000000
+      internalID: 1362387775996226461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 1376
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9c2c27bcd311a90800000000000000
+      internalID: -7345021573251544653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12686ed9041334e0800000000000000
+      internalID: -2003235376631094753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 688
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc7b32101f376080800000000000000
+      internalID: -9194310775995663139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 688
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25137b20a6dcbd40800000000000000
+      internalID: 5601588019954128173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 688
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb291c1e3c1f1c9d0800000000000000
+      internalID: -2755655673365556545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 688
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2239ce471e433be0800000000000000
+      internalID: -1498768388971220436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ace1060b8fc2100800000000000000
+      internalID: 84715929423759935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 0
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d860d2d6c7009a1f0800000000000000
+      internalID: -1033294105097206131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 0
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70f8a7d9cb524ba0800000000000000
+      internalID: -6106217222296244102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 0
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545c20e6a6de75980800000000000000
+      internalID: -8550104326171605691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shreddar idle spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 0
+        width: 830
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be294eb09a7310ff0800000000000000
+      internalID: -71714919872687381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
