@@ -24,8 +24,10 @@ public class BattleEnemyAnimation : MonoBehaviour
     public Sprite damageSprite; // The sprite to show when the enemy is damaged.
     public float damageIntensity; // Default intensity.
     float currentDamageIntensity; // If this is ever above 0, activate the damage animation.
+    public float damageIntensityFalloff;
     public float damageSpeed;
-    public float damageFalloff;
+    public float damageSpeedFalloff;
+
     float deltaX;
     Vector3 originalDamagePos; // Local coords.
 
@@ -118,8 +120,14 @@ public class BattleEnemyAnimation : MonoBehaviour
 
         transform.localPosition += new Vector3(deltaX * Time.deltaTime, 0, 0);
 
+        // Shrink the deltaX over time.
+        float signDeltaX = Mathf.Sign(deltaX);
+        float absDeltaX = Mathf.Abs(deltaX);
+        float shrinkAmount = damageSpeedFalloff * Time.deltaTime;
+        deltaX = signDeltaX * (absDeltaX - shrinkAmount);
+
         // Shrink the damageIntensity over time. When it hits 0, reset everything. Then, DamageUpdate() should stop activating.
-        currentDamageIntensity -= damageFalloff * Time.deltaTime;
+        currentDamageIntensity -= damageIntensityFalloff * Time.deltaTime;
         if (currentDamageIntensity <= 0)
         {
             paused = false;
