@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+	/*
+		Dialogue Manager displays text on screen after being given a list of dialog from BeginConversation(Dialogue dialogue)
+		Requires 2 text objests to display text and an animator for the text box
 
+	*/
 public class DialogueManager : MonoBehaviour {
 
+
+//What is currently being displayed:
 	public Text nameText;
 	public Text dialogueText;
-
 	public Animator animator;
 
 	private Queue<string> sentences;
@@ -20,12 +25,15 @@ public class DialogueManager : MonoBehaviour {
 		index = 0;
 	}
 
+//Called by a DialogueTrigger and stores dialog information into conversation
+//Calls StartDialogue
 	public void BeginConversation(Dialogue[] dialogue)
 	{
 		conversation = dialogue;
 		StartDialogue(conversation[0]);
 	}
 
+//Begins displaying diaglog parameter
 	public void StartDialogue (Dialogue dialogue)
 	{
 		animator.SetBool("IsOpen", true);
@@ -42,6 +50,7 @@ public class DialogueManager : MonoBehaviour {
 		DisplayNextSentence();
 	}
 
+//Called by continue button to move onto next text
 	public void DisplayNextSentence ()
 	{
 		if (sentences.Count == 0)
@@ -55,6 +64,7 @@ public class DialogueManager : MonoBehaviour {
 		StartCoroutine(TypeSentence(sentence));
 	}
 
+//Displays dialog text letter by letter (1 letter per cyce)
 	IEnumerator TypeSentence (string sentence)
 	{
 		dialogueText.text = "";
@@ -65,6 +75,8 @@ public class DialogueManager : MonoBehaviour {
 		}
 	}
 
+//Is called everytime StartDialogue() is called
+//Hides Dialog Box if conversation is done
 	void EndDialogue()
 	{
 		if (index + 1 < conversation.Length)
