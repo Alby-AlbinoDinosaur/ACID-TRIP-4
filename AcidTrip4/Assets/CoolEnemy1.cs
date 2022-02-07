@@ -9,9 +9,13 @@ public class CoolEnemy1 : Entity
     // Start is called before the first frame update
     void Start()
     {   //Add each move to list
-        base.moveList = new List<Move>();
-        base.moveList.Add(Move1);
-       
+        base.initialize();
+      
+        base.moveExecuteList.Add(Move1);
+        base.moveTargetsList.Add(Move1Targets);
+        base.moveTextList.Add(Move1Text);
+        base.nextMove = 0;
+        base.selectedTargets = Move1Targets(this);
         base.Run();
     }
 
@@ -21,22 +25,30 @@ public class CoolEnemy1 : Entity
         
     }
 
-    private bool Move1(List<Entity> targetList, bool shouldExecute)
+    private void Move1(List<Entity> targetList)
     {
-        if (shouldExecute)
-        {
-            print("HEYYY!");
-        }
+            print("HEYYY!");  
+    }
 
-        if (targetList.Count == 0)
-            return true;
-        else
-            return false;
+    private List<Entity> Move1Targets(Entity target)
+    {
+        return new List<Entity>();
+    }
+
+    private string Move1Text(int context)
+    {
+        switch (context)
+        {
+            case 0: return "this is the move name, Move1, for the menu";
+            case 1: return "This is the text we would show once you click it, before selecting targets";
+            case 2: return "And this is the text that the move says as the moves are resolving";
+        }
+        return "code should not ever get to here";
     }
 
     public override void AutoChooseNextMove(List<Entity> possibleTargets)
     {
         //set selected targets and next move
-        base.nextMove = Move1;//temp
+        base.nextMove = 0;//temp
     }
 }

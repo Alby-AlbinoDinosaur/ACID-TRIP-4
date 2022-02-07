@@ -8,15 +8,24 @@ public abstract class Entity : MonoBehaviour
     public int speed_stat;
     public int health_stat;
 
-    //Return type: 
-    public delegate bool Move(List<Entity> selectedTargets, bool shouldExecute);
-    public Move nextMove;
+    //These three functions make up the three parts of a move
+    //moveExecute executes the move on selectedTargets when called
+    //moveTargets returns all the targets that would be affected by a move if that entity were clicked on as a target
+    //moveText spits out the right text for the situation given the context, possibly using selectedTargets
+    public delegate void moveExecute(List<Entity> selectedTargets);
+    public delegate List<Entity> moveTargets(Entity potentialTarget);
+    public delegate string moveText(int context);
+
+    public List<moveExecute> moveExecuteList;
+    public List<moveTargets> moveTargetsList;
+    public List<moveText> moveTextList;
+
+    public int nextMove;
     public List<Entity> selectedTargets;
-    public List<Move> moveList;
 
     public void Run()
     {
-        nextMove(selectedTargets, true);
+        moveExecuteList[nextMove](selectedTargets);
     }
 
     public bool IsDefeated()
@@ -26,12 +35,25 @@ public abstract class Entity : MonoBehaviour
 
 
     //Get the list of moves for ui
-    public List<Move> GetMoveList()
+    public List<moveTargets> GetMoveList()
     {
-        return moveList;
+        return moveTargetsList;
     }
 
     //For enemies
     public abstract void AutoChooseNextMove(List<Entity> possibleTargets);
+
+
+
+    //Default constructor: call by hand before start in individual enemies
+    public void initialize()
+    {
+        moveExecuteList = new List<moveExecute>();
+        moveTargetsList = new List<moveTargets>();
+        moveTextList = new List<moveText>();
+    }
+
+
+
 
 }
