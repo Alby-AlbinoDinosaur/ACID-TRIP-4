@@ -10,7 +10,8 @@ public class CoolEnemy1 : Entity
     void Start()
     {   //Add each move to list
         base.initialize();
-      
+
+        base.name = "Dummy";
         base.moveExecuteList.Add(Move1);
         base.moveTargetList.Add(Move1Targets);
         base.moveTextList.Add(Move1Text);
