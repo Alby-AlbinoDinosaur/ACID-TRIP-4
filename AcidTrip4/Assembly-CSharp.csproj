@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\AddButtonCallback.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
     <Compile Include="Assets\Scripts\Other\TrippyBackgroundLines.cs" />
+    <Compile Include="Assets\Entity.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
     <Compile Include="Assets\Scripts\Battle\UnitStats.cs" />
+    <Compile Include="Assets\CoolEnemy1.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
     <Compile Include="Assets\Scripts\Battle\CreateEnemyMenuItems.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
@@ -117,8 +119,8 @@
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
     <Compile Include="Assets\Scripts\Battle\SelectUnit.cs" />
-    <Compile Include="Assets\Entity.cs" />
-    <Compile Include="Assets\CoolEnemy1.cs" />
+    <Compile Include="Assets\PlayerMover.cs" />
+    <Compile Include="Assets\EnemyMover.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
