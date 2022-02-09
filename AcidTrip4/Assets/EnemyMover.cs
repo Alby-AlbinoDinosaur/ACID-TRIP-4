@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyMover : MonoBehaviour
 {
-    public static List<Entity> enemyList;
+    public List<Entity> enemyList;
+    public PlayerMover playerMover;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class EnemyMover : MonoBehaviour
         
     }
 
+    //Returns true if all enemies in enemyList are defeated, else false
     bool isAllDefeated()
     {
         int defeatCount = 0;
@@ -30,7 +32,7 @@ public class EnemyMover : MonoBehaviour
         return defeatCount == enemyList.Count;
     }
 
-    //Move through enemy list and have 
+    //Move through enemy list and have each enemy autochoose their targets and next move
     void EnemyChoosing()
     {
         if (isAllDefeated())
@@ -42,7 +44,10 @@ public class EnemyMover : MonoBehaviour
             foreach (Entity enemy in enemyList)
             {
                 if (!enemy.IsDefeated())
-                    enemy.AutoChooseNextMove(PlayerMover.playerList, enemyList);
+                {
+                    enemy.AutoChooseNextMove(playerMover.playerList, enemyList);
+                    //Show enemy intent in battle manager
+                }
             }
         }
         
