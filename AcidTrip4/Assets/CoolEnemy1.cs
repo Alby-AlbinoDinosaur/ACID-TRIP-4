@@ -10,7 +10,8 @@ public class CoolEnemy1 : Entity
     void Start()
     {   //Add each move to list
         base.initialize();
-      
+
+        base.name = "Dummy :)";
         base.moveExecuteList.Add(Move1);
         base.moveTargetsList.Add(Move1Targets);
         base.moveTextList.Add(Move1Text);
@@ -46,7 +47,7 @@ public class CoolEnemy1 : Entity
         return "code should not ever get to here";
     }
 
-    public override void AutoChooseNextMove(List<Entity> possibleTargets)
+    public override void AutoChooseNextMove(List<Entity> playerList, List<Entity> enemyList)
     {
         //set selected targets and next move
         base.nextMove = 0;//temp

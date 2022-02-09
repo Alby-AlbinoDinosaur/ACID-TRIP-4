@@ -7,6 +7,7 @@ public abstract class Entity : MonoBehaviour
     //Entity Stats
     public int speed_stat;
     public int health_stat;
+    public string name;
 
     //These three functions make up the three parts of a move
     //moveExecute executes the move on selectedTargets when called
@@ -41,7 +42,7 @@ public abstract class Entity : MonoBehaviour
     }
 
     //For enemies
-    public abstract void AutoChooseNextMove(List<Entity> possibleTargets);
+    public abstract void AutoChooseNextMove(List<Entity> playerList, List<Entity> enemyList);
 
 
 
