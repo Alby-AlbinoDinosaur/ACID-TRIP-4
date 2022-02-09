@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
-    public static List<Entity> playerList;
-    public GameObject enemyMover;
+    public List<Entity> playerList;
+    public EnemyMover enemyMover;
 
 
     // Start is called before the first frame update
@@ -38,27 +38,40 @@ public class PlayerMover : MonoBehaviour
     {
         if (isAllDefeated())
         {
-            // End battle
+            // tell BM to End battle
         }
 
         foreach (Entity current in playerList)
         {
             int currentSelection = 0;
+
             while (true)
             {
+                List<Entity> possibleTargets = new List<Entity>();
                 // Show possible moves in menu
                 // When click possible move in menu
-
-
+                // currentSelection = clicked move;
+                foreach (Entity possible in playerList)
+                {
+                    if (current.moveTargetList[currentSelection](possible))
+                    { possibleTargets.Add(possible); }
+                }
+                foreach (Entity possible in enemyMover.enemyList)
+                {
+                    if (current.moveTargetList[currentSelection](possible))
+                    { possibleTargets.Add(possible); }
+                }
                 // Do the UI stuff
-
-
+                // show up all the possible names
+                // if you clicked any name but back
+                // current.selectedTarget = clicked
+                current.nextMove = currentSelection;
                 break;
             }
+
+            //put in place in battlemanager list
         }
 
-
-        //put in place in battlemanager list
     }
 
 }
