@@ -66,7 +66,7 @@ public class CoolEnemy1 : Entity
      */
 
 
-    public override void AutoChooseNextMove(List<Entity> possibleTargets)
+    public override void AutoChooseNextMove(List<Entity> playerList, List<Entity> enemyList)
     {
         //set selected targets and next move
         base.nextMove = 0;//temp
