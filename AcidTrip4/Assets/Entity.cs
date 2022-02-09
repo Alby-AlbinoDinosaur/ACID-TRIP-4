@@ -12,20 +12,20 @@ public abstract class Entity : MonoBehaviour
     //moveExecute executes the move on selectedTargets when called
     //moveTargets returns all the targets that would be affected by a move if that entity were clicked on as a target
     //moveText spits out the right text for the situation given the context, possibly using selectedTargets
-    public delegate void moveExecute(List<Entity> selectedTargets);
-    public delegate List<Entity> moveTargets(Entity potentialTarget);
+    public delegate void moveExecute(Entity target);
+    public delegate bool moveTarget(Entity potentialTarget);
     public delegate string moveText(int context);
 
     public List<moveExecute> moveExecuteList;
-    public List<moveTargets> moveTargetsList;
+    public List<moveTarget> moveTargetList;
     public List<moveText> moveTextList;
 
     public int nextMove;
-    public List<Entity> selectedTargets;
+    public Entity selectedTarget;
 
     public void Run()
     {
-        moveExecuteList[nextMove](selectedTargets);
+        moveExecuteList[nextMove](selectedTarget);
     }
 
     public bool IsDefeated()
@@ -35,9 +35,9 @@ public abstract class Entity : MonoBehaviour
 
 
     //Get the list of moves for ui
-    public List<moveTargets> GetMoveList()
+    public List<moveTarget> GetMoveList()
     {
-        return moveTargetsList;
+        return moveTargetList;
     }
 
     //For enemies
@@ -49,7 +49,7 @@ public abstract class Entity : MonoBehaviour
     public void initialize()
     {
         moveExecuteList = new List<moveExecute>();
-        moveTargetsList = new List<moveTargets>();
+        moveTargetList = new List<moveTarget>();
         moveTextList = new List<moveText>();
     }
 

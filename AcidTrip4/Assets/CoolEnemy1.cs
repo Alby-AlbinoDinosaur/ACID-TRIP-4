@@ -12,10 +12,12 @@ public class CoolEnemy1 : Entity
         base.initialize();
       
         base.moveExecuteList.Add(Move1);
-        base.moveTargetsList.Add(Move1Targets);
+        base.moveTargetList.Add(Move1Targets);
         base.moveTextList.Add(Move1Text);
+
+
         base.nextMove = 0;
-        base.selectedTargets = Move1Targets(this);
+        base.selectedTarget = this;
         base.Run();
     }
 
@@ -25,16 +27,16 @@ public class CoolEnemy1 : Entity
         
     }
 
-    private void Move1(List<Entity> targetList)
+
+    private void Move1(Entity target)
     {
+            // is there anyone behind target?
             print("HEYYY!");  
     }
-
-    private List<Entity> Move1Targets(Entity target)
+    private bool Move1Targets(Entity target)
     {
-        return new List<Entity>();
+        return true;
     }
-
     private string Move1Text(int context)
     {
         switch (context)
@@ -45,6 +47,23 @@ public class CoolEnemy1 : Entity
         }
         return "code should not ever get to here";
     }
+
+
+    /*
+    private void Move1(Entity target)
+    {
+            // do i hit anyone else ?
+            print("HEYYY!");  
+    }
+    private bool Move1Targets(Entity target)
+    {
+       is move 1 legal? if so
+        return true;
+       else return false;
+    }
+
+     */
+
 
     public override void AutoChooseNextMove(List<Entity> possibleTargets)
     {
