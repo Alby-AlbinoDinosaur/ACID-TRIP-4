@@ -106,6 +106,7 @@
     <Compile Include="Assets\CoolEnemy1.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
     <Compile Include="Assets\Scripts\Battle\CreateEnemyMenuItems.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueManagerAlternate.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
     <Compile Include="Assets\Scripts\Battle\KillEnemy.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="Assets\Scripts\Battle\TurnSystem.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
     <Compile Include="Assets\Scripts\Battle\Character.cs" />
+    <Compile Include="Assets\BattleManager.cs" />
     <Compile Include="Assets\Scripts\MenuButtonController.cs" />
     <Compile Include="Assets\Scripts\Battle\charStats.cs" />
     <Compile Include="Assets\Scripts\Battle\EnemyUnitAction.cs" />
@@ -121,9 +123,6 @@
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
     <Compile Include="Assets\Scripts\Battle\SelectUnit.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\DialogueManagerAlternate.cs" />
-    <Compile Include="Assets\BattleManager.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\DialogueManagerAlternate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />

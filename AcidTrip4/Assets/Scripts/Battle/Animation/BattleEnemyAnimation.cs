@@ -8,19 +8,36 @@ public class BattleEnemyAnimation : MonoBehaviour
 
     public enum AnimationTypes
     {
-        frameByFrame,
+        frameByFrame, squash,
     }
     public AnimationTypes animationType;
 
+    // ==NOTES==
+    // Frame by frame: iterates between a set of sprites every interval.
+    //      If unpaused, FBF will use a preset order of specific sprites, so other sprites cannot be used.
+    // Squash: Squishes and stretches the sprite with a sine wave.
+    //      If unpaused, squash will use this object's transform.localScale, so if you want to resize the sprite, use the parent object instead.
+    //      Squash works best when the sprite's pivot is on the bottom.
+
     public bool paused = false;
 
+    float timer = 0; // Number of seconds that this sprite has gone without being paused.
+
     // FBF parameters.
-    public Sprite[] FBFSprites; // Frame by frame: iterates between these sprites every interval.
+    public Sprite[] FBFSprites; // 
     int FBFIndex = 0; // The index of the current frame.
     public float FBFInterval; // 0.0416 for 24 fps.
     float FBFCooldown;
 
+    // Squash parameters.
+    public float squashSpeed; // Speed at which to squash sprite.
+    public float squashAmplitude; // Magnitude of squashing.
+    public bool squashHardBounce; // This applies an absolute value to the squash, resulting in a slightly different animation.
+    public float squashXMultiplier; // Multiply the x-scaling by this amount. Usually <1, to limit the sideways stretching because that looks strange.
+    Vector3 squashOriginalScale;
+
     // Damage animation.
+    Sprite previousSprite;
     public Sprite damageSprite; // The sprite to show when the enemy is damaged.
     public float damageIntensity; // Default intensity.
     float currentDamageIntensity; // If this is ever above 0, activate the damage animation.
@@ -43,16 +60,26 @@ public class BattleEnemyAnimation : MonoBehaviour
             FBFCooldown = FBFInterval;
             spriteRenderer.sprite = FBFSprites[FBFIndex];
         }
+
+        if (animationType == AnimationTypes.squash) // Initialize squash parameters.
+        {
+            squashOriginalScale = transform.localScale;
+        }
     }
 
     void Update()
     {
         if (!paused)
         {
+            timer += Time.deltaTime; // If not paused, increment the timer, which can be used for any animation.
+
             switch (animationType)
             {
                 case AnimationTypes.frameByFrame:
                     FBFUpdate();
+                    break;
+                case AnimationTypes.squash:
+                    SquashUpdate();
                     break;
             }
         }
@@ -82,6 +109,21 @@ public class BattleEnemyAnimation : MonoBehaviour
         }
     }
 
+    void SquashUpdate()
+    {
+        // What happens every frame if Squash animation is selected:
+        // Increase the y scaling on a sin wave and the x scaling on a cos wave (multiplied by squashXMultiplier).
+
+        float deltaY = (Mathf.Sin(timer * squashSpeed) * squashAmplitude);
+        if (squashHardBounce) { deltaY = Mathf.Abs(deltaY); }
+
+        float hardBounceXFactor = 1;
+        if (squashHardBounce) { hardBounceXFactor = 2; } // If squashHardBounce is on, the X should go twice as fast to keep up with the absolute Y squash. Otherwise it doesn't look right.
+        float deltaX = (Mathf.Cos(timer * squashSpeed * hardBounceXFactor) * squashAmplitude * squashXMultiplier); // May be 0 if squashXMultiplier is 0.
+
+        transform.localScale = new Vector3(squashOriginalScale.x + deltaX, squashOriginalScale.y + deltaY, squashOriginalScale.z);
+    }
+
     public void DamageAnimation()
     {
         // When this is called, the sprite switches to damageSprite and the enemy jiggles back and forth a little.
@@ -93,7 +135,15 @@ public class BattleEnemyAnimation : MonoBehaviour
             currentDamageIntensity = damageIntensity;
             deltaX = damageSpeed;
             paused = true;
+
+            previousSprite = spriteRenderer.sprite; // Save the old sprite so you can return to that sprite after the damage animation.
             spriteRenderer.sprite = damageSprite;
+
+            if (animationType == AnimationTypes.squash)
+            {
+                transform.localScale = squashOriginalScale; // Reset the local scale, since Squash changes it.
+                timer = 0; // Reset the timer so the squash doesn't restart in a weird spot.
+            }
         }
         else // If currentDamageIntensity > 0, there's already a damage shake in progress, so just replace those values with these ones instead of starting a new shake.
         {
@@ -130,6 +180,7 @@ public class BattleEnemyAnimation : MonoBehaviour
         currentDamageIntensity -= damageIntensityFalloff * Time.deltaTime;
         if (currentDamageIntensity <= 0)
         {
+            spriteRenderer.sprite = previousSprite; // Go back to the original sprite.
             paused = false;
             transform.localPosition = originalDamagePos;
         }
