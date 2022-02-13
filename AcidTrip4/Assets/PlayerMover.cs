@@ -70,7 +70,8 @@ public class PlayerMover : MonoBehaviour
             }
 
             //put in place in battlemanager list
-        }
+            BattleManager.instance.AddEntity(current);
+        }//foreach
 
     }
 
