@@ -5,7 +5,11 @@ using UnityEngine;
 public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance;
-    //public List<Entity> globalEntityList = new List<Entity>(); //Global battle entity list
+
+    public PlayerMover playerMover;
+    public EnemyMover enemyMover;
+
+    public List<Entity> globalEntityList = new List<Entity>(); //Global battle entity list
     public List<Entity> battleEntityList = new List<Entity>(); 
 
     public bool pauseBattle = false;
@@ -25,8 +29,12 @@ public class BattleManager : MonoBehaviour
 
     void InstantiateBattle()
     {
-        /*globalEntityList.Clear();
-        currentEntityList.Clear();*/
+        globalEntityList.Clear();
+        battleEntityList.Clear();
+
+        //Add player list and enemy list to global list
+        globalEntityList.AddRange(playerMover.playerList);
+        globalEntityList.AddRange(enemyMover.enemyList);
     }
 
     //Sort entity list by speed stat (largest to smallest) using selection sort
@@ -76,5 +84,10 @@ public class BattleManager : MonoBehaviour
     public void AddEntity(Entity entity)
     {
         battleEntityList.Add(entity);
+    }
+
+    public void EndBattle()
+    {
+        //Do something here
     }
 }

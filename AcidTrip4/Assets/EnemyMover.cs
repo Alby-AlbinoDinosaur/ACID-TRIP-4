@@ -38,6 +38,7 @@ public class EnemyMover : MonoBehaviour
         if (isAllDefeated())
         {
             //End battle
+            BattleManager.instance.EndBattle();
         }
         else
         {
