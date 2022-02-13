@@ -41,13 +41,16 @@ public class EnemyMover : MonoBehaviour
         }
         else
         {
-            foreach (Entity enemy in enemyList)
+            foreach (Entity current in enemyList)
             {
-                if (!enemy.IsDefeated())
+                if (!current.IsDefeated())
                 {
-                    enemy.AutoChooseNextMove(playerMover.playerList, enemyList);
+                    current.AutoChooseNextMove(playerMover.playerList, enemyList);
                     //Show enemy intent in battle manager
                 }
+
+                //Add enemy to battle manager
+                BattleManager.instance.AddEntity(current);
             }
         }
         

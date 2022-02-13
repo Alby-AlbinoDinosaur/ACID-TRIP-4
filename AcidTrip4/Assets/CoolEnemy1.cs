@@ -13,6 +13,8 @@ public class CoolEnemy1 : Entity
 
         base.name = "Dummy";
         base.moveExecuteList.Add(Move1);
+        base.moveExecuteList.Add(Move2);
+
         base.moveTargetList.Add(Move1Targets);
         base.moveTextList.Add(Move1Text);
 
@@ -34,6 +36,12 @@ public class CoolEnemy1 : Entity
             // is there anyone behind target?
             print("HEYYY!");  
     }
+
+    private void Move2(Entity target)
+    {
+
+    }
+
     private bool Move1Targets(Entity target)
     {
         return true;
@@ -69,6 +77,8 @@ public class CoolEnemy1 : Entity
     public override void AutoChooseNextMove(List<Entity> playerList, List<Entity> enemyList)
     {
         //set selected targets and next move
-        base.nextMove = 0;//temp
+        int moveCount = base.moveExecuteList.Count - 1;
+
+        base.nextMove = Random.Range(0, moveCount);
     }
 }

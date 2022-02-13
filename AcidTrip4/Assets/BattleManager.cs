@@ -5,8 +5,8 @@ using UnityEngine;
 public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance;
-    public List<Entity> entityList = new List<Entity>();
-    public List<Entity> targetList = new List<Entity>();
+    //public List<Entity> globalEntityList = new List<Entity>(); //Global battle entity list
+    public List<Entity> battleEntityList = new List<Entity>(); 
 
     public bool pauseBattle = false;
 
@@ -25,13 +25,14 @@ public class BattleManager : MonoBehaviour
 
     void InstantiateBattle()
     {
-        entityList.Clear();
+        /*globalEntityList.Clear();
+        currentEntityList.Clear();*/
     }
 
     //Sort entity list by speed stat (largest to smallest) using selection sort
     void SortEntities()
     {
-        int listLength = entityList.Count;
+        int listLength = battleEntityList.Count;
 
         //List must be 2 or greater in length
         if (listLength > 1)
@@ -43,7 +44,7 @@ public class BattleManager : MonoBehaviour
                 int largest = i;
                 for (int j = i + 1; j < listLength; j++)
                 {
-                    if (entityList[j].speed_stat > entityList[largest].speed_stat)
+                    if (battleEntityList[j].speed_stat > battleEntityList[largest].speed_stat)
                     {
                         largest = j;
                     }
@@ -51,9 +52,9 @@ public class BattleManager : MonoBehaviour
 
 
                 // Swap the found largest element with the first element
-                Entity temp = entityList[largest];
-                entityList[largest] = entityList[i];
-                entityList[i] = temp;
+                Entity temp = battleEntityList[largest];
+                battleEntityList[largest] = battleEntityList[i];
+                battleEntityList[i] = temp;
 
             }//for
         }
@@ -63,9 +64,9 @@ public class BattleManager : MonoBehaviour
     //Run each entity's move
     private IEnumerator MoveExecute()
     {
-        foreach (Entity current in targetList)
+        foreach (Entity current in battleEntityList)
         {
-            //Pause until pauseBattle is false
+            //Pause until pauseBattle is false (to have in between events if wanted)
             yield return new WaitUntil(() => pauseBattle == false);
             current.Run();
         }
@@ -74,6 +75,6 @@ public class BattleManager : MonoBehaviour
     //Add entity to BattleManager (global) entity list
     public void AddEntity(Entity entity)
     {
-        entityList.Add(entity);
+        battleEntityList.Add(entity);
     }
 }

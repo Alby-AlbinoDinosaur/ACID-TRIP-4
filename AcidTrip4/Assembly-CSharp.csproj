@@ -122,6 +122,7 @@
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
     <Compile Include="Assets\Scripts\Battle\SelectUnit.cs" />
     <Compile Include="Assets\BattleManager.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueManagerAlternate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
