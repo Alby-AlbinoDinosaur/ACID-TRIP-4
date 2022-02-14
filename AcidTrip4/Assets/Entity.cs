@@ -21,8 +21,9 @@ public abstract class Entity : MonoBehaviour
     public List<moveTarget> moveTargetList;
     public List<moveText> moveTextList;
 
-    public int nextMove;
+    public int nextMove = -1;
     public Entity selectedTarget;
+
 
     public void Run()
     {

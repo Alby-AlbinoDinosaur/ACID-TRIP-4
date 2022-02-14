@@ -6,7 +6,7 @@ public class PlayerMover : MonoBehaviour
 {
     public List<Entity> playerList;
     public EnemyMover enemyMover;
-
+    public GameObject endturnbutton;
 
     // Start is called before the first frame update
     void Start()
@@ -45,28 +45,28 @@ public class PlayerMover : MonoBehaviour
         {
             int currentSelection = 0;
 
-            while (true)
+            while (current.nextMove == -1)
             {
-                List<Entity> possibleTargets = new List<Entity>();
+                //List<Entity> possibleTargets = new List<Entity>();
                 // Show possible moves in menu
                 // When click possible move in menu
                 // currentSelection = clicked move;
-                foreach (Entity possible in playerList)
-                {
-                    if (current.moveTargetList[currentSelection](possible))
-                    { possibleTargets.Add(possible); }
-                }
-                foreach (Entity possible in enemyMover.enemyList)
-                {
-                    if (current.moveTargetList[currentSelection](possible))
-                    { possibleTargets.Add(possible); }
-                }
+                //foreach (Entity possible in playerList)
+                //{
+                //    if (current.moveTargetList[currentSelection](possible))
+                //    { possibleTargets.Add(possible); }
+                //}
+                //foreach (Entity possible in enemyMover.enemyList)
+                //{
+                 //   if (current.moveTargetList[currentSelection](possible))
+                //    { possibleTargets.Add(possible); }
+                //}
                 // Do the UI stuff
                 // show up all the possible names
                 // if you clicked any name but back
                 // current.selectedTarget = clicked
-                current.nextMove = currentSelection;
-                break;
+                //current.nextMove = currentSelection;
+                //break;
             }
 
             //put in place in battlemanager list

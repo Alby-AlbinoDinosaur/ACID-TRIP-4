@@ -8,9 +8,11 @@ public class BattleManager : MonoBehaviour
 
     public PlayerMover playerMover;
     public EnemyMover enemyMover;
+//    public DialougeTrigger dtrigger;
 
     public List<Entity> globalEntityList = new List<Entity>(); //Global battle entity list
-    public List<Entity> battleEntityList = new List<Entity>(); 
+    public List<Entity> battleEntityList = new List<Entity>();
+    public Dialogue text;
 
     public bool pauseBattle = false;
 
@@ -77,6 +79,7 @@ public class BattleManager : MonoBehaviour
             //Pause until pauseBattle is false (to have in between events if wanted)
             yield return new WaitUntil(() => pauseBattle == false);
             current.Run();
+
         }
     }
 
@@ -88,6 +91,10 @@ public class BattleManager : MonoBehaviour
 
     public void EndBattle()
     {
-        //Do something here
+        //  while(true)
+        // {
+        //     DialougeTrigger.instance.
+        //  }
+        print("Battle over");
     }
 }
