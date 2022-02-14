@@ -25,7 +25,7 @@ public class BattleDialogueManager : MonoBehaviour {
 
     public GameObject next;
     
-	//private Dialogue[] conversation;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -39,7 +39,7 @@ public class BattleDialogueManager : MonoBehaviour {
     {
         if(Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Pressed clicke.");
+            
             if (!finished)
             {
                 DisplayNextSentence();

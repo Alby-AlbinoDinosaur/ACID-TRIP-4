@@ -34,7 +34,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
     {
         if(Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Pressed clicke.");
+            
             if (!finished)
             {
                 DisplayNextSentence();
