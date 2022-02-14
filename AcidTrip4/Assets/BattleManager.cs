@@ -6,10 +6,10 @@ public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance;
 
-    public PlayerMover playerMover = FindObjectOfType<PlayerMover>();
-    public EnemyMover enemyMover = FindObjectOfType<EnemyMover>();
+    public PlayerMover playerMover;
+    public EnemyMover enemyMover;
 
-    public BattleDialogueManager battleDialogue = FindObjectOfType<BattleDialogueManager>();
+    public BattleDialogueManager battleDialogue;
 
     public List<Entity> globalEntityList = new List<Entity>(); //Global battle entity list
     public List<Entity> battleEntityList = new List<Entity>();
