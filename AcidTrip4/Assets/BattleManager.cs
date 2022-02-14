@@ -6,13 +6,14 @@ public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance;
 
-    public PlayerMover playerMover;
-    public EnemyMover enemyMover;
-//    public DialougeTrigger dtrigger;
+    public PlayerMover playerMover = FindObjectOfType<PlayerMover>();
+    public EnemyMover enemyMover = FindObjectOfType<EnemyMover>();
+
+    public BattleDialogueManager battleDialogue = FindObjectOfType<BattleDialogueManager>();
 
     public List<Entity> globalEntityList = new List<Entity>(); //Global battle entity list
     public List<Entity> battleEntityList = new List<Entity>();
-    public Dialogue text;
+
 
     public bool pauseBattle = false;
 
@@ -26,7 +27,23 @@ public class BattleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!pauseBattle)
+        {
+            if (playerMover.moveThroughPlayers())
+            {
+                enemyMover.EnemyChoosing();
+                SortEntities();
+                foreach (Entity current in battleEntityList)
+                {
+                    current.Run();
+                    // With the BDM set up, entities can also actually say text within the move itself.
+                    // TODO: make current do an animation
+                    battleDialogue.WriteLine(current.moveTextList[current.nextMove](2));
+                }
+
+                //TODO: add second forach that updates health, sprites etc
+            }
+        }
     }
 
     void InstantiateBattle()
@@ -95,6 +112,7 @@ public class BattleManager : MonoBehaviour
         // {
         //     DialougeTrigger.instance.
         //  }
-        print("Battle over");
+        pauseBattle = true;
+        battleDialogue.WriteLine("Battle is over.");
     }
 }

@@ -5,9 +5,9 @@ using UnityEngine;
 public abstract class Entity : MonoBehaviour
 {
     //Entity Stats
-    public int speed_stat;
-    public int health_stat;
-    public string name;
+    public int speed_stat = 0;
+    public int health_stat = 0;
+    public string name = "uh oh, we forgot to name this one";
 
     //These three functions make up the three parts of a move
     //moveExecute executes the move on selectedTargets when called
@@ -23,11 +23,13 @@ public abstract class Entity : MonoBehaviour
 
     public int nextMove = -1;
     public Entity selectedTarget;
+    public bool hasMoved = false;
 
 
     public void Run()
     {
         moveExecuteList[nextMove](selectedTarget);
+        hasMoved = true;
     }
 
     public bool IsDefeated()

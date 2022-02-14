@@ -6,6 +6,7 @@ public class EnemyMover : MonoBehaviour
 {
     public List<Entity> enemyList;
     public PlayerMover playerMover;
+    public BattleDialogueManager battleDialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +34,12 @@ public class EnemyMover : MonoBehaviour
     }
 
     //Move through enemy list and have each enemy autochoose their targets and next move
-    void EnemyChoosing()
+    public void EnemyChoosing()
     {
         if (isAllDefeated())
         {
             //End battle
+            battleDialogue.WriteLine("You Win!");
             BattleManager.instance.EndBattle();
         }
         else
