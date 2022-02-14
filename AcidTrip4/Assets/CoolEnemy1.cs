@@ -80,6 +80,6 @@ public class CoolEnemy1 : Entity
         int moveCount = base.moveExecuteList.Count - 1;
 
         base.nextMove = Random.Range(0, moveCount);
-        base.hasMoved = false;
+        base.nextMoveHasAlreadyBeenRun = false;
     }
 }

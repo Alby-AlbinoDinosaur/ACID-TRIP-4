@@ -20,14 +20,22 @@ public class EnemyMover : MonoBehaviour
         
     }
 
+    public void addEnemy(Entity current)
+    {
+        enemyList.Add(current);
+    }
+
     //Returns true if all enemies in enemyList are defeated, else false
-    bool isAllDefeated()
+    public bool isAllDefeated()
     {
         int defeatCount = 0;
         foreach (Entity enemy in enemyList)
         {
             if (enemy.IsDefeated())
+            {
                 defeatCount++;
+                print("an enemy is dead");
+            }
         }
 
         return defeatCount == enemyList.Count;
@@ -36,14 +44,13 @@ public class EnemyMover : MonoBehaviour
     //Move through enemy list and have each enemy autochoose their targets and next move
     public void EnemyChoosing()
     {
+        /*
         if (isAllDefeated())
         {
             //End battle
             battleDialogue.WriteLine("You Win!");
             BattleManager.instance.EndBattle();
-        }
-        else
-        {
+        }*/
             foreach (Entity current in enemyList)
             {
                 if (!current.IsDefeated())
@@ -55,7 +62,6 @@ public class EnemyMover : MonoBehaviour
                 //Add enemy to battle manager
                 BattleManager.instance.AddEntity(current);
             }
-        }
         
     }
 }

@@ -10,8 +10,6 @@ public class DemoCheeseEnemy : Entity
     void Start()
     {   //Add each move to list
         base.initialize();
-
-        base.name = "CheeseMan";
         base.moveExecuteList.Add(Scratch);
         base.moveExecuteList.Add(Bite);
         base.moveTargetList.Add(ScratchTargets);
@@ -36,6 +34,7 @@ public class DemoCheeseEnemy : Entity
         int damage = 5;
         // Calculate damage however here
         target.health_stat -= damage;
+        print("did a scratch");
     }
 
 
@@ -79,10 +78,12 @@ public class DemoCheeseEnemy : Entity
 
         base.nextMove = Random.Range(0, moveCount);
 
-        int nextTarget = Random.Range(0, 2);
+        print("Enemy selected move");
+        int nextTarget = Random.Range(0, 0);
 
         base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
+        print("Enemy selected target");
 
-        base.hasMoved = false;
+        base.nextMoveHasAlreadyBeenRun = false;
     }
 }

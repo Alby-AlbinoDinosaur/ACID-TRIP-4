@@ -6,7 +6,7 @@ public abstract class Entity : MonoBehaviour
 {
     //Entity Stats
     public int speed_stat = 0;
-    public int health_stat = 0;
+    public int health_stat = 100;
     public string name = "uh oh, we forgot to name this one";
 
     //These three functions make up the three parts of a move
@@ -23,13 +23,15 @@ public abstract class Entity : MonoBehaviour
 
     public int nextMove = -1;
     public Entity selectedTarget;
-    public bool hasMoved = false;
+
+    //hasMoved means it has already used the nextMove & selectedTarget
+    public bool nextMoveHasAlreadyBeenRun = true;
 
 
     public void Run()
     {
         moveExecuteList[nextMove](selectedTarget);
-        hasMoved = true;
+        nextMoveHasAlreadyBeenRun = true;
     }
 
     public bool IsDefeated()

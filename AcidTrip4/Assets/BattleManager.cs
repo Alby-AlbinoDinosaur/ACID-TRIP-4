@@ -13,6 +13,7 @@ public class BattleManager : MonoBehaviour
 
     public List<Entity> globalEntityList = new List<Entity>(); //Global battle entity list
     public List<Entity> battleEntityList = new List<Entity>();
+    bool readyToRun = false;
 
 
     public bool pauseBattle = false;
@@ -27,23 +28,7 @@ public class BattleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!pauseBattle)
-        {
-            if (playerMover.moveThroughPlayers())
-            {
-                enemyMover.EnemyChoosing();
-                SortEntities();
-                foreach (Entity current in battleEntityList)
-                {
-                    current.Run();
-                    // With the BDM set up, entities can also actually say text within the move itself.
-                    // TODO: make current do an animation
-                    battleDialogue.WriteLine(current.moveTextList[current.nextMove](2));
-                }
-
-                //TODO: add second forach that updates health, sprites etc
-            }
-        }
+      
     }
 
     void InstantiateBattle()
@@ -54,6 +39,55 @@ public class BattleManager : MonoBehaviour
         //Add player list and enemy list to global list
         globalEntityList.AddRange(playerMover.playerList);
         globalEntityList.AddRange(enemyMover.enemyList);
+    }
+
+    public void EndTurnButton()
+    {
+        if (!pauseBattle)
+        {
+            if (playerMover.moveThroughPlayers())
+            {
+
+                enemyMover.EnemyChoosing();
+                SortEntities();
+                foreach (Entity current in battleEntityList)
+                {
+                    current.Run();
+                    // With the BDM set up, entities can also actually say text within the move itself.
+                    // TODO: make current do an animation
+                    battleDialogue.WriteLine(current.moveTextList[current.nextMove](2));
+                }
+
+                //This second loop is for debug, this is not the right way to do this
+                foreach (Entity current in battleEntityList)
+                {
+                    print("Entity: " + current.name);
+                    print("Health: " + current.health_stat);
+                }
+                    battleEntityList.Clear();
+                //TODO: add second forach that updates health, sprites etc
+
+                // check if all players are dead and end battle
+                if (playerMover.isAllDefeated())
+                {
+                    print("you are dead");
+                    EndBattle();
+                    battleDialogue.WriteLine("You Lose!");
+                }
+                // check if all enemies are dead and end battle
+                if (enemyMover.isAllDefeated())
+                {
+                    //End battle
+                    EndBattle();
+                    battleDialogue.WriteLine("You Win!");
+                }
+            }
+            else
+            {
+                print("you havent selected all moves");
+            }
+        }
+
     }
 
     //Sort entity list by speed stat (largest to smallest) using selection sort
@@ -112,6 +146,7 @@ public class BattleManager : MonoBehaviour
         // {
         //     DialougeTrigger.instance.
         //  }
+        print("Battle is over");
         pauseBattle = true;
         battleDialogue.WriteLine("Battle is over.");
     }

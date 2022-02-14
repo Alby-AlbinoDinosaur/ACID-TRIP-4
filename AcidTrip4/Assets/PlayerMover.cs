@@ -28,25 +28,33 @@ public class PlayerMover : MonoBehaviour
         
     }
 
+    public void addPlayer(Entity current)
+    {
+        playerList.Add(current);
+    }
+
     public void setSelectedPlayer(Entity current)
     {
         //To be triggered by the first set of buttons, the ones on your dude's faceplates
         CurrentSelectedPlayer = current;
     }
 
-   public void setSelectedMove(Entity current)
+   public void setSelectedMove(int current)
     {
         //To be triggered by the first set of buttons, the ones on your dude's faceplates
-        CurrentSelectedPlayer = current;
+        selectedMove = current;
     }
 
-    bool isAllDefeated()
+    public bool isAllDefeated()
     {
         int defeatCount = 0;
         foreach (Entity player in playerList)
         {
             if (player.IsDefeated())
+            {
                 defeatCount++;
+                print("a player is dead");
+            }
         }
 
         return defeatCount == playerList.Count;
@@ -66,7 +74,8 @@ public class PlayerMover : MonoBehaviour
             SelectedTarget = possible;
             CurrentSelectedPlayer.selectedTarget = possible;
             CurrentSelectedPlayer.nextMove = selectedMove;
-            CurrentSelectedPlayer.hasMoved = false;
+            CurrentSelectedPlayer.nextMoveHasAlreadyBeenRun = false;
+            print("You've set a move!");
         }
         else
         {
@@ -83,28 +92,38 @@ public class PlayerMover : MonoBehaviour
 
     public bool moveThroughPlayers()
     {
+
+        if (playerList.Count == 0)
+        {
+            print("no players");
+            return false;
+        }
         //Because we have to make players selectable out of order, this function is now just
         //to tell the BattleManager if all players have picked a move.
         //This former loop is mostly in the BattleManager's update function now.
 
-        if (isAllDefeated())
+        /*if (isAllDefeated())
         {
             battleDialogue.WriteLine("You Lose!");
+            print("you are dead");
             battleManager.EndBattle();
             return false;
-        }
+        }*/
 
         foreach (Entity current in playerList)
         {
-                if (!current.IsDefeated() && current.hasMoved == false)
-                { return false; }
+                if (!current.IsDefeated() && current.nextMoveHasAlreadyBeenRun)
+                {
+                    print("someone has not moved"); return false;
+                }
 
         }//foreach
 
-        // TO ADD: Activate end Turn button here
+        print("each player has a move");
 
-        if (!EndTurnPressed)
-        { return false; }
+
+//        if (!EndTurnPressed)
+//        { return false; }
 
         foreach (Entity current in playerList)
         {
@@ -113,7 +132,6 @@ public class PlayerMover : MonoBehaviour
         }
 
 
-        // TO ADD: Deactivate End Turn button here
 
         return true;
         }
