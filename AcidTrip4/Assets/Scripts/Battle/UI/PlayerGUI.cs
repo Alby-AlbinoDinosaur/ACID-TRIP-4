@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerGUI : MonoBehaviour
 {
     // Start is called before the first frame update
     public Button plateButton;
     public Entity playerEntity;
+    public Image hpBar;
+    public TextMeshProUGUI nextText;
 
     public Button attackButton;
     public Button itemsButton;
@@ -19,12 +22,13 @@ public class PlayerGUI : MonoBehaviour
     {
         BattleEventManager.OnEnemySelected += finishSelection;
         BattleEventManager.OnEnemyRevealSelect += startSelection;
+        BattleEventManager.OnGUIUpdate += updateGUI;
     }
 
     // Update is called once per frame
     void Update()
     {
-        BattleEventManager.OnGUIUpdate += updateGUI;
+        
     }
 
     void finishSelection()
@@ -50,7 +54,11 @@ public class PlayerGUI : MonoBehaviour
 
     void updateGUI()
     {
-
+        
+        
+        hpBar.fillAmount -= 0.2f;
+        nextText.text += "1";
+        Debug.Log("CALLED");
     }
 
 

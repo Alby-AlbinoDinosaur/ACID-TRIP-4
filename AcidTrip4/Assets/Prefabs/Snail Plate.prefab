@@ -748,6 +748,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plateButton: {fileID: 7663557970797517399}
+  playerEntity: {fileID: 0}
+  hpBar: {fileID: 7663557972380231516}
+  nextText: {fileID: 880045963167616482}
   attackButton: {fileID: 7663557971763257642}
   itemsButton: {fileID: 7663557971713914174}
   abilitiesButton: {fileID: 7663557972622681677}

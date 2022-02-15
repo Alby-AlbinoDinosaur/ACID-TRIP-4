@@ -7,12 +7,14 @@ public class enemyGUI : MonoBehaviour
 {
 
     // Start is called before the first frame update
+    public Image hpBar;
     
     public Button selector;
     void Start()
     {
         BattleEventManager.OnEnemyRevealSelect+= enableSelector;
         BattleEventManager.OnEnemySelected+= disableSelector;
+        BattleEventManager.OnGUIUpdate+= updateGUI;
         selector.interactable = false;
     }
 
@@ -30,5 +32,10 @@ public class enemyGUI : MonoBehaviour
     void disableSelector()
     {
         selector.interactable = false;
+    }
+
+    void updateGUI()
+    {
+        hpBar.fillAmount -= 0.2f;
     }
 }

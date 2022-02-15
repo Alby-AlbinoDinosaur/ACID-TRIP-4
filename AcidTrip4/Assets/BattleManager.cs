@@ -10,6 +10,7 @@ public class BattleManager : MonoBehaviour
     public EnemyMover enemyMover;
 
     public BattleDialogueManager battleDialogue;
+    public BattleEventManager battleEventManager;
 
     public List<Entity> globalEntityList = new List<Entity>(); //Global battle entity list
     public List<Entity> battleEntityList = new List<Entity>();
@@ -43,6 +44,11 @@ public class BattleManager : MonoBehaviour
 
     public void EndTurnButton()
     {
+        StartCoroutine("EndTurnButtonCoroutine");
+    }
+
+    public IEnumerator EndTurnButtonCoroutine()
+    {
         if (!pauseBattle)
         {
             if (playerMover.moveThroughPlayers())
@@ -56,6 +62,9 @@ public class BattleManager : MonoBehaviour
                     // With the BDM set up, entities can also actually say text within the move itself.
                     // TODO: make current do an animation
                     battleDialogue.WriteLine(current.moveTextList[current.nextMove](2));
+                    battleEventManager.updateGUIS();
+
+                    yield return new WaitForSeconds(.1f);
                 }
 
                 //This second loop is for debug, this is not the right way to do this
