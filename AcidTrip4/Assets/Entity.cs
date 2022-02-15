@@ -7,6 +7,10 @@ public abstract class Entity : MonoBehaviour
     //Entity Stats
     public int speed_stat = 0;
     public int health_stat = 100;
+    public int defense_stat = 0;
+    public int attack_stat = 0;
+    public int ability_stat = 0;
+    public int power_points = 0;
     public string name = "uh oh, we forgot to name this one";
 
     //These three functions make up the three parts of a move
