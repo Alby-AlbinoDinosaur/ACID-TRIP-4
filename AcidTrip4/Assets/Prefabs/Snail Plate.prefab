@@ -545,6 +545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7663557971030525358}
   - component: {fileID: 7663557971030525353}
+  - component: {fileID: 5711265285555416604}
   m_Layer: 5
   m_Name: Snail Plate
   m_TagString: Untagged
@@ -599,6 +600,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5711265285555416604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7663557971030525359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70750fe22336e7e45a7e48b97792eb20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plateButton: {fileID: 7663557970797517399}
+  attackButton: {fileID: 7663557971763257642}
+  itemsButton: {fileID: 7663557971713914174}
+  abilitiesButton: {fileID: 7663557972622681677}
+  guardButton: {fileID: 7663557972757377666}
+  basicCancelButton: {fileID: 7663557972650878581}
+  plateAnimator: {fileID: 7663557971030525353}
 --- !u!1 &7663557971324100661
 GameObject:
   m_ObjectHideFlags: 0
