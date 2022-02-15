@@ -64,7 +64,8 @@ public class BattleManager : MonoBehaviour
                     battleDialogue.WriteLine(current.moveTextList[current.nextMove](2));
                     battleEventManager.updateGUIS();
 
-                    yield return new WaitForSeconds(.1f);
+                    //yield return new WaitForSeconds(2f);
+                    yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
                 }
 
                 //This second loop is for debug, this is not the right way to do this
