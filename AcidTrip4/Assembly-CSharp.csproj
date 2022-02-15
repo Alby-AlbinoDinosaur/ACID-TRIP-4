@@ -133,6 +133,8 @@
     <Compile Include="Assets\Snail_Char.cs" />
     <Compile Include="Assets\Leon_Char.cs" />
     <Compile Include="Assets\Stat_Char.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
