@@ -36,7 +36,7 @@ public class BattleEventManager : MonoBehaviour
     public void updateGUIS()
     {
         if(OnGUIUpdate != null){
-
+            OnGUIUpdate();
         }
     }
 
