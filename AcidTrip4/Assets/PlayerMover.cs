@@ -76,6 +76,7 @@ public class PlayerMover : MonoBehaviour
             CurrentSelectedPlayer.nextMove = selectedMove;
             CurrentSelectedPlayer.nextMoveHasAlreadyBeenRun = false;
             print("You've set a move!");
+            battleManager.battleEventManager.updateGUIS();
         }
         else
         {

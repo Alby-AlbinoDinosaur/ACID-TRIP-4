@@ -10,12 +10,17 @@ public class enemyGUI : MonoBehaviour
     public Image hpBar;
     
     public Button selector;
+
+    public Entity enemyEntity;
+    private int maxHp = 0;
+
     void Start()
     {
         BattleEventManager.OnEnemyRevealSelect+= enableSelector;
         BattleEventManager.OnEnemySelected+= disableSelector;
         BattleEventManager.OnGUIUpdate+= updateGUI;
         selector.interactable = false;
+        maxHp = enemyEntity.health_stat;
     }
 
     // Update is called once per frame
@@ -36,6 +41,9 @@ public class enemyGUI : MonoBehaviour
 
     void updateGUI()
     {
-        hpBar.fillAmount -= 0.2f;
+        if(maxHp != 0)
+        {
+            hpBar.fillAmount = (float)enemyEntity.health_stat/maxHp;
+        }
     }
 }

@@ -36,6 +36,7 @@ public abstract class Entity : MonoBehaviour
     {
         moveExecuteList[nextMove](selectedTarget);
         nextMoveHasAlreadyBeenRun = true;
+        
     }
 
     public bool IsDefeated()

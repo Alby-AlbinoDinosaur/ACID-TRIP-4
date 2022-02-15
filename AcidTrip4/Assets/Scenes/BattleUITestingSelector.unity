@@ -2131,6 +2131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpBar: {fileID: 736687095}
   selector: {fileID: 265470676}
+  enemyEntity: {fileID: 1131697723}
 --- !u!1 &1217963289
 GameObject:
   m_ObjectHideFlags: 0
