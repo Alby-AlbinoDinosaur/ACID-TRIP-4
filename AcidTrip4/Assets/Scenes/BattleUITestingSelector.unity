@@ -1110,6 +1110,7 @@ MonoBehaviour:
   playerMover: {fileID: 563079673}
   enemyMover: {fileID: 563079674}
   battleDialogue: {fileID: 494405932}
+  battleEventManager: {fileID: 1942520755}
   globalEntityList: []
   battleEntityList: []
   pauseBattle: 0
