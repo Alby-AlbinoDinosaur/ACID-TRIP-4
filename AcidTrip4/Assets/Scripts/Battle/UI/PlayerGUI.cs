@@ -7,6 +7,7 @@ public class PlayerGUI : MonoBehaviour
 {
     // Start is called before the first frame update
     public Button plateButton;
+    public Entity playerEntity;
 
     public Button attackButton;
     public Button itemsButton;
@@ -23,7 +24,7 @@ public class PlayerGUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        BattleEventManager.OnGUIUpdate += updateGUI;
     }
 
     void finishSelection()
@@ -47,6 +48,10 @@ public class PlayerGUI : MonoBehaviour
         basicCancelButton.interactable = false;
     }
 
+    void updateGUI()
+    {
+
+    }
 
 
 }
