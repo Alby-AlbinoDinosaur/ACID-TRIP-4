@@ -2452,6 +2452,14 @@ PrefabInstance:
       propertyPath: sounds.Array.data[3].name
       value: menu_select
       objectReference: {fileID: 0}
+    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
 --- !u!114 &1209067742 stripped
