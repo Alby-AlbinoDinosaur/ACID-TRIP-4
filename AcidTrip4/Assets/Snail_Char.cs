@@ -31,7 +31,16 @@ public class Snail_Char : Entity
         base.moveTextList.Add(Ability_1_Text);
         base.moveTextList.Add(Ability_2_Text);
 
+
         base.name = "Snail";
+
+        base.health_stat = 250;
+        base.defense_stat = 20;
+        base.spdefense_stat = 8;
+        base.attack_stat = 30;
+        base.ability_stat = 10;
+        base.power_points = 20;
+        base.speed_stat = 10;
 
         base.nextMove = 0;
 

@@ -33,6 +33,14 @@ public class Stat_Char : Entity
 
         base.name = "Statistician";
 
+        base.health_stat = 100;
+        base.defense_stat = 8;
+        base.spdefense_stat = 20;
+        base.attack_stat = 10;
+        base.ability_stat = 30;
+        base.power_points = 50;
+        base.speed_stat = 20;
+
         base.nextMove = 0;
 
         playerMover.addPlayer(this);

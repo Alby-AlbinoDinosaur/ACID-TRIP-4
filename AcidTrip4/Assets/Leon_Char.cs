@@ -31,6 +31,14 @@ public class Leon_Char : Entity
         base.moveTextList.Add(Ability_1_Text);
         base.moveTextList.Add(Ability_2_Text);
 
+        base.health_stat = 150;
+        base.defense_stat = 15;
+        base.spdefense_stat = 15;
+        base.attack_stat = 15;
+        base.ability_stat = 15;
+        base.power_points = 30;
+        base.speed_stat = 15;
+
         base.name = "Leon Bradely";
 
         base.nextMove = 0;

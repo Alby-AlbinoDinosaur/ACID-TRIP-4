@@ -86,13 +86,27 @@ public class BattleManager : MonoBehaviour
                     battleDialogue.WriteLine("You Lose!");
                 }
                 // check if all enemies are dead and end battle
-                if (enemyMover.isAllDefeated())
+                else if (enemyMover.isAllDefeated())
                 {
                     //End battle
                     EndBattle();
                     battleDialogue.WriteLine("You Win!");
                 }
-                endTurnButton.SetActive(true);
+                else
+                {
+                    //Resolve end of turn effects here-
+                    /*foreach (entity in battleEntityList)
+                    {
+                        if (!entity.IsDefeated())
+                        {
+                            while they have effects left to do
+                                do one effect and writeline the text
+                                wait
+                        }
+
+                    }*/
+                    endTurnButton.SetActive(true); 
+                }
             }
             else
             {
@@ -103,6 +117,7 @@ public class BattleManager : MonoBehaviour
 
     }
 
+  
     //Sort entity list by speed stat (largest to smallest) using selection sort
     void SortEntities()
     {
