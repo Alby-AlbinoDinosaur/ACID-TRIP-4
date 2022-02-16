@@ -10,10 +10,12 @@ using UnityEngine.UI;
 public class DialogueManagerAlternate : MonoBehaviour {
 
 
+
 //What is currently being displayed:
 	public Text nameText;
 	public Text dialogueText;
 	public Animator animator;
+	public DemoEventManager manager;
 
 	private Queue<string> sentences;
 	private int index;
@@ -108,6 +110,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 			animator.SetBool("IsOpen", false);
 			index = 0;
             finished = true;
+			manager.nextBattle();
 
 		}
 	}
