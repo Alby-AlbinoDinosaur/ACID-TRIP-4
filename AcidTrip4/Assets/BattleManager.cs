@@ -16,6 +16,8 @@ public class BattleManager : MonoBehaviour
     public List<Entity> battleEntityList = new List<Entity>();
     bool readyToRun = false;
 
+    public GameObject endTurnButton;
+
 
     public bool pauseBattle = false;
 
@@ -91,10 +93,12 @@ public class BattleManager : MonoBehaviour
                     EndBattle();
                     battleDialogue.WriteLine("You Win!");
                 }
+                endTurnButton.SetActive(true);
             }
             else
             {
-                print("you havent selected all moves");
+                battleDialogue.WriteLine("You have not selected all moves.");
+                endTurnButton.SetActive(true);
             }
         }
 

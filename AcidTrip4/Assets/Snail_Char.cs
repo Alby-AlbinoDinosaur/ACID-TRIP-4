@@ -35,6 +35,8 @@ public class Snail_Char : Entity
 
         base.nextMove = 0;
 
+        playerMover.addPlayer(this);
+
     }
 
     // Update is called once per frame
@@ -63,7 +65,7 @@ public class Snail_Char : Entity
         {
             case 0: return "Scratch";
             case 1: return "Scratch: Does a basic physical attack to the target.";
-            case 2: return "Cheese Enemy moves Scratch " + base.selectedTarget.name + " !";
+            case 2: return "Snail moves Scratch " + base.selectedTarget.name + " !";
         }
         return "code should not ever get to here";
     }
