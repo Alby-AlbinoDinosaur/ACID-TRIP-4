@@ -28,6 +28,7 @@ public class enemyGUI : MonoBehaviour
         BattleEventManager.OnGUIUpdate+= updateGUI;
         selector.interactable = false;
         maxHp = enemyEntity.health_stat;
+        //Debug.Log("max hp initialized to: " + maxHp);
         currentHp = maxHp;
         
 
@@ -53,11 +54,12 @@ public class enemyGUI : MonoBehaviour
     {
         if(maxHp != 0)
         {
-            Debug.Log("CALLED CURRENHP = " + currentHp + "ENEMY HP: " + enemyEntity.health_stat);
+            //Debug.Log("CALLED CURRENHP = " + currentHp + "ENEMY HP: " + enemyEntity.health_stat + "MAX HP: " + maxHp);
 
             hpBar.fillAmount = (float)enemyEntity.health_stat/maxHp;
+
             if(enemyEntity.health_stat<currentHp){
-                Debug.Log("DAMAGED");
+                //Debug.Log("DAMAGED");
                 GameObject canvas = Instantiate(damagePrefab, gameObject.transform.position, Quaternion.identity);
                 //canvas.transform.parent = gameObject.transform;
                 TextMeshProUGUI text = canvas.transform.GetChild(0).gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
