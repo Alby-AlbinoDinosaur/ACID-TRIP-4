@@ -19,7 +19,9 @@ public class DemoCheeseEnemy : Entity
 
 
         base.nextMove = 0;
-        
+
+        enemyMover.addEnemy(this);
+
     }
 
     // Update is called once per frame
