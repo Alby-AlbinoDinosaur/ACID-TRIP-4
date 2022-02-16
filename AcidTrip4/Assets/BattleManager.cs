@@ -71,13 +71,12 @@ public class BattleManager : MonoBehaviour
                 }
 
                 //This second loop is for debug, this is not the right way to do this
-                foreach (Entity current in battleEntityList)
+             /*   foreach (Entity current in battleEntityList)
                 {
                     print("Entity: " + current.name);
                     print("Health: " + current.health_stat);
-                }
+                }*/
                     battleEntityList.Clear();
-                //TODO: add second forach that updates health, sprites etc
 
                 // check if all players are dead and end battle
                 if (playerMover.isAllDefeated())
