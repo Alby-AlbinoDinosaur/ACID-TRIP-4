@@ -48,7 +48,7 @@ public class PlayerGUI : MonoBehaviour
         itemsButton.interactable = true;
         abilitiesButton.interactable = true;
         guardButton.interactable = true;
-        //basicCancelButton.interactable = true;
+        basicCancelButton.interactable = true;
     }
 
     void startSelection()
@@ -57,7 +57,7 @@ public class PlayerGUI : MonoBehaviour
         itemsButton.interactable = false;
         abilitiesButton.interactable = false;
         guardButton.interactable = false;
-        //basicCancelButton.interactable = false;
+        basicCancelButton.interactable = false;
     }
 
     void updateGUI()

@@ -81,7 +81,7 @@ public class DemoCheeseEnemy : Entity
         base.nextMove = Random.Range(0, moveCount);
 
         print("Enemy selected move");
-        int nextTarget = Random.Range(0, 0);
+        int nextTarget = Random.Range(0, 2);
 
         base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
         print("Enemy selected target");
