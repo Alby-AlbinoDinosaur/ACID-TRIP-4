@@ -758,6 +758,7 @@ MonoBehaviour:
   guardButton: {fileID: 7663557972757377666}
   basicCancelButton: {fileID: 7663557972650878581}
   plateAnimator: {fileID: 7663557971030525353}
+  faceAnimator: {fileID: 394210142141676341}
 --- !u!1 &7663557971324100661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,6 +2081,7 @@ GameObject:
   - component: {fileID: 7663557972016075645}
   - component: {fileID: 7663557972016075647}
   - component: {fileID: 7663557972016075644}
+  - component: {fileID: 394210142141676341}
   m_Layer: 5
   m_Name: CharacterFace
   m_TagString: Untagged
@@ -2103,9 +2105,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 42, y: 10}
+  m_AnchoredPosition: {x: 42.00006, y: -160}
   m_SizeDelta: {x: 165, y: 165}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &7663557972016075647
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2144,6 +2146,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &394210142141676341
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7663557972016075618}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6de4dfbc83f7ddc49a96d83170b01d7f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7663557972026581626
 GameObject:
   m_ObjectHideFlags: 0

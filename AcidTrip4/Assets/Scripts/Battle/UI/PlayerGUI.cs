@@ -19,8 +19,10 @@ public class PlayerGUI : MonoBehaviour
     public Button guardButton;
     public Button basicCancelButton;
     public Animator plateAnimator;
+    public Animator faceAnimator;
 
     private int maxHp = 0;
+    private int currentHp = 0;
     private int maxPp = 0;
     void Start()
     {
@@ -28,6 +30,9 @@ public class PlayerGUI : MonoBehaviour
         BattleEventManager.OnEnemyRevealSelect += startSelection;
         BattleEventManager.OnGUIUpdate += updateGUI;
         maxHp = playerEntity.health_stat;
+        
+        currentHp = maxHp;
+        
         //Debug.Log("maxHp set to " + maxHp);
         maxPp = playerEntity.power_points;
 
@@ -59,13 +64,66 @@ public class PlayerGUI : MonoBehaviour
         guardButton.interactable = false;
         basicCancelButton.interactable = false;
     }
+    private void updateFace(float ratio){
+        if(ratio > (float)2/3)
+                    {   
+                        Debug.Log("Set State 0");
+                        faceAnimator.SetInteger("State", 0);
+                    }
+                    else if(ratio > (float)1/3)
+                    {   
+                        Debug.Log("Set State 1");
+                        faceAnimator.SetInteger("State", 1);
+                    }
+                    else if(ratio > (float)0)
+                    {   
+                        Debug.Log("Set State 2");
+                        faceAnimator.SetInteger("State", 2);
+                    }
+                    else 
+                    {   
+                        Debug.Log("Set State 3");
+                        faceAnimator.SetInteger("State", 3);
+                    }
+                    
+    }
 
     void updateGUI()
     {
         
         if(maxHp != 0)
         {
-            hpBar.fillAmount = (float)playerEntity.health_stat/maxHp;
+
+            if(currentHp != playerEntity.health_stat)
+            {
+                
+                float ratio = (float)playerEntity.health_stat/maxHp;
+                hpBar.fillAmount = ratio;
+                Debug.Log("Ratio: " +ratio);
+                Debug.Log("Current HP: " + currentHp);
+                Debug.Log("Actual HP: " + playerEntity.health_stat);
+                
+                if(playerEntity.health_stat < currentHp)
+                {
+                    
+                    faceAnimator.SetTrigger("Damage");
+
+        
+                    updateFace(ratio);
+                    
+                    
+                    
+                }
+                else
+                {
+                    faceAnimator.SetTrigger("Heal");
+
+                    updateFace(ratio);
+                }
+
+                currentHp = playerEntity.health_stat;
+            }
+            
             //Debug.Log("Current HP: " + playerEntity.health_stat + "Set bar to: " + (float)playerEntity.health_stat/maxHp);
         }
         if(maxPp != 0)

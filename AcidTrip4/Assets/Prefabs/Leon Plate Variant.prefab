@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 394210142141676341, guid: de47554e7a933d240854d80d41756059, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 067ded5221522514086f5defa34254f7, type: 2}
     - target: {fileID: 7663557970780782819, guid: de47554e7a933d240854d80d41756059, type: 3}
       propertyPath: m_text
       value: Leon Bradely
@@ -133,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7663557971030525359, guid: de47554e7a933d240854d80d41756059, type: 3}
       propertyPath: m_Name
-      value: Leon Plate
+      value: Leon Plate Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7663557972016075644, guid: de47554e7a933d240854d80d41756059, type: 3}
       propertyPath: m_Sprite
