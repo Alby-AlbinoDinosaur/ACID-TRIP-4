@@ -4,34 +4,15 @@ using UnityEngine;
 
 public class BackgroundMusic : MonoBehaviour
 {
-    // Plays a random music track, and loops it.
-    // Very simple, probably ought to be replaced with something more complex.
+    // Plays a random music track
 
-    AudioSource audioSource;
-
-    public AudioClip[] music;
-    AudioClip chosenTrack;
-
-    float timeUntilLoop;
+    public string[] musicTracks;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        int randomIndex = Random.Range(0, musicTracks.Length);
 
-        int chosenTrackIndex = Random.Range(0, music.Length);
-        chosenTrack = music[chosenTrackIndex];
-
-        audioSource.PlayOneShot(chosenTrack);
-        timeUntilLoop = chosenTrack.length;
+        AudioManager.instance.Play(musicTracks[randomIndex]);
     }
 
-    void Update()
-    {
-        timeUntilLoop -= Time.deltaTime;
-        if (timeUntilLoop <= 0)
-        {
-            audioSource.PlayOneShot(chosenTrack);
-            timeUntilLoop = chosenTrack.length;
-        }
-    }
 }

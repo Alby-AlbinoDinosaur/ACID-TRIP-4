@@ -46,13 +46,19 @@ MonoBehaviour:
   sounds:
   - name: battle_music_1
     clip: {fileID: 8300000, guid: b08ddab9c2a7e9047a1f283cb7d12af0, type: 3}
-    volume: 0
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: earrape
     clip: {fileID: 8300000, guid: e419b25512fbd1b49aab7c8608954c23, type: 3}
-    volume: 0
+    volume: 0.5
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: beatsong
+    clip: {fileID: 8300000, guid: b91ffb6ff4ab0b3418947db7457762c3, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
     source: {fileID: 0}

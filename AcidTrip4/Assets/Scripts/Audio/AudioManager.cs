@@ -53,25 +53,29 @@ public class AudioManager : MonoBehaviour
     }
 
     //Play a sound
-    public void Play(string soundName)
+    public Sound Play(string soundName)
     {
         Sound s = FindSound(soundName);
 
         if (s != null)
             s.source.Play();
+
+        return s;
     }
 
     //Stop a sound
-    public void Stop(string soundName)
+    public Sound Stop(string soundName)
     {
         Sound s = FindSound(soundName);
 
         if (s != null)
             s.source.Stop();
+
+        return s;
     }
 
     //Pause/Unpause sound
-    public void Pause(string soundName, bool pause)
+    public Sound Pause(string soundName, bool pause)
     {
         Sound s = FindSound(soundName);
 
@@ -82,5 +86,7 @@ public class AudioManager : MonoBehaviour
             else
                 s.source.UnPause();
         }
+
+        return s;
     }
 }
