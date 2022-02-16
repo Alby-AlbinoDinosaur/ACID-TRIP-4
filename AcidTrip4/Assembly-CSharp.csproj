@@ -217,6 +217,7 @@
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+    <None Include="Assets\Sounds\Menu\Copyright.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
