@@ -64,8 +64,20 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: menu_hover
-    clip: {fileID: 8300000, guid: b75a242e50cc36c4e8c72c7413fbce2f, type: 3}
-    volume: 0.5
+    clip: {fileID: 8300000, guid: d37f22bd0f4ffdc43a1dae38a6bc5886, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: menu_back
+    clip: {fileID: 8300000, guid: 8dbd9689d8f28684995ac8408a4b9e47, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: blip
+    clip: {fileID: 8300000, guid: bb3fc89f582f5ad4faa254df6be661d7, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
