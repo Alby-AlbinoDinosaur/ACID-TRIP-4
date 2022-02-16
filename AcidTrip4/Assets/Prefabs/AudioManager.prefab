@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8123648911067391814}
   - component: {fileID: 8123648911067391815}
+  - component: {fileID: 1209067742}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -62,3 +63,21 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: menu_hover
+    clip: {fileID: 8300000, guid: b75a242e50cc36c4e8c72c7413fbce2f, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!114 &1209067742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123648911067391813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a5b472c6406ea41bc33c6539665dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 123334200}
   - component: {fileID: 123334199}
   - component: {fileID: 123334198}
+  - component: {fileID: 123334201}
   m_Layer: 5
   m_Name: Turn Order Button
   m_TagString: Untagged
@@ -394,6 +395,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123334196}
   m_CullTransparentMesh: 1
+--- !u!114 &123334201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123334196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1209067742}
+          m_TargetAssemblyTypeName: ButtonSoundEvents, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: menu_hover
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &265470674
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,6 +598,7 @@ MonoBehaviour:
   speed_stat: 0
   health_stat: 100
   defense_stat: 0
+  spdefense_stat: 0
   attack_stat: 0
   ability_stat: 0
   power_points: 0
@@ -707,6 +738,7 @@ GameObject:
   - component: {fileID: 422312600}
   - component: {fileID: 422312599}
   - component: {fileID: 422312598}
+  - component: {fileID: 422312601}
   m_Layer: 5
   m_Name: Menu Button
   m_TagString: Untagged
@@ -827,6 +859,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422312596}
   m_CullTransparentMesh: 1
+--- !u!114 &422312601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422312596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1209067742}
+          m_TargetAssemblyTypeName: ButtonSoundEvents, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: menu_hover
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &494405930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2153,7 @@ MonoBehaviour:
   speed_stat: 0
   health_stat: 20
   defense_stat: 0
+  spdefense_stat: 0
   attack_stat: 0
   ability_stat: 0
   power_points: 0
@@ -2171,35 +2233,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
-      propertyPath: sounds.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
-      propertyPath: sounds.Array.data[2].clip
+      propertyPath: sounds.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: b91ffb6ff4ab0b3418947db7457762c3, type: 3}
+      objectReference: {fileID: 8300000, guid: d37f22bd0f4ffdc43a1dae38a6bc5886, type: 3}
     - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
-      propertyPath: sounds.Array.data[2].name
-      value: beatsong
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
-      propertyPath: sounds.Array.data[2].pitch
+      propertyPath: sounds.Array.data[3].volume
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
-      propertyPath: sounds.Array.data[0].volume
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
-      propertyPath: sounds.Array.data[1].volume
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
-      propertyPath: sounds.Array.data[2].volume
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+--- !u!114 &1209067742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1209067742, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+  m_PrefabInstance: {fileID: 1209067740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a5b472c6406ea41bc33c6539665dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1217963289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2397,10 @@ PrefabInstance:
     - target: {fileID: 3996908756787414824, guid: 884d33a852bc336488dc0cbcf8de186c, type: 3}
       propertyPath: m_Name
       value: BGMPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996908756787414824, guid: 884d33a852bc336488dc0cbcf8de186c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3996908756787414825, guid: 884d33a852bc336488dc0cbcf8de186c, type: 3}
       propertyPath: m_RootOrder
@@ -2550,6 +2607,7 @@ MonoBehaviour:
   speed_stat: 0
   health_stat: 100
   defense_stat: 0
+  spdefense_stat: 0
   attack_stat: 0
   ability_stat: 0
   power_points: 0
@@ -2704,6 +2762,7 @@ GameObject:
   - component: {fileID: 1558429502}
   - component: {fileID: 1558429501}
   - component: {fileID: 1558429500}
+  - component: {fileID: 1558429503}
   m_Layer: 5
   m_Name: Flee Button
   m_TagString: Untagged
@@ -2824,6 +2883,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558429498}
   m_CullTransparentMesh: 1
+--- !u!114 &1558429503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558429498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1209067742}
+          m_TargetAssemblyTypeName: ButtonSoundEvents, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: menu_hover
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1683735434
 GameObject:
   m_ObjectHideFlags: 0
@@ -2993,6 +3081,7 @@ MonoBehaviour:
   speed_stat: 0
   health_stat: 100
   defense_stat: 0
+  spdefense_stat: 0
   attack_stat: 0
   ability_stat: 0
   power_points: 0
@@ -3147,6 +3236,7 @@ GameObject:
   - component: {fileID: 1876238191}
   - component: {fileID: 1876238190}
   - component: {fileID: 1876238189}
+  - component: {fileID: 1876238192}
   m_Layer: 5
   m_Name: End Turn Button
   m_TagString: Untagged
@@ -3279,6 +3369,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876238187}
   m_CullTransparentMesh: 1
+--- !u!114 &1876238192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876238187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1209067742}
+          m_TargetAssemblyTypeName: ButtonSoundEvents, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: menu_hover
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1942520753
 GameObject:
   m_ObjectHideFlags: 0

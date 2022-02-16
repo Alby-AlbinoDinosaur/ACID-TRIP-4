@@ -63,6 +63,17 @@ public class AudioManager : MonoBehaviour
         return s;
     }
 
+    //Play a sound using PlayOneShot
+    public Sound PlayOneShot(string soundName)
+    {
+        Sound s = FindSound(soundName);
+
+        if (s != null)
+            s.source.PlayOneShot(s.source.clip);
+
+        return s;
+    }
+
     //Stop a sound
     public Sound Stop(string soundName)
     {
@@ -89,4 +100,5 @@ public class AudioManager : MonoBehaviour
 
         return s;
     }
+
 }
