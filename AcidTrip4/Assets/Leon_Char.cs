@@ -148,7 +148,7 @@ public class Leon_Char : Entity
             case 1: return "Paint Thinner: Applies damage each turn.";
             case 2: return base.name + " hits " + base.selectedTarget.name + " with thinner!";
         }
-        return "uuuh thinner describer go brrrrreak";
+        return "oh no, this one's a pain when it breaks";
     }
     //---------------------------------------------------------------------------------------
 
@@ -158,12 +158,12 @@ public class Leon_Char : Entity
         base.power_points -= 10;
         foreach (Entity current in playerMover.playerList)
         {
-            if (current.health_stat < target.health_stat)
+            if (current.max_health - current.health_stat <target.max_health - target.health_stat)
             { target = current; }
         }
 
         healTarget = target;
-        healTarget.health_stat += this.ability_stat;
+        healTarget.health_stat = Mathf.Min(target.health_stat + this.ability_stat, target.max_health);
 
     }
 
@@ -177,7 +177,7 @@ public class Leon_Char : Entity
         switch (context)
         {
             case 0: return "Healing Paints";
-            case 1: return "Healing Paints: Heal the lowest health teammate.";
+            case 1: return "Healing Paints: Heals the most damaged teammate.";
             case 2: return base.name + " heals " + healTarget.name + "!";
         }
         return "uh oh move broke";

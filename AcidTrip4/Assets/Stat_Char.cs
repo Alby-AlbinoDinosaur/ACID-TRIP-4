@@ -168,7 +168,7 @@ public class Stat_Char : Entity
     private void Ability_2(Entity target)
     {
         base.power_points -= 7;
-        int damage = Mathf.Max((int)(base.ability_stat * Mathf.PI /5), 0);
+        int damage = Mathf.Max((int)((base.ability_stat * Mathf.PI /5) * (float)(100 - target.spdefense_stat) / 100f), 0);
         // Calculate damage however here
         target.health_stat -= damage;
     }
@@ -182,9 +182,9 @@ public class Stat_Char : Entity
     {
         switch (context)
         {
-            case 0: return "Mathematical Maelstrom";
+            case 0: return "Maethstrom";
             case 1: return "Hits all enemies for decreasing damage.";
-            case 2: return base.name + " starts spinning his math around!";
+            case 2: return base.name + " starts doing math spins!";
         }
         return "uh oh move broke";
     }

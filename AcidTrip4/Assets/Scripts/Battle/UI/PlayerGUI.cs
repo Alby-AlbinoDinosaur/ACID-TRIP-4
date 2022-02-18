@@ -152,7 +152,7 @@ public class PlayerGUI : MonoBehaviour
         }
         if(maxPp != 0)
         {
-            ppBar.fillAmount = playerEntity.power_points/maxPp;
+            ppBar.fillAmount = (float)playerEntity.power_points/maxPp;
         }
 
         updateText();

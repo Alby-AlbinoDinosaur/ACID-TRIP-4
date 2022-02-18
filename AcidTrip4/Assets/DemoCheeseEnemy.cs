@@ -114,7 +114,7 @@ public class DemoCheeseEnemy : Entity
         {
             case 0: return "Bite";
             case 1: return "Bite: Infects target with the Cheese Touch.";
-            case 2: return base.name + " bites " + base.selectedTarget.name + "! " + base.selectedTarget.name + " is cheese touch'd!";
+            case 2: return base.name + " bites " + base.selectedTarget.name + "! He is cheese touch'd!";
         }
         return "code should not ever get to here";
     }

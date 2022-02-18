@@ -140,7 +140,7 @@ public class Snail_Char : Entity
     private void Ability_2(Entity target)
     {
         base.power_points -= 5;
-        int damage = Mathf.Max((int)((float)base.defense_stat * 0.75f) - target.defense_stat, 0);
+        int damage = Mathf.Max((int)(((float)base.defense_stat * 0.75f)* (float)(100-target.spdefense_stat)/100f), 0);
         // Calculate damage however here
         target.health_stat -= damage;
     }

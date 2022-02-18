@@ -13,6 +13,7 @@ public abstract class Entity : MonoBehaviour
     public int ability_stat = 0;
     public int power_points = 0;
     public string name = "uh oh, we forgot to name this one";
+    public int max_health;
 
     //These three functions make up the three parts of a move
     //moveExecute executes the move on selectedTargets when called
@@ -74,6 +75,7 @@ public abstract class Entity : MonoBehaviour
         beforeMoveEffects = new Queue<endTurnEffect>();
         thisTurnEffects = new Queue<endTurnEffect>(); 
         nextTurnEffects = new Queue<endTurnEffect>();
+        max_health = health_stat;
     }
     
 
