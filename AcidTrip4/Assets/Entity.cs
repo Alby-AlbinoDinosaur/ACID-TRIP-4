@@ -33,6 +33,14 @@ public abstract class Entity : MonoBehaviour
     public bool nextMoveHasAlreadyBeenRun = true;
 
 
+    // thisTurnEffects are queued by moves, and nextTurnEffects are lambdas queued by thisTurnEffects, then swapped in after thisTurnEffects are all done
+    // beforeMoveEffects happen before the target moves next
+    public delegate string endTurnEffect(Entity self);
+    public Queue<endTurnEffect> thisTurnEffects;
+    public Queue<endTurnEffect> nextTurnEffects;
+    public Queue<endTurnEffect> beforeMoveEffects;
+
+
     public void Run()
     {
         moveExecuteList[nextMove](selectedTarget);
@@ -63,9 +71,27 @@ public abstract class Entity : MonoBehaviour
         moveExecuteList = new List<moveExecute>();
         moveTargetList = new List<moveTarget>();
         moveTextList = new List<moveText>();
+        beforeMoveEffects = new Queue<endTurnEffect>();
+        thisTurnEffects = new Queue<endTurnEffect>(); 
+        nextTurnEffects = new Queue<endTurnEffect>();
+    }
+    
+
+    public string doEndTurnEffect()
+    {
+        if (thisTurnEffects.Count > 0)
+        {
+            return thisTurnEffects.Dequeue()(this);
+        }
+        else { return null; }
     }
 
-
-
-
+    public string doBeforeMoveEffect()
+    {
+        if (thisTurnEffects.Count > 0)
+        {
+            return beforeMoveEffects.Dequeue()(this);
+        }
+        else { return null; }
+    }
 }

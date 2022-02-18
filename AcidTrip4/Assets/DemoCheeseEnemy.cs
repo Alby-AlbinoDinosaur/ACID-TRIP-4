@@ -5,11 +5,15 @@ using UnityEngine;
 public class DemoCheeseEnemy : Entity
 {
 
+    private List<Entity> infectedTargets;
     private int scratchDamageDealt;
     public EnemyMover enemyMover;
+    bool debugflag = false;
     // Start is called before the first frame update
     void Start()
     {   //Add each move to list
+        infectedTargets = new List<Entity>();
+
         base.initialize();
         base.moveExecuteList.Add(Scratch);
         base.moveExecuteList.Add(Bite);
@@ -21,13 +25,14 @@ public class DemoCheeseEnemy : Entity
         base.health_stat = 150;
         base.defense_stat = 15;
         base.spdefense_stat = 15;
-        base.attack_stat = 10;
+        base.attack_stat = 15;
         base.ability_stat = 15;
-        base.power_points = 50;
+        base.power_points = 30;
         base.speed_stat = 10;
 
 
         base.nextMove = 0;
+        base.selectedTarget = this;
         base.name = "Shreddar";
         enemyMover.addEnemy(this);
 
@@ -43,10 +48,10 @@ public class DemoCheeseEnemy : Entity
     private void Scratch(Entity target)
     {
 
-        scratchDamageDealt = base.attack_stat + 30 - target.defense_stat;
+        scratchDamageDealt = Mathf.Max(base.attack_stat + Random.Range(0, 30) - target.defense_stat, 0);
         // Calculate damage however here
-        target.health_stat -= Mathf.Min(scratchDamageDealt, 0);
-        print("did a scratch");
+        target.health_stat -= scratchDamageDealt;
+        //print("did a scratch");
     }
 
 
@@ -61,24 +66,57 @@ public class DemoCheeseEnemy : Entity
         {
             case 0: return "Scratch";
             case 1: return "Scratch: Does a basic physical attack to the target.";
-            case 2: return base.name +" scratches " + base.selectedTarget.name + " ! It does " + Mathf.Min(scratchDamageDealt,0) + " damage!";
+            case 2: return base.name + " scratches " + base.selectedTarget.name + " ! It does " + scratchDamageDealt + " damage!";
         }
         return "code should not ever get to here";
     }
 
     private void Bite(Entity target)
     {
+        if (base.power_points >= 5)
+        {
+            base.power_points -= 5;
+            infectedTargets.Add(target);
 
+            endTurnEffect action = null; //= (Entity self) => { return "dummytext"; };
+
+
+            action = (Entity self) =>
+            {
+                int damage = this.ability_stat * Random.Range(-1, 3);
+                if (damage <= 0)
+                {
+                    this.infectedTargets.Remove(self);
+                    return self.name + " no longer has the Cheese Touch.";
+                }
+                else
+                {
+                    self.nextTurnEffects.Enqueue(action);
+                    self.health_stat -= damage;
+                    return self.name + " takes " + damage + " from the Cheese Touch!";
+                }
+
+            };
+            target.thisTurnEffects.Enqueue(action);
+        }
     }
+
+
 
     private bool BiteTargets(Entity target)
     {
-        return true;
+        return (target != this && !infectedTargets.Contains(target) && this.power_points >= 5);
     }
 
     private string BiteText(int context)
     {
-        return "placeholder";
+        switch (context)
+        {
+            case 0: return "Bite";
+            case 1: return "Bite: Infects target with the Cheese Touch.";
+            case 2: return base.name + " bites " + base.selectedTarget.name + "! " + base.selectedTarget.name + " is cheese touch'd!";
+        }
+        return "code should not ever get to here";
     }
     
 
@@ -86,17 +124,19 @@ public class DemoCheeseEnemy : Entity
     public override void AutoChooseNextMove(List<Entity> playerList, List<Entity> enemyList)
     {
         //set selected targets and next move
-        int moveCount = base.moveExecuteList.Count - 1;
+        int moveCount = base.moveExecuteList.Count;
+        base.selectedTarget = this;
+        while (!base.moveTargetList[base.nextMove](base.selectedTarget))
+        {
+            base.nextMove = Random.Range(0, moveCount);
 
-        base.nextMove = Random.Range(0, moveCount);
-        base.nextMove = 0;
 
-        print("Enemy selected move");
-        int nextTarget = Random.Range(0, 2);
+            print("Enemy selected move");
+            int nextTarget = Random.Range(0, 2);
 
-        base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
-        print("Enemy selected target");
-
+            base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
+            print("Enemy selected target");
+        }
         base.nextMoveHasAlreadyBeenRun = false;
     }
 }

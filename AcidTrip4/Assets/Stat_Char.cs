@@ -6,7 +6,7 @@ public class Stat_Char : Entity
 {
 
     public PlayerMover playerMover;
-
+    string zeroedStat;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,10 +56,9 @@ public class Stat_Char : Entity
     //Attack --------------------------------------------------------------------------------
     private void Attack(Entity target)
     {
-        int damage = 5;
+        int damage = Mathf.Max(base.attack_stat + 15 - target.defense_stat, 0);
         // Calculate damage however here
         target.health_stat -= damage;
-        print("did a scratch");
     }
 
     private bool AttackTargets(Entity target)
@@ -71,62 +70,123 @@ public class Stat_Char : Entity
     {
         switch (context)
         {
-            case 0: return "Scratch";
-            case 1: return "Scratch: Does a basic physical attack to the target.";
-            case 2: return "Statistician moves Scratch " + base.selectedTarget.name + " !";
+            case 0: return "Attack";
+            case 1: return "Attack: Does a basic physical attack to the target.";
+            case 2: return base.name + " moves to attack " + base.selectedTarget.name + " !";
         }
-        return "code should not ever get to here";
+        return "uh oh move broke";
     }
     //---------------------------------------------------------------------------------------
 
     //Defend --------------------------------------------------------------------------------
     private void Defend(Entity target)
     {
-
+        target.defense_stat += 20;
+        target.beforeMoveEffects.Enqueue((Entity self) =>
+        {
+            self.defense_stat -= 20;
+            return self.name + "'s defense wears off.";
+        });
     }
 
     private bool DefendTargets(Entity target)
     {
-        return true;
+        return target == this;
     }
 
     private string DefendText(int context)
     {
-        return "placeholder";
+        switch (context)
+        {
+            case 0: return "Defend";
+            case 1: return "Defend: protects oneself from physical attacks .";
+            case 2: return base.name + " moves to defend!";
+        }
+        return "uh oh move broke";
     }
     //---------------------------------------------------------------------------------------
 
     //Ability_1 -----------------------------------------------------------------------------
     private void Ability_1(Entity target)
     {
-
+        base.power_points -= 15;
+        int random = Random.Range(0, 8);
+        switch (random)
+        {
+        case 0: target.health_stat = 0;
+            zeroedStat = "health";
+            return;
+        case 1:
+            target.speed_stat = 0;
+            zeroedStat = "speed";
+            return;
+        case 2:
+            target.defense_stat = 0;
+            zeroedStat = "defense";
+            return;
+        case 3:
+            target.spdefense_stat = 0;
+            zeroedStat = "special defense";
+            return;
+        case 4:
+            target.attack_stat = 0;
+            zeroedStat = "attack";
+            return;
+        case 5:
+            target.ability_stat = 0;
+            zeroedStat = "ability";
+            return;
+        case 6:
+            target.power_points = 0;
+            zeroedStat = "power points";
+            return;
+        case 7:
+            target.name = "0";
+            zeroedStat = "name";
+            return;
+        }
     }
 
     private bool Ability_1_Targets(Entity target)
     {
-        return true;
+        return base.power_points >= 15;
     }
 
     private string Ability_1_Text(int context)
     {
-        return "placeholder";
+        switch (context)
+        {
+            case 0: return "Divide by zero";
+            case 1: return "Sets one of the target's stats at random to zero.";
+            case 2: return base.selectedTarget.name + "'s " + zeroedStat + " was set to 0!";
+        }
+        return "uh oh move broke";
     }
     //---------------------------------------------------------------------------------------
 
     //Ability_2 -----------------------------------------------------------------------------
     private void Ability_2(Entity target)
     {
-
+        base.power_points -= 7;
+        int damage = Mathf.Max((int)(base.ability_stat * Mathf.PI /5), 0);
+        // Calculate damage however here
+        target.health_stat -= damage;
     }
 
     private bool Ability_2_Targets(Entity target)
     {
-        return true;
+        return base.power_points >= 7;
     }
 
     private string Ability_2_Text(int context)
     {
-        return "placeholder";
+        switch (context)
+        {
+            case 0: return "Mathematical Maelstrom";
+            case 1: return "Hits all enemies for decreasing damage.";
+            case 2: return base.name + " starts spinning his math around!";
+        }
+        return "uh oh move broke";
     }
     //---------------------------------------------------------------------------------------
 

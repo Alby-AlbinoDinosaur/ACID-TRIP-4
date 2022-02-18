@@ -80,7 +80,7 @@ public class PlayerMover : MonoBehaviour
         }
         else
         {
-            battleDialogue.WriteLine("That is an illegal target for that move.");
+            battleDialogue.WriteLine("That is an illegal move.");
         }
 
     }

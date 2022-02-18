@@ -24,6 +24,7 @@ public class BattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Random.seed = (int)System.DateTime.Now.Ticks;
         DontDestroyOnLoad(gameObject);
         instance = this;
     }
@@ -60,6 +61,22 @@ public class BattleManager : MonoBehaviour
                 SortEntities();
                 foreach (Entity current in battleEntityList)
                 {
+                    if (current.beforeMoveEffects.Count > 0)
+                    {
+                        print(current.beforeMoveEffects.Count);
+                        string resultText = current.doBeforeMoveEffect();
+                        if (resultText != null)
+                        {
+                            battleDialogue.WriteLine(resultText);
+                            battleEventManager.updateGUIS();
+                            yield return new WaitForSeconds(0.2f);
+                            yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+                        }
+                        print(current.beforeMoveEffects.Count);
+                    }
+
+
+
                     current.Run();
                     // With the BDM set up, entities can also actually say text within the move itself.
                     // TODO: make current do an animation
@@ -71,13 +88,33 @@ public class BattleManager : MonoBehaviour
                 }
 
                 //This second loop is for debug, this is not the right way to do this
-             /*   foreach (Entity current in battleEntityList)
+                /*   foreach (Entity current in battleEntityList)
+                   {
+                       print("Entity: " + current.name);
+                       print("Health: " + current.health_stat);
+                   }*/
+                foreach (Entity entity in battleEntityList)
                 {
-                    print("Entity: " + current.name);
-                    print("Health: " + current.health_stat);
-                }*/
-                    battleEntityList.Clear();
+                    if (!entity.IsDefeated())
+                    {
+                        while (entity.thisTurnEffects.Count > 0)
+                        {
+                            string resultText = entity.doEndTurnEffect();
+                            if (resultText != null)
+                            {
+                                battleDialogue.WriteLine(resultText);
+                                battleEventManager.updateGUIS();
+                                yield return new WaitForSeconds(0.2f);
+                                yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+                            }
+                        }
+                        battleEventManager.updateGUIS();
+                        Queue<Entity.endTurnEffect> temp = entity.thisTurnEffects;
+                        entity.thisTurnEffects = entity.nextTurnEffects;
+                        entity.nextTurnEffects = temp;
+                    }
 
+                }
                 // check if all players are dead and end battle
                 if (playerMover.isAllDefeated())
                 {
@@ -94,19 +131,12 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
-                    //Resolve end of turn effects here-
-                    /*foreach (entity in battleEntityList)
-                    {
-                        if (!entity.IsDefeated())
-                        {
-                            while they have effects left to do
-                                do one effect and writeline the text
-                                wait
-                        }
-
-                    }*/
+                    //Resolve end of turn effects here
+                    // A null return from an endTurnEffect means it does not show up in order-
+                    // like guard wearing off, happens silently
                     endTurnButton.SetActive(true); 
                 }
+                battleEntityList.Clear();
             }
             else
             {

@@ -55,6 +55,7 @@ public class EnemyMover : MonoBehaviour
             {
                 if (!current.IsDefeated())
                 {
+                print("gotcha!");
                     current.AutoChooseNextMove(playerMover.playerList, enemyList);
                     //Show enemy intent in battle manager
                 }
