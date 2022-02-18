@@ -83,7 +83,7 @@ public class DemoCheeseEnemy : Entity
 
             action = (Entity self) =>
             {
-                int damage = this.ability_stat * Random.Range(-1, 3);
+                int damage = this.ability_stat * Random.Range(-1, 4);
                 if (damage <= 0)
                 {
                     this.infectedTargets.Remove(self);

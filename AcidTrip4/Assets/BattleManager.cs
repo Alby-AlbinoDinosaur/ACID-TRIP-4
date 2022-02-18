@@ -61,7 +61,7 @@ public class BattleManager : MonoBehaviour
                 SortEntities();
                 foreach (Entity current in battleEntityList)
                 {
-                    if (current.beforeMoveEffects.Count > 0)
+                    while (current.beforeMoveEffects.Count > 0)
                     {
                         print(current.beforeMoveEffects.Count);
                         string resultText = current.doBeforeMoveEffect();
@@ -76,8 +76,8 @@ public class BattleManager : MonoBehaviour
                     }
 
 
-
-                    current.Run();
+                    if (!current.IsDefeated())
+                    { current.Run(); }
                     // With the BDM set up, entities can also actually say text within the move itself.
                     // TODO: make current do an animation
                     battleDialogue.WriteLine(current.moveTextList[current.nextMove](2));

@@ -90,10 +90,11 @@ public abstract class Entity : MonoBehaviour
 
     public string doBeforeMoveEffect()
     {
-        if (thisTurnEffects.Count > 0)
+        if (beforeMoveEffects.Count > 0)
         {
             return beforeMoveEffects.Dequeue()(this);
         }
         else { return null; }
     }
+
 }

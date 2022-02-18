@@ -100,8 +100,8 @@ public class Snail_Char : Entity
     {
         switch (context)
         {
-            case 0: return "Defend";
-            case 1: return "Defend: protects oneself from physical attacks.";
+            case 0: return "Guard";
+            case 1: return "Guard: protects oneself from physical attacks.";
             case 2: return base.name + " moves to defend!";
         }
         return "uh oh move broke";
@@ -129,7 +129,7 @@ public class Snail_Char : Entity
         switch (context)
         {
             case 0: return "Taunt";
-            case 1: return "Taunt: forces the enemy to attack " + this.name +".";
+            case 1: return "3 PP: forces the enemy to attack " + this.name +".";
             case 2: return base.name + " taunts " +base.selectedTarget.name + "!";
         }
         return "uh oh move broke";
@@ -155,7 +155,7 @@ public class Snail_Char : Entity
         switch (context)
         {
             case 0: return "Shell Bash";
-            case 1: return "Shell Bash: attacks with defense stat.";
+            case 1: return "5 PP: attacks with defense stat.";
             case 2: return base.name + " bonks " + base.selectedTarget.name + "!";
         }
         return "uh oh move broke";

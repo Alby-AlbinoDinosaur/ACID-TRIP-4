@@ -98,8 +98,8 @@ public class Stat_Char : Entity
     {
         switch (context)
         {
-            case 0: return "Defend";
-            case 1: return "Defend: protects oneself from physical attacks .";
+            case 0: return "Guard";
+            case 1: return "Guard: protects oneself from physical attacks .";
             case 2: return base.name + " moves to defend!";
         }
         return "uh oh move broke";
@@ -109,82 +109,84 @@ public class Stat_Char : Entity
     //Ability_1 -----------------------------------------------------------------------------
     private void Ability_1(Entity target)
     {
-        base.power_points -= 15;
-        int random = Random.Range(0, 8);
-        switch (random)
-        {
-        case 0: target.health_stat = 0;
-            zeroedStat = "health";
-            return;
-        case 1:
-            target.speed_stat = 0;
-            zeroedStat = "speed";
-            return;
-        case 2:
-            target.defense_stat = 0;
-            zeroedStat = "defense";
-            return;
-        case 3:
-            target.spdefense_stat = 0;
-            zeroedStat = "special defense";
-            return;
-        case 4:
-            target.attack_stat = 0;
-            zeroedStat = "attack";
-            return;
-        case 5:
-            target.ability_stat = 0;
-            zeroedStat = "ability";
-            return;
-        case 6:
-            target.power_points = 0;
-            zeroedStat = "power points";
-            return;
-        case 7:
-            target.name = "0";
-            zeroedStat = "name";
-            return;
-        }
+        base.power_points -= 7;
+        int damage = Mathf.Max((int)((base.ability_stat * Mathf.PI / 5) * (float)(100 - target.spdefense_stat) / 100f), 0);
+        // Calculate damage however here
+        target.health_stat -= damage;
     }
 
     private bool Ability_1_Targets(Entity target)
     {
-        return base.power_points >= 15;
+        return base.power_points >= 7;
     }
 
     private string Ability_1_Text(int context)
     {
         switch (context)
         {
-            case 0: return "Divide by zero";
-            case 1: return "Sets one of the target's stats at random to zero.";
-            case 2: return base.selectedTarget.name + "'s " + zeroedStat + " was set to 0!";
+            case 0: return "Maethstrom";
+            case 1: return "7 PP: Hits all enemies for decreasing damage.";
+            case 2: return base.name + " starts doing math spins!";
         }
         return "uh oh move broke";
     }
+
     //---------------------------------------------------------------------------------------
 
     //Ability_2 -----------------------------------------------------------------------------
     private void Ability_2(Entity target)
     {
-        base.power_points -= 7;
-        int damage = Mathf.Max((int)((base.ability_stat * Mathf.PI /5) * (float)(100 - target.spdefense_stat) / 100f), 0);
-        // Calculate damage however here
-        target.health_stat -= damage;
+        base.power_points -= 15;
+        int random = Random.Range(0, 8);
+        switch (random)
+        {
+            case 0:
+                target.health_stat = 0;
+                zeroedStat = "health";
+                return;
+            case 1:
+                target.speed_stat = 0;
+                zeroedStat = "speed";
+                return;
+            case 2:
+                target.defense_stat = 0;
+                zeroedStat = "defense";
+                return;
+            case 3:
+                target.spdefense_stat = 0;
+                zeroedStat = "special defense";
+                return;
+            case 4:
+                target.attack_stat = 0;
+                zeroedStat = "attack";
+                return;
+            case 5:
+                target.ability_stat = 0;
+                zeroedStat = "ability";
+                return;
+            case 6:
+                target.power_points = 0;
+                zeroedStat = "power points";
+                return;
+            case 7:
+                target.name = "0";
+                zeroedStat = "name";
+                return;
+        }
     }
 
     private bool Ability_2_Targets(Entity target)
     {
-        return base.power_points >= 7;
+        return base.power_points >= 15;
     }
 
     private string Ability_2_Text(int context)
     {
         switch (context)
         {
-            case 0: return "Maethstrom";
-            case 1: return "Hits all enemies for decreasing damage.";
-            case 2: return base.name + " starts doing math spins!";
+            case 0: return "Deletion";
+            case 1: return "15 PP: Sets one of the target's stats at random to zero.";
+            case 2: return base.selectedTarget.name + "'s " + zeroedStat + " was set to 0!";
         }
         return "uh oh move broke";
     }

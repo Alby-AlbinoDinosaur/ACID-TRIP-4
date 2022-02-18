@@ -101,8 +101,8 @@ public class Leon_Char : Entity
     {
         switch (context)
         {
-            case 0: return "Defend";
-            case 1: return "Defend: protects oneself from physical attacks.";
+            case 0: return "Guard";
+            case 1: return "Guard: protects oneself from physical attacks.";
             case 2: return base.name + " moves to defend!";
         }
         return "uh oh move broke";
@@ -145,7 +145,7 @@ public class Leon_Char : Entity
         switch (context)
         {
             case 0: return "Paint Thinner";
-            case 1: return "Paint Thinner: Applies damage each turn.";
+            case 1: return "10 PP: Applies damage each turn.";
             case 2: return base.name + " hits " + base.selectedTarget.name + " with thinner!";
         }
         return "oh no, this one's a pain when it breaks";
@@ -158,7 +158,7 @@ public class Leon_Char : Entity
         base.power_points -= 10;
         foreach (Entity current in playerMover.playerList)
         {
-            if (current.max_health - current.health_stat <target.max_health - target.health_stat)
+            if (current.max_health - current.health_stat >target.max_health - target.health_stat)
             { target = current; }
         }
 
@@ -177,7 +177,7 @@ public class Leon_Char : Entity
         switch (context)
         {
             case 0: return "Healing Paints";
-            case 1: return "Healing Paints: Heals the most damaged teammate.";
+            case 1: return "10 PP: Heals the most damaged teammate.";
             case 2: return base.name + " heals " + healTarget.name + "!";
         }
         return "uh oh move broke";
