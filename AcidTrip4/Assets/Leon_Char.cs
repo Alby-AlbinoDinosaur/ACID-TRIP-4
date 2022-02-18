@@ -39,7 +39,7 @@ public class Leon_Char : Entity
         base.power_points = 30;
         base.speed_stat = 15;
 
-        base.name = "Leon Bradely";
+        base.name = "Leon Bradley";
 
         base.nextMove = 0;
 

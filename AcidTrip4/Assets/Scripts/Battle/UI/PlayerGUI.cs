@@ -129,7 +129,7 @@ public class PlayerGUI : MonoBehaviour
                     GameObject canvas = Instantiate(damagePrefab, hpBar.rectTransform.position, Quaternion.identity);
                     canvas.transform.SetParent(gameObject.transform);
                     TextMeshProUGUI text = canvas.transform.GetChild(0).gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
-                    text.text = (currentHp-playerEntity.health_stat).ToString();
+                    text.text = "-" + (currentHp-playerEntity.health_stat).ToString();
                     
                     
                     
@@ -140,7 +140,7 @@ public class PlayerGUI : MonoBehaviour
                     GameObject canvas = Instantiate(healPrefab, hpBar.rectTransform.position, Quaternion.identity);
                     canvas.transform.SetParent(gameObject.transform);
                     TextMeshProUGUI text = canvas.transform.GetChild(0).gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
-                    text.text = (playerEntity.health_stat-currentHp).ToString();
+                    text.text = "+" + (playerEntity.health_stat-currentHp).ToString();
 
                     updateFace(ratio);
                 }
@@ -174,6 +174,13 @@ public class PlayerGUI : MonoBehaviour
             nextText.text = "";
         }
 
+    }
+
+    private void OnDestroy()
+    {
+        BattleEventManager.OnEnemySelected -= finishSelection;
+        BattleEventManager.OnEnemyRevealSelect -= startSelection;
+        BattleEventManager.OnGUIUpdate -= updateGUI;
     }
 
 

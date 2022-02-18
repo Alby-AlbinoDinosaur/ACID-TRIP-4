@@ -71,5 +71,13 @@ public class enemyGUI : MonoBehaviour
         
     }
 
+    private void OnDestroy()
+    {
+        BattleEventManager.OnEnemyRevealSelect-= enableSelector;
+        BattleEventManager.OnEnemySelected-= disableSelector;
+        BattleEventManager.OnGUIUpdate-= updateGUI;
+
+    }
+
     
 }

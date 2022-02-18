@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DemoEventManager : MonoBehaviour
 {
@@ -35,11 +36,13 @@ public class DemoEventManager : MonoBehaviour
 
     public void nextBattle()
     {
+        /*
         if(OnBattleStart != null)
         {
             OnBattleStart();
         }
-        
+        */
+        SceneManager.LoadScene(2);
         
     }
 
