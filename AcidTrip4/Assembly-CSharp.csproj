@@ -76,6 +76,7 @@
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
     <Compile Include="Assets\DemoCheeseEnemy.cs" />
     <Compile Include="Assets\Scripts\DestroyOnExit.cs" />
+    <Compile Include="Assets\Scripts\Test-Debug\DamageEntityTest.cs" />
     <Compile Include="Assets\Snail_Char.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\Entity.cs" />
     <Compile Include="Assets\Stat_Char.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+    <Compile Include="Assets\Scripts\Test-Debug\DemoEventHelper.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\Scripts\Dialogue\BattleDialogueManager.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
@@ -116,6 +118,7 @@
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
     <Compile Include="Assets\Scripts\Battle\UnitStats.cs" />
     <Compile Include="Assets\CoolEnemy1.cs" />
+    <Compile Include="Assets\DemoEventManager.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
     <Compile Include="Assets\Scripts\Battle\CreateEnemyMenuItems.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManagerAlternate.cs" />
@@ -125,18 +128,19 @@
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
     <Compile Include="Assets\Scripts\Battle\ShowUnitMana.cs" />
     <Compile Include="Assets\Scripts\Battle\TurnSystem.cs" />
+    <Compile Include="Assets\Scripts\Audio\ButtonSoundEvents.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
     <Compile Include="Assets\Scripts\Battle\Character.cs" />
     <Compile Include="Assets\BattleManager.cs" />
     <Compile Include="Assets\Scripts\MenuButtonController.cs" />
     <Compile Include="Assets\Leon_Char.cs" />
     <Compile Include="Assets\Scripts\Battle\charStats.cs" />
+    <Compile Include="Assets\LoadDemo.cs" />
     <Compile Include="Assets\Scripts\Battle\EnemyUnitAction.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
     <Compile Include="Assets\Scripts\Battle\SelectUnit.cs" />
-    <Compile Include="Assets\Scripts\Audio\ButtonSoundEvents.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
