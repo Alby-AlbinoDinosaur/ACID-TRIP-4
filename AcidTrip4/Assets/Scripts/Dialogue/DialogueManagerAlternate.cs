@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 	/*
 		Dialogue Manager displays text on screen after being given a list of dialog from BeginConversation(Dialogue dialogue)
 		Requires 2 text objests to display text and an animator for the text box
@@ -12,9 +13,10 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 
 //What is currently being displayed:
-	public Text nameText;
-	public Text dialogueText;
+	public TextMeshProUGUI nameText;
+	public TextMeshProUGUI dialogueText;
 	public Animator animator;
+	public Animator actor;
 	public DemoEventManager manager;
 
 	private Queue<string> sentences;
@@ -60,6 +62,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 		animator.SetBool("IsOpen", true);
 
 		nameText.text = dialogue.name;
+		actor.SetTrigger(dialogue.name);
 
 		sentences.Clear();
 
