@@ -121,6 +121,7 @@ public class PlayerGUI : MonoBehaviour
                 {
                     
                     faceAnimator.SetTrigger("Damage");
+                    plateAnimator.SetTrigger("Damage");
 
         
                     updateFace(ratio);
@@ -137,6 +138,7 @@ public class PlayerGUI : MonoBehaviour
                 else
                 {
                     faceAnimator.SetTrigger("Heal");
+                    plateAnimator.SetTrigger("Heal");
                     GameObject canvas = Instantiate(healPrefab, hpBar.rectTransform.position, Quaternion.identity);
                     canvas.transform.SetParent(gameObject.transform);
                     TextMeshProUGUI text = canvas.transform.GetChild(0).gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;

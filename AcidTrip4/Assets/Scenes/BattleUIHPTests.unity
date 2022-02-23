@@ -835,6 +835,7 @@ MonoBehaviour:
   ability_stat: 0
   power_points: 0
   name: Leon Bradley
+  max_health: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
@@ -3417,6 +3418,7 @@ MonoBehaviour:
   ability_stat: 0
   power_points: 0
   name: Statistician
+  max_health: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
@@ -4349,10 +4351,19 @@ MonoBehaviour:
   ability_stat: 0
   power_points: 0
   name: Snail
+  max_health: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
   playerMover: {fileID: 563079673}
+--- !u!222 &1771740116
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771740113}
+  m_CullTransparentMesh: 1
 --- !u!1 &1788763002
 GameObject:
   m_ObjectHideFlags: 0
