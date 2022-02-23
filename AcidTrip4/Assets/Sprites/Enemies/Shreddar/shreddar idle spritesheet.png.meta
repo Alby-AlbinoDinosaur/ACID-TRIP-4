@@ -169,10 +169,10 @@ TextureImporter:
       name: shreddar idle spritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2752
-        width: 830
-        height: 688
+        x: 3
+        y: 1059
+        width: 314
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: shreddar idle spritesheet_1
       rect:
         serializedVersion: 2
-        x: 830
-        y: 2752
-        width: 830
-        height: 688
+        x: 323
+        y: 1059
+        width: 313
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +211,10 @@ TextureImporter:
       name: shreddar idle spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1660
-        y: 2752
-        width: 830
-        height: 688
+        x: 643
+        y: 1060
+        width: 314
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +232,10 @@ TextureImporter:
       name: shreddar idle spritesheet_3
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 2752
-        width: 830
-        height: 688
+        x: 963
+        y: 1060
+        width: 314
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +253,10 @@ TextureImporter:
       name: shreddar idle spritesheet_4
       rect:
         serializedVersion: 2
-        x: 3320
-        y: 2752
-        width: 830
-        height: 688
+        x: 1283
+        y: 1060
+        width: 315
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: shreddar idle spritesheet_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2064
-        width: 830
-        height: 688
+        x: 3
+        y: 794
+        width: 314
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +295,10 @@ TextureImporter:
       name: shreddar idle spritesheet_6
       rect:
         serializedVersion: 2
-        x: 830
-        y: 2064
-        width: 830
-        height: 688
+        x: 321
+        y: 795
+        width: 317
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +316,10 @@ TextureImporter:
       name: shreddar idle spritesheet_7
       rect:
         serializedVersion: 2
-        x: 1660
-        y: 2064
-        width: 830
-        height: 688
+        x: 642
+        y: 795
+        width: 316
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +337,10 @@ TextureImporter:
       name: shreddar idle spritesheet_8
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 2064
-        width: 830
-        height: 688
+        x: 961
+        y: 795
+        width: 317
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +358,10 @@ TextureImporter:
       name: shreddar idle spritesheet_9
       rect:
         serializedVersion: 2
-        x: 3320
-        y: 2064
-        width: 830
-        height: 688
+        x: 1282
+        y: 795
+        width: 317
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +379,10 @@ TextureImporter:
       name: shreddar idle spritesheet_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1376
-        width: 830
-        height: 688
+        x: 1
+        y: 530
+        width: 318
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +400,10 @@ TextureImporter:
       name: shreddar idle spritesheet_11
       rect:
         serializedVersion: 2
-        x: 830
-        y: 1376
-        width: 830
-        height: 688
+        x: 321
+        y: 530
+        width: 319
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,10 +421,10 @@ TextureImporter:
       name: shreddar idle spritesheet_12
       rect:
         serializedVersion: 2
-        x: 1660
-        y: 1376
-        width: 830
-        height: 688
+        x: 641
+        y: 530
+        width: 319
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,10 +442,10 @@ TextureImporter:
       name: shreddar idle spritesheet_13
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 1376
-        width: 830
-        height: 688
+        x: 962
+        y: 530
+        width: 317
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,10 +463,10 @@ TextureImporter:
       name: shreddar idle spritesheet_14
       rect:
         serializedVersion: 2
-        x: 3320
-        y: 1376
-        width: 830
-        height: 688
+        x: 1282
+        y: 530
+        width: 316
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: shreddar idle spritesheet_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 688
-        width: 830
-        height: 688
+        x: 2
+        y: 264
+        width: 316
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +505,10 @@ TextureImporter:
       name: shreddar idle spritesheet_16
       rect:
         serializedVersion: 2
-        x: 830
-        y: 688
-        width: 830
-        height: 688
+        x: 323
+        y: 264
+        width: 315
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,10 +526,10 @@ TextureImporter:
       name: shreddar idle spritesheet_17
       rect:
         serializedVersion: 2
-        x: 1660
-        y: 688
-        width: 830
-        height: 688
+        x: 642
+        y: 264
+        width: 316
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,10 +547,10 @@ TextureImporter:
       name: shreddar idle spritesheet_18
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 688
-        width: 830
-        height: 688
+        x: 963
+        y: 263
+        width: 314
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,10 +568,10 @@ TextureImporter:
       name: shreddar idle spritesheet_19
       rect:
         serializedVersion: 2
-        x: 3320
-        y: 688
-        width: 830
-        height: 688
+        x: 1284
+        y: 263
+        width: 313
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -589,10 +589,10 @@ TextureImporter:
       name: shreddar idle spritesheet_20
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 830
-        height: 688
+        width: 313
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -610,10 +610,10 @@ TextureImporter:
       name: shreddar idle spritesheet_21
       rect:
         serializedVersion: 2
-        x: 830
+        x: 323
         y: 0
-        width: 830
-        height: 688
+        width: 314
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,10 +631,10 @@ TextureImporter:
       name: shreddar idle spritesheet_22
       rect:
         serializedVersion: 2
-        x: 1660
+        x: 644
         y: 0
-        width: 830
-        height: 688
+        width: 313
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -652,10 +652,10 @@ TextureImporter:
       name: shreddar idle spritesheet_23
       rect:
         serializedVersion: 2
-        x: 2490
+        x: 964
         y: 0
-        width: 830
-        height: 688
+        width: 313
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -665,27 +665,6 @@ TextureImporter:
       bones: []
       spriteID: 545c20e6a6de75980800000000000000
       internalID: -8550104326171605691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shreddar idle spritesheet_24
-      rect:
-        serializedVersion: 2
-        x: 3320
-        y: 0
-        width: 830
-        height: 688
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be294eb09a7310ff0800000000000000
-      internalID: -71714919872687381
       vertices: []
       indices: 
       edges: []
