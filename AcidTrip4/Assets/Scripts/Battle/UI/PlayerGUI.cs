@@ -130,9 +130,17 @@ public class PlayerGUI : MonoBehaviour
                     updateFace(ratio);
                     
                     
-                    GameObject canvas = Instantiate(damagePrefab, hpBar.rectTransform.position, Quaternion.identity);
+                    GameObject canvas = Instantiate(damagePrefab, hpBar.transform.position, Quaternion.identity);
                     canvas.transform.SetParent(gameObject.transform);
+                    //Debug.Log(hpBar.transform.parent.name.transform.position);
+                    
+                    RectTransform rect = canvas.transform.GetChild(0).GetComponent<RectTransform>();
+                    RectTransform targetRect = hpBar.transform.parent.parent.GetComponent<RectTransform>();
+                    rect.localScale = targetRect.localScale;
+                    
+                    
                     TextMeshProUGUI text = canvas.transform.GetChild(0).gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
+                    
                     text.text = "-" + (currentHp-playerEntity.health_stat).ToString();
                     
                     
@@ -144,6 +152,10 @@ public class PlayerGUI : MonoBehaviour
                     plateAnimator.SetTrigger("Heal");
                     GameObject canvas = Instantiate(healPrefab, hpBar.rectTransform.position, Quaternion.identity);
                     canvas.transform.SetParent(gameObject.transform);
+                    RectTransform rect = canvas.transform.GetChild(0).GetComponent<RectTransform>();
+                    RectTransform targetRect = hpBar.transform.parent.parent.GetComponent<RectTransform>();
+                    rect.localScale = targetRect.localScale;
+                    
                     TextMeshProUGUI text = canvas.transform.GetChild(0).gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
                     text.text = "+" + (playerEntity.health_stat-currentHp).ToString();
 
