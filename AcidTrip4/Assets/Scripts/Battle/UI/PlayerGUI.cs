@@ -25,11 +25,13 @@ public class PlayerGUI : MonoBehaviour
     public Button basicCancelButton;
     public Animator plateAnimator;
     public Animator faceAnimator;
+    public Animator statusAnimator;
 
     private int maxHp = 0;
     private int maxPpl = 0;
     private int currentHp = 0;
     private int maxPp = 0;
+    
     void Start()
     {
         BattleEventManager.OnEnemySelected += finishSelection;
@@ -98,6 +100,7 @@ public class PlayerGUI : MonoBehaviour
 
     void updateGUI()
     {
+        updateStatus();
         
         if(maxHp != 0)
         {
@@ -178,12 +181,31 @@ public class PlayerGUI : MonoBehaviour
 
     }
 
+    void updateStatus()
+    {
+        
+        if(playerEntity.thisTurnEffects.Count > 0)
+        {
+            
+            foreach(var effect in playerEntity.thisTurnEffects)
+            {
+                Debug.Log(effect.GetType());
+            }
+        }
+        else
+        {
+            Debug.Log("Empty effeccts");
+        }
+    }
+
     private void OnDestroy()
     {
         BattleEventManager.OnEnemySelected -= finishSelection;
         BattleEventManager.OnEnemyRevealSelect -= startSelection;
         BattleEventManager.OnGUIUpdate -= updateGUI;
     }
+
+    
 
 
 }
