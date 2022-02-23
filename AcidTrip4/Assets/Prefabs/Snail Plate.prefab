@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7209081881100508699}
   - component: {fileID: 2434571526127851448}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Status Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1127,6 +1127,7 @@ MonoBehaviour:
   basicCancelButton: {fileID: 7663557972650878581}
   plateAnimator: {fileID: 7663557971030525353}
   faceAnimator: {fileID: 394210142141676341}
+  statusAnimator: {fileID: 2434571526127851448}
 --- !u!1 &7663557971324100661
 GameObject:
   m_ObjectHideFlags: 0

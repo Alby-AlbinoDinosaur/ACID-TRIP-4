@@ -186,15 +186,19 @@ public class PlayerGUI : MonoBehaviour
         
         if(playerEntity.thisTurnEffects.Count > 0)
         {
-            
+
+            /* I tried to get this done, but the lambdas dont have enough info to differentiate status effects
             foreach(var effect in playerEntity.thisTurnEffects)
             {
                 Debug.Log(effect.GetType());
             }
+            */
+
+            statusAnimator.SetBool("Cheese Touched",true);
         }
         else
         {
-            Debug.Log("Empty effeccts");
+            statusAnimator.SetBool("Cheese Touched",false);
         }
     }
 
