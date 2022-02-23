@@ -64,7 +64,40 @@ public class DialogueManagerAlternate : MonoBehaviour {
 		nameText.text = dialogue.name;
 		actor.SetTrigger(dialogue.name);
 
+		switch (dialogue.name)
+		{
+			case "Snail":
+				
+				nameText.color = new Color(0,0,255,255);
+				break;
+
+			case "Leon Bradley":
+				
+				nameText.color = new Color(0,255,0,255);
+				break;
+
+			case "Statistician":
+				
+				nameText.color = new Color(255,0,0,255);
+				break;
+
+			case "Mans Undersnail":
+				
+				nameText.color = new Color(255,0,255,355);
+				break;
+
+			default:
+				
+				nameText.color = new Color(255,255,255,255);
+				break;
+
+		}
+
+
 		sentences.Clear();
+
+		
+		
 
 		foreach (string sentence in dialogue.sentences)
 		{
