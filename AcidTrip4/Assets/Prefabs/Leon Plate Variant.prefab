@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leon Plate Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7663557971956758315, guid: de47554e7a933d240854d80d41756059, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7663557972016075644, guid: de47554e7a933d240854d80d41756059, type: 3}
       propertyPath: m_Sprite
       value: 
