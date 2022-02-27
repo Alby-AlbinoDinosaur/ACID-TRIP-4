@@ -1280,80 +1280,83 @@ MonoBehaviour:
   conversation:
   - name: 
     sentences:
-    - 'Snail enjoys himself at home, playing video games.
+    - "Narration: Once upon a time, there was a snail. That snail's name was \u2026.
+      Snail (duh)."
+    - "Snail\u2019s life was more boring than plain bread and white rice. But after
+      today, his world will get a whole lot spicier."
+    - 'Or should we say, cheesier?
 
 '
   - name: Snail
     sentences:
-    - "Woop De Doo. I\u2019m Snail. I just finished making a video game by doing
-      absolutely nothing. "
-    - What could possibly go wrong?
+    - "Finally, I\u2019m done cleaning my house. Let\u2019s hope nothing random happens
+      and -\r"
   - name: 
     sentences:
-    - Window Crash. Snails Snails' eyes pop out
-  - name: Snail
-    sentences:
-    - 'Who are you?
+    - 'Crash! Leon Bradely, Statistician, and Shredder crashes in
 
 '
+  - name: Snail
+    sentences:
+    - "\u2026dirties the place up."
   - name: Leon Bradley
     sentences:
-    - " I\u2019m Leon Bradley and he\u2019s the Statistician."
-  - name: Statistician
-    sentences:
-    - Sup. (Statistician makes cool poses)
+    - What the hell are you doing fool? Are you gonna help or not?
   - name: Snail
     sentences:
-    - What are you doing at my house?
-  - name: Statistician
-    sentences:
-    - Introducing ourselves to the audience.
+    - Who are you guys?
   - name: Leon Bradley
     sentences:
-    - And avoiding the IRS.
-  - name: Snail
-    sentences:
-    - Why am I asking so many questions.?
+    - "I\u2019m Leon Bradely and he\u2019s the Statistician."
   - name: Statistician
     sentences:
-    - "Because you\u2019re the na\xEFve main character and audience surrogate. "
-    - "It\u2019s a lazy way for writers to justify exposition dumps.\r\n"
+    - Sup.
+  - name: Shredder
+    sentences:
+    - Screech!!!!
+  - name: Statistician
+    sentences:
+    - That cheese monster over there is a Shredder. Undead cheese corpses brought
+      back to life.
+  - name: Snail
+    sentences:
+    - How did you know I was going to ask?
+  - name: Statistician
+    sentences:
+    - Simple, I calculated my knowledge of Shredders and divided it by your naivety.
+  - name: Snail
+    sentences:
+    - "Wow! That\u2019s math and magical."
+  - name: Statistician
+    sentences:
+    - "It\u2019s math-a-magical."
+  - name: Shredder
+    sentences:
+    - Shredder screeches and breaks some stuff
+  - name: Snail
+    sentences:
+    - My house! But I just cleaned it.
+  - name: Statistician
+    sentences:
+    - "If we don\u2019t deal with this grotesque gouda, you won\u2019t have a house
+      to clean."
+  - name: Snail
+    sentences:
+    - Yikes!
+  - name: Statistician
+    sentences:
+    - Right now, we need to cream this cheese before it causes any more harm.
   - name: Leon Bradley
     sentences:
-    - "The only dump we\u2019ll be doing is on Mans Undersnail."
+    - 'And then come up with an appropriate cheese pun afterward.
+
+'
+  - name: Shredder
+    sentences:
+    - Screech!!!!
   - name: Snail
     sentences:
-    - Who?
-  - name: 
-    sentences:
-    - Mans Undersnail pops out of nowhere.
-  - name: Mans Undersnail
-    sentences:
-    - Derp. Derp. Derp. My name is Mans Undersnail?
-  - name: Snail
-    sentences:
-    - 'Why is your evil laugh so weird?
-
-'
-  - name: Statistician
-    sentences:
-    - "It\u2019s called characterization. \r"
-  - name: Mans Undersnail
-    sentences:
-    - 'Which none of you will get once I devour your eyeballs.
-
-'
-  - name: Statistician
-    sentences:
-    - 'How about we all sit down and solve math problems instead. Somebody has to
-      find the value of X.
-
-'
-  - name: Leon Bradley
-    sentences:
-    - 'No, you fool. We gonna whoop his ass JRPG style.
-
-'
+    - All right, here we go!
   next: {fileID: 0}
 --- !u!1 &1693065539
 GameObject:
