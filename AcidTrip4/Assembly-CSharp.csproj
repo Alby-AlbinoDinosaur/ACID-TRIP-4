@@ -139,6 +139,7 @@
     <Compile Include="Assets\Scripts\Battle\charStats.cs" />
     <Compile Include="Assets\LoadDemo.cs" />
     <Compile Include="Assets\Scripts\Battle\EnemyUnitAction.cs" />
+    <Compile Include="Assets\ItemButton.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
