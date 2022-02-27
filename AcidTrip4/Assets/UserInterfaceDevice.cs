@@ -80,4 +80,48 @@ public class UserInterfaceDevice : MonoBehaviour
         }
         
     }
+
+
+    //Sets player or enemy button selected; Selects the first player or enemy that is not defeated in the list
+    //playerOrEnemy: true, player, false: enemy
+    public void SetEntitySelected(bool playerOrEnemy)
+    {
+        List<Entity> entityList = null;
+
+        if (playerOrEnemy)
+        {
+            //get player list
+            entityList = BattleManager.instance.playerMover.playerList;
+
+        }
+        else
+        {
+            //get enemy list
+            entityList = BattleManager.instance.enemyMover.enemyList;
+        }
+
+        if (entityList != null)
+        {
+            //Select the first undefeated enemy/player in the list of entities
+            foreach (Entity entity in entityList)
+            {
+                if (!entity.IsDefeated())
+                {
+                    //Select the child object button of the enemy/player
+                    GameObject buttonObj = entity.GetComponentInChildren<Button>().gameObject;
+                    SetSelectedUI(buttonObj);
+
+                    break;
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("EntityList is Null!");
+        }
+
+    }
+
 }
+
+
