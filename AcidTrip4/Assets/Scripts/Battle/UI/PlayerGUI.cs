@@ -35,7 +35,7 @@ public class PlayerGUI : MonoBehaviour
     void Start()
     {
         BattleEventManager.OnEnemySelected += finishSelection;
-        BattleEventManager.OnEnemyRevealSelect += startSelection;
+        //BattleEventManager.OnEnemyRevealSelect += startSelection;
         BattleEventManager.OnGUIUpdate += updateGUI;
         maxHp = playerEntity.health_stat;
         
@@ -217,7 +217,7 @@ public class PlayerGUI : MonoBehaviour
     private void OnDestroy()
     {
         BattleEventManager.OnEnemySelected -= finishSelection;
-        BattleEventManager.OnEnemyRevealSelect -= startSelection;
+        //BattleEventManager.OnEnemyRevealSelect -= startSelection;
         BattleEventManager.OnGUIUpdate -= updateGUI;
     }
 

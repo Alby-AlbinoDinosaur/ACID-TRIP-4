@@ -7,6 +7,7 @@ public class BattleEventManager : MonoBehaviour
     public delegate void Reveal();
     public static event Reveal OnEnemyRevealSelect;
     public static event Reveal OnEnemySelected;
+    public static event Reveal OnEnemySelectCancel;
 
     public delegate void GUI();
     public static event Reveal OnGUIUpdate;
@@ -21,6 +22,17 @@ public class BattleEventManager : MonoBehaviour
         }
         
     }
+
+    public void cancelEnemySelector()
+    {
+
+        if (OnEnemySelectCancel != null)
+        {
+            OnEnemySelectCancel();
+        }
+
+    }
+
 
     public void hideEnemySelector()
     {

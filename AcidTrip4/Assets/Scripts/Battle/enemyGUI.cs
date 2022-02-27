@@ -26,6 +26,7 @@ public class enemyGUI : MonoBehaviour
         BattleEventManager.OnEnemyRevealSelect+= enableSelector;
         BattleEventManager.OnEnemySelected+= disableSelector;
         BattleEventManager.OnGUIUpdate+= updateGUI;
+        BattleEventManager.OnEnemySelectCancel += disableSelector;
         selector.interactable = false;
         maxHp = enemyEntity.health_stat;
         //Debug.Log("max hp initialized to: " + maxHp);
@@ -75,6 +76,7 @@ public class enemyGUI : MonoBehaviour
     {
         BattleEventManager.OnEnemyRevealSelect-= enableSelector;
         BattleEventManager.OnEnemySelected-= disableSelector;
+        BattleEventManager.OnEnemySelectCancel -= disableSelector;
         BattleEventManager.OnGUIUpdate-= updateGUI;
 
     }
