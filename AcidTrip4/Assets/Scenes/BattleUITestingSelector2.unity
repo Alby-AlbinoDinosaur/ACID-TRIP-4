@@ -1037,6 +1037,10 @@ PrefabInstance:
       propertyPath: playerEntity
       value: 
       objectReference: {fileID: 309468246}
+    - target: {fileID: 3937888191138993523, guid: d933953ee91efbc4ca2dac6ab47382d5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ca8e4a874ed94814395887072e9e8cd0, type: 3}
     - target: {fileID: 4104908926793823434, guid: d933953ee91efbc4ca2dac6ab47382d5, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
@@ -4016,7 +4020,7 @@ PrefabInstance:
       objectReference: {fileID: 1209067742}
     - target: {fileID: 6061990248766811051, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6061990248912279688, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
       propertyPath: m_RootOrder
@@ -4024,7 +4028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6061990248912279688, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.000061035156
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6061990248912279688, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4366,6 +4370,10 @@ PrefabInstance:
       propertyPath: playerEntity
       value: 
       objectReference: {fileID: 1325709375}
+    - target: {fileID: 8196756465469343720, guid: 77880ddb9fb4ac648bc99e14705af6f7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ca8e4a874ed94814395887072e9e8cd0, type: 3}
     - target: {fileID: 9192156944751884505, guid: 77880ddb9fb4ac648bc99e14705af6f7, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
@@ -5785,7 +5793,7 @@ PrefabInstance:
       objectReference: {fileID: 1209067742}
     - target: {fileID: 6061990248766811051, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6061990248912279688, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
       propertyPath: m_RootOrder
@@ -5793,7 +5801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6061990248912279688, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.000061035156
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6061990248912279688, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5864,6 +5872,10 @@ PrefabInstance:
       propertyPath: playerEntity
       value: 
       objectReference: {fileID: 1771740114}
+    - target: {fileID: 7209081881100508699, guid: de47554e7a933d240854d80d41756059, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ca8e4a874ed94814395887072e9e8cd0, type: 3}
     - target: {fileID: 7663557970797517399, guid: de47554e7a933d240854d80d41756059, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4

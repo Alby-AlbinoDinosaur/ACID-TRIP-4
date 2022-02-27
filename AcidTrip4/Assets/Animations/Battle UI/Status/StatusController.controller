@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Cheesed
+    m_ConditionEvent: Cheese Touched
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6939357308866326825}
@@ -34,7 +34,7 @@ AnimatorController:
   m_Name: StatusController
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Cheesed
+  - m_Name: Cheese Touched
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -126,7 +126,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: a2da6b5edde9f754f9cbb0c8a5c20507, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -141,7 +141,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Cheesed
+    m_ConditionEvent: Cheese Touched
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7435060068549407012}
