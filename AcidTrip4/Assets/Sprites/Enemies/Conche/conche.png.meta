@@ -1,0 +1,1056 @@
+fileFormatVersion: 2
+guid: cb9cabb637ca50a4a9ce2e41c474a986
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6923170474202652438
+    second: conche_0
+  - first:
+      213: -7701170729887513092
+    second: conche_1
+  - first:
+      213: -2824759141694836135
+    second: conche_2
+  - first:
+      213: 2267962894329954087
+    second: conche_3
+  - first:
+      213: -2097603490344366348
+    second: conche_4
+  - first:
+      213: -757871442782613433
+    second: conche_5
+  - first:
+      213: -4113228015009277188
+    second: conche_6
+  - first:
+      213: 8807881296492697129
+    second: conche_7
+  - first:
+      213: 6963694343939348472
+    second: conche_8
+  - first:
+      213: 6441622986731638234
+    second: conche_9
+  - first:
+      213: 5136111862547835413
+    second: conche_10
+  - first:
+      213: -4391827536240882185
+    second: conche_11
+  - first:
+      213: -5261024379846692458
+    second: conche_12
+  - first:
+      213: 270309524416842970
+    second: conche_13
+  - first:
+      213: 6732417268700634796
+    second: conche_14
+  - first:
+      213: -2067870502257036694
+    second: conche_15
+  - first:
+      213: -7032534017295094509
+    second: conche_16
+  - first:
+      213: 718483473105702859
+    second: conche_17
+  - first:
+      213: 1910875954386294939
+    second: conche_18
+  - first:
+      213: 3263065204334802394
+    second: conche_19
+  - first:
+      213: -6185861231327838900
+    second: conche_20
+  - first:
+      213: 3550651247063045903
+    second: conche_21
+  - first:
+      213: 443402088846625292
+    second: conche_22
+  - first:
+      213: -3118025900017187840
+    second: conche_23
+  - first:
+      213: 1177327749215066327
+    second: conche_24
+  - first:
+      213: -4703191762944507677
+    second: conche_25
+  - first:
+      213: -538262468137721147
+    second: conche_26
+  - first:
+      213: -4108037215530259441
+    second: conche_27
+  - first:
+      213: 1511774101441819663
+    second: conche_28
+  - first:
+      213: -9202825814684246328
+    second: conche_29
+  - first:
+      213: 5660739926187609031
+    second: conche_30
+  - first:
+      213: -3677805487481489044
+    second: conche_31
+  - first:
+      213: 7415788568383087229
+    second: conche_32
+  - first:
+      213: 4518192244173210264
+    second: conche_33
+  - first:
+      213: 1914924439030135955
+    second: conche_34
+  - first:
+      213: -6186999385003253050
+    second: conche_35
+  - first:
+      213: 4106920405031462143
+    second: conche_36
+  - first:
+      213: -2193515704708242128
+    second: conche_37
+  - first:
+      213: -3418743544707841884
+    second: conche_38
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: conche_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5609
+        width: 592
+        height: 471
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0adad5225fbef90800000000000000
+      internalID: -6923170474202652438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_1
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 5609
+        width: 585
+        height: 471
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf54b621602ff1590800000000000000
+      internalID: -7701170729887513092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_2
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 5609
+        width: 586
+        height: 471
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952fd3fd6807cc8d0800000000000000
+      internalID: -2824759141694836135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4674
+        width: 585
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fbd487c3c697f10800000000000000
+      internalID: 2267962894329954087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5140
+        width: 585
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe87663db0d3e2e0800000000000000
+      internalID: -2097603490344366348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_5
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 5140
+        width: 585
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740978b20ff7b75f0800000000000000
+      internalID: -757871442782613433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_6
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 5140
+        width: 585
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfadf25c9e0eae6c0800000000000000
+      internalID: -4113228015009277188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_7
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 4674
+        width: 588
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926114d7f51eb3a70800000000000000
+      internalID: 8807881296492697129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_8
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 4674
+        width: 585
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7d6ee4c1304a060800000000000000
+      internalID: 6963694343939348472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3739
+        width: 585
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add412d2afd356950800000000000000
+      internalID: 6441622986731638234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4205
+        width: 585
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a65d5d682274740800000000000000
+      internalID: 5136111862547835413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_11
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 3739
+        width: 588
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd459bef181d03c0800000000000000
+      internalID: -4391827536240882185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_12
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 4205
+        width: 587
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691719c53361df6b0800000000000000
+      internalID: -5261024379846692458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_13
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 3739
+        width: 585
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc454e841550c300800000000000000
+      internalID: 270309524416842970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_14
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 4205
+        width: 584
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae5b9406d95e6d50800000000000000
+      internalID: 6732417268700634796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2804
+        width: 592
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62f577fbb27d43e0800000000000000
+      internalID: -2067870502257036694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3270
+        width: 589
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d664c329b676e90800000000000000
+      internalID: -7032534017295094509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_17
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 2804
+        width: 588
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf447f79e098f900800000000000000
+      internalID: 718483473105702859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_18
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 3270
+        width: 585
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98d7076e8bc48a10800000000000000
+      internalID: 1910875954386294939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_19
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 2804
+        width: 586
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5305fc38cb84d20800000000000000
+      internalID: 3263065204334802394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_20
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 3270
+        width: 586
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4df7d4fbf7672aa0800000000000000
+      internalID: -6185861231327838900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2335
+        width: 592
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f079d7e3f72764130800000000000000
+      internalID: 3550651247063045903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_22
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 2335
+        width: 588
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a8e5eb9d7472600800000000000000
+      internalID: 443402088846625292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_23
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 2335
+        width: 586
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0040205c6fb8ab4d0800000000000000
+      internalID: -3118025900017187840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1869
+        width: 592
+        height: 462
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d89c24a955b65010800000000000000
+      internalID: 1177327749215066327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_25
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1869
+        width: 588
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0462b9208eabeb0800000000000000
+      internalID: -4703191762944507677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_26
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1869
+        width: 586
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2e9b61325b788f0800000000000000
+      internalID: -538262468137721147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 592
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ceb34fae15df6c0800000000000000
+      internalID: -4108037215530259441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_28
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1400
+        width: 588
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0433191986eaf410800000000000000
+      internalID: 1511774101441819663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_29
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1400
+        width: 586
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce53f12eaef84080800000000000000
+      internalID: -9202825814684246328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 934
+        width: 592
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb884298fcfe8e40800000000000000
+      internalID: 5660739926187609031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_31
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 934
+        width: 588
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69fead156fc5fcc0800000000000000
+      internalID: -3677805487481489044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_32
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 934
+        width: 586
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7260e3996c2ae660800000000000000
+      internalID: 7415788568383087229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 465
+        width: 592
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8928edc58e7d3be30800000000000000
+      internalID: 4518192244173210264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_34
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 588
+        height: 467
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cfa10b1ad239a10800000000000000
+      internalID: 1914924439030135955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_35
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 465
+        width: 588
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c22257e6dc532aa0800000000000000
+      internalID: -6186999385003253050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_36
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 0
+        width: 586
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff424b65956bef830800000000000000
+      internalID: 4106920405031462143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_37
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 465
+        width: 586
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035ef9b96111f81e0800000000000000
+      internalID: -2193515704708242128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conche_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 592
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0878ffbde2e80d0800000000000000
+      internalID: -3418743544707841884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
