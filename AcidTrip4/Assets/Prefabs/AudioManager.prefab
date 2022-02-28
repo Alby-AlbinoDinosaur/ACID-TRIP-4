@@ -87,6 +87,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: garfield
+    clip: {fileID: 8300000, guid: 91761e8576b7d89489f92473f9ff3dbc, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!114 &1209067742
 MonoBehaviour:
   m_ObjectHideFlags: 0

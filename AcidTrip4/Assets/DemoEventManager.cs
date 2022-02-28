@@ -14,6 +14,8 @@ public class DemoEventManager : MonoBehaviour
     public static event BattleState OnBattleStart;
     public static event BattleState OnBattleEnd;
 
+     
+
     // Start is called before the first frame update
 
     
@@ -23,6 +25,7 @@ public class DemoEventManager : MonoBehaviour
     void Start()
     {
         OnDialogueEnd += nextBattle;
+        AudioManager.instance.Play("garfield");
     }
     public void nextDialogue()
     {
@@ -42,6 +45,7 @@ public class DemoEventManager : MonoBehaviour
             OnBattleStart();
         }
         */
+        AudioManager.instance.Stop("garfield");
         SceneManager.LoadScene(2);
         
     }

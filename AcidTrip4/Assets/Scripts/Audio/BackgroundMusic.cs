@@ -15,6 +15,9 @@ public class BackgroundMusic : MonoBehaviour
         AudioManager.instance.Play(musicTracks[randomIndex]);
     }
 
+
+    
+
     public void stopAllTracks()
     {  
         for(int i = 0; i < musicTracks.Length; i++)

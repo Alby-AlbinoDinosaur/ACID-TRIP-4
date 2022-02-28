@@ -18,6 +18,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 	public Animator animator;
 	public Animator actor;
 	public DemoEventManager manager;
+	public AudioManager soundManager;
 
 	private Queue<string> sentences;
 	private int index;
@@ -25,6 +26,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
     private bool finished = false;
 
     public GameObject next;
+	
 	//private Dialogue[] conversation;
 
 	// Use this for initialization
@@ -42,6 +44,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
             if (!finished)
             {
                 DisplayNextSentence();
+				soundManager.Play("menu_hover");
             }
         }
 
