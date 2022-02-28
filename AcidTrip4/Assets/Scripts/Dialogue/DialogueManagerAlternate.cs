@@ -64,34 +64,9 @@ public class DialogueManagerAlternate : MonoBehaviour {
 		nameText.text = dialogue.name;
 		actor.SetTrigger(dialogue.name);
 
-		switch (dialogue.name)
-		{
-			case "Snail":
-				
-				nameText.color = new Color(0,0,255,255);
-				break;
+		showSprite(dialogue.name);
 
-			case "Leon Bradley":
-				
-				nameText.color = new Color(0,255,0,255);
-				break;
-
-			case "Statistician":
-				
-				nameText.color = new Color(255,0,0,255);
-				break;
-
-			case "Mans Undersnail":
-				
-				nameText.color = new Color(255,0,255,355);
-				break;
-
-			default:
-				
-				nameText.color = new Color(255,255,255,255);
-				break;
-
-		}
+		
 
 
 		sentences.Clear();
@@ -149,6 +124,44 @@ public class DialogueManagerAlternate : MonoBehaviour {
 			manager.nextBattle();
 
 		}
+	}
+	
+	void showSprite(string sprite)
+	{
+		switch (sprite)
+		{
+			case "Snail":
+				
+				nameText.color = new Color32(0,0,255,255);
+				break;
+
+			case "Leon Bradley":
+				
+				nameText.color = new Color32(0,255,0,255);
+				break;
+
+			case "Statistician":
+				
+				nameText.color = new Color32(255,0,0,255);
+				break;
+
+			case "Mans Undersnail":
+				
+				nameText.color = new Color32(255,0,255,255);
+				break;
+
+			case "Shredder":
+				
+				nameText.color = new Color32(255,200,0,255);
+				break;
+
+			default:
+				
+				nameText.color = new Color32(255,255,255,255);
+				break;
+
+		}
+
 	}
 
 
