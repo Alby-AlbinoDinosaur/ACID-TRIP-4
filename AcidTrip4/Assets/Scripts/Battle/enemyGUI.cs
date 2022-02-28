@@ -9,6 +9,7 @@ public class enemyGUI : MonoBehaviour
 
     // Start is called before the first frame update
     public Image hpBar;
+    public BattleEnemyAnimation animator;
     
     
     public Button selector;
@@ -60,6 +61,7 @@ public class enemyGUI : MonoBehaviour
             hpBar.fillAmount = (float)enemyEntity.health_stat/maxHp;
 
             if(enemyEntity.health_stat<currentHp){
+                animator.DamageAnimation();
                 //Debug.Log("DAMAGED");
                 GameObject canvas = Instantiate(damagePrefab, gameObject.transform.position, Quaternion.identity);
                 //canvas.transform.parent = gameObject.transform;

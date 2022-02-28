@@ -770,6 +770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpBar: {fileID: 6061990247176142150}
+  animator: {fileID: 6061990248766811050}
   selector: {fileID: 6061990247781813349}
   damagePrefab: {fileID: 5364885180368766624, guid: c40c092658d347044891b3b72684f0a2, type: 3}
   enemyEntity: {fileID: 6061990248912279690}
