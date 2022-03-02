@@ -135,27 +135,31 @@ public class DialogueManagerAlternate : MonoBehaviour {
 		{
 			case "Snail":
 				
-				nameText.color = new Color32(0,0,255,255);
+				nameText.color = new Color32(136,206,238,255);
 				break;
 
 			case "Leon Bradley":
 				
-				nameText.color = new Color32(0,255,0,255);
+				nameText.color = new Color32(45,119,94,255);
 				break;
 
 			case "Statistician":
 				
-				nameText.color = new Color32(255,0,0,255);
+				nameText.color = new Color32(227,58,46,255);
 				break;
 
 			case "Mans Undersnail":
 				
-				nameText.color = new Color32(255,0,255,255);
+				nameText.color = new Color32(0,161,231,255);
 				break;
 
 			case "Shredder":
 				
-				nameText.color = new Color32(255,200,0,255);
+				nameText.color = new Color32(253,253,112,255);
+				break;
+
+			case "Conche":
+				nameText.color = new Color32(209,74,82,255);
 				break;
 
 			default:
