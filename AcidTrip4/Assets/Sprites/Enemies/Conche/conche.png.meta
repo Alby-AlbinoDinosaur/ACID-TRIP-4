@@ -224,11 +224,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5609
-        width: 592
-        height: 471
+        y: 11124
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: conche_1
       rect:
         serializedVersion: 2
-        x: 595
-        y: 5609
-        width: 585
-        height: 471
+        x: 1169
+        y: 11124
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: conche_2
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 5609
-        width: 586
-        height: 471
+        x: 2338
+        y: 11124
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: conche_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4674
-        width: 585
-        height: 469
+        x: 0
+        y: 10197
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +307,12 @@ TextureImporter:
       name: conche_4
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5140
-        width: 585
-        height: 469
+        x: 1169
+        y: 10197
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: conche_5
       rect:
         serializedVersion: 2
-        x: 595
-        y: 5140
-        width: 585
-        height: 469
+        x: 2338
+        y: 10197
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: conche_6
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 5140
-        width: 585
-        height: 469
+        x: 0
+        y: 9270
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: conche_7
       rect:
         serializedVersion: 2
-        x: 592
-        y: 4674
-        width: 588
-        height: 466
+        x: 1169
+        y: 9270
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,12 +391,12 @@ TextureImporter:
       name: conche_8
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 4674
-        width: 585
-        height: 466
+        x: 2338
+        y: 9270
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -412,12 +412,12 @@ TextureImporter:
       name: conche_9
       rect:
         serializedVersion: 2
-        x: 4
-        y: 3739
-        width: 585
-        height: 469
+        x: 0
+        y: 8343
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,12 +433,12 @@ TextureImporter:
       name: conche_10
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4205
-        width: 585
-        height: 469
+        x: 1169
+        y: 8343
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -454,12 +454,12 @@ TextureImporter:
       name: conche_11
       rect:
         serializedVersion: 2
-        x: 592
-        y: 3739
-        width: 588
-        height: 469
+        x: 2338
+        y: 8343
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: conche_12
       rect:
         serializedVersion: 2
-        x: 592
-        y: 4205
-        width: 587
-        height: 469
+        x: 0
+        y: 7416
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -496,12 +496,12 @@ TextureImporter:
       name: conche_13
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 3739
-        width: 585
-        height: 469
+        x: 1169
+        y: 7416
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -517,12 +517,12 @@ TextureImporter:
       name: conche_14
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 4205
-        width: 584
-        height: 469
+        x: 2338
+        y: 7416
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -539,11 +539,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2804
-        width: 592
-        height: 469
+        y: 6489
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -559,12 +559,12 @@ TextureImporter:
       name: conche_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3270
-        width: 589
-        height: 469
+        x: 1169
+        y: 6489
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -580,12 +580,12 @@ TextureImporter:
       name: conche_17
       rect:
         serializedVersion: 2
-        x: 595
-        y: 2804
-        width: 588
-        height: 472
+        x: 2338
+        y: 6489
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -601,12 +601,12 @@ TextureImporter:
       name: conche_18
       rect:
         serializedVersion: 2
-        x: 595
-        y: 3270
-        width: 585
-        height: 469
+        x: 0
+        y: 5562
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -622,12 +622,12 @@ TextureImporter:
       name: conche_19
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 2804
-        width: 586
-        height: 472
+        x: 1169
+        y: 5562
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -643,12 +643,12 @@ TextureImporter:
       name: conche_20
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 3270
-        width: 586
-        height: 469
+        x: 2338
+        y: 5562
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -665,11 +665,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2335
-        width: 592
-        height: 469
+        y: 4635
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -685,12 +685,12 @@ TextureImporter:
       name: conche_22
       rect:
         serializedVersion: 2
-        x: 595
-        y: 2335
-        width: 588
-        height: 466
+        x: 1169
+        y: 4635
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -706,12 +706,12 @@ TextureImporter:
       name: conche_23
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 2335
-        width: 586
-        height: 463
+        x: 2338
+        y: 4635
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -728,11 +728,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1869
-        width: 592
-        height: 462
+        y: 3708
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -748,12 +748,12 @@ TextureImporter:
       name: conche_25
       rect:
         serializedVersion: 2
-        x: 595
-        y: 1869
-        width: 588
-        height: 460
+        x: 1169
+        y: 3708
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -769,12 +769,12 @@ TextureImporter:
       name: conche_26
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 1869
-        width: 586
-        height: 457
+        x: 2338
+        y: 3708
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -791,11 +791,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1400
-        width: 592
-        height: 457
+        y: 2781
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -811,12 +811,12 @@ TextureImporter:
       name: conche_28
       rect:
         serializedVersion: 2
-        x: 595
-        y: 1400
-        width: 588
-        height: 457
+        x: 1169
+        y: 2781
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -832,12 +832,12 @@ TextureImporter:
       name: conche_29
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 1400
-        width: 586
-        height: 454
+        x: 2338
+        y: 2781
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -854,11 +854,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 934
-        width: 592
-        height: 454
+        y: 1854
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -874,12 +874,12 @@ TextureImporter:
       name: conche_31
       rect:
         serializedVersion: 2
-        x: 595
-        y: 934
-        width: 588
-        height: 454
+        x: 1169
+        y: 1854
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -895,12 +895,12 @@ TextureImporter:
       name: conche_32
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 934
-        width: 586
-        height: 457
+        x: 2338
+        y: 1854
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -917,11 +917,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 465
-        width: 592
-        height: 460
+        y: 927
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -937,12 +937,12 @@ TextureImporter:
       name: conche_34
       rect:
         serializedVersion: 2
-        x: 595
-        y: 0
-        width: 588
-        height: 467
+        x: 1169
+        y: 927
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -958,12 +958,12 @@ TextureImporter:
       name: conche_35
       rect:
         serializedVersion: 2
-        x: 595
-        y: 465
-        width: 588
-        height: 460
+        x: 2338
+        y: 927
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -979,12 +979,12 @@ TextureImporter:
       name: conche_36
       rect:
         serializedVersion: 2
-        x: 1183
+        x: 0
         y: 0
-        width: 586
-        height: 468
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1000,12 +1000,12 @@ TextureImporter:
       name: conche_37
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 465
-        width: 586
-        height: 465
+        x: 1169
+        y: 0
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1021,12 +1021,12 @@ TextureImporter:
       name: conche_38
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2338
         y: 0
-        width: 592
-        height: 464
+        width: 1169
+        height: 927
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
