@@ -162,6 +162,10 @@ public class DialogueManagerAlternate : MonoBehaviour {
 				nameText.color = new Color32(209,74,82,255);
 				break;
 
+			case "Coco the cowboy/cop":
+				nameText.color = new Color32(128,106,78,255);
+				break;
+
 			default:
 				
 				nameText.color = new Color32(255,255,255,255);
