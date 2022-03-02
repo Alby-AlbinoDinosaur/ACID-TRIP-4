@@ -40,10 +40,16 @@ public abstract class Entity : MonoBehaviour
     public Queue<endTurnEffect> thisTurnEffects;
     public Queue<endTurnEffect> nextTurnEffects;
     public Queue<endTurnEffect> beforeMoveEffects;
+    public GameObject attackPrefab = null;
 
 
     public void Run()
     {
+        if(attackPrefab){
+            GameObject vfx = Instantiate(attackPrefab, selectedTarget.transform.position, Quaternion.identity);
+            vfx.transform.SetParent(selectedTarget.transform);
+        }
+
         moveExecuteList[nextMove](selectedTarget);
         nextMoveHasAlreadyBeenRun = true;
         

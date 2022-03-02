@@ -69,6 +69,7 @@ public class BattleManager : MonoBehaviour
                         {
                             battleDialogue.WriteLine(resultText);
                             battleEventManager.updateGUIS();
+                            Debug.Log(current.name);
                             yield return new WaitForSeconds(0.2f);
                             yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
                         }

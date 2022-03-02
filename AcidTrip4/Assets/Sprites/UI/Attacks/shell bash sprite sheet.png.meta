@@ -1,0 +1,888 @@
+fileFormatVersion: 2
+guid: a9d9df582e6046d4e898a56a012cd35f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4437442334855487635
+    second: shell bash sprite sheet_0
+  - first:
+      213: -7211598514555280012
+    second: shell bash sprite sheet_1
+  - first:
+      213: -5934162074644145332
+    second: shell bash sprite sheet_2
+  - first:
+      213: 1790863957748560893
+    second: shell bash sprite sheet_3
+  - first:
+      213: -5180719214959908694
+    second: shell bash sprite sheet_4
+  - first:
+      213: 1918120144314411886
+    second: shell bash sprite sheet_5
+  - first:
+      213: 3142348577411684815
+    second: shell bash sprite sheet_6
+  - first:
+      213: 1735220696584790235
+    second: shell bash sprite sheet_7
+  - first:
+      213: -5826637266362860428
+    second: shell bash sprite sheet_8
+  - first:
+      213: -8456994144546144477
+    second: shell bash sprite sheet_9
+  - first:
+      213: 1718025250808310119
+    second: shell bash sprite sheet_10
+  - first:
+      213: 8175256901560334239
+    second: shell bash sprite sheet_11
+  - first:
+      213: 872898611209592331
+    second: shell bash sprite sheet_12
+  - first:
+      213: -2993443683278918825
+    second: shell bash sprite sheet_13
+  - first:
+      213: 722304200489555384
+    second: shell bash sprite sheet_14
+  - first:
+      213: 8056644467317982947
+    second: shell bash sprite sheet_15
+  - first:
+      213: -4198196335856682653
+    second: shell bash sprite sheet_16
+  - first:
+      213: 2086289714356605521
+    second: shell bash sprite sheet_17
+  - first:
+      213: 9194985549763154318
+    second: shell bash sprite sheet_18
+  - first:
+      213: 3865988320439563231
+    second: shell bash sprite sheet_19
+  - first:
+      213: 3396542156513328541
+    second: shell bash sprite sheet_20
+  - first:
+      213: 1001190259127042415
+    second: shell bash sprite sheet_21
+  - first:
+      213: -7373147691296222081
+    second: shell bash sprite sheet_22
+  - first:
+      213: -4114623663857794469
+    second: shell bash sprite sheet_23
+  - first:
+      213: 3825204513183328842
+    second: shell bash sprite sheet_24
+  - first:
+      213: -655052089115417975
+    second: shell bash sprite sheet_25
+  - first:
+      213: -8619566261546625649
+    second: shell bash sprite sheet_26
+  - first:
+      213: 1128346265453308439
+    second: shell bash sprite sheet_27
+  - first:
+      213: -986728706335672945
+    second: shell bash sprite sheet_28
+  - first:
+      213: 3988705909902354348
+    second: shell bash sprite sheet_29
+  - first:
+      213: -2439075244800704747
+    second: shell bash sprite sheet_30
+  - first:
+      213: 4769121048334234174
+    second: shell bash sprite sheet_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 39
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 39
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 39
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shell bash sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f98aff4b90b62c0800000000000000
+      internalID: -4437442334855487635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475a2351c514beb90800000000000000
+      internalID: -7211598514555280012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b9d3d980f95ada0800000000000000
+      internalID: -5934162074644145332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df337aaf74d6ad810800000000000000
+      internalID: 1790863957748560893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8264792536a18b0800000000000000
+      internalID: -5180719214959908694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ba16ecb188e9a10800000000000000
+      internalID: 1918120144314411886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2808
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9d31dd16ddb9b20800000000000000
+      internalID: 3142348577411684815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0a7daa70eb41810800000000000000
+      internalID: 1735220696584790235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c736fe640a32fa0800000000000000
+      internalID: -5826637266362860428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4212
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fb4c2f1a8b2aa80800000000000000
+      internalID: -8456994144546144477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769a495fcd6a7d710800000000000000
+      internalID: 1718025250808310119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 5148
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97701d66d8547170800000000000000
+      internalID: 8175256901560334239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 5616
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e541e79a82d1c00800000000000000
+      internalID: 872898611209592331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 6084
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75be50b74d62576d0800000000000000
+      internalID: -2993443683278918825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5d3f9e7d3260a00800000000000000
+      internalID: 722304200489555384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6ca140573fecf60800000000000000
+      internalID: 8056644467317982947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 7488
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3697aefeca20db5c0800000000000000
+      internalID: -4198196335856682653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 7956
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152d6ca017df3fc10800000000000000
+      internalID: 2086289714356605521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 8424
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e819b70f3a62b9f70800000000000000
+      internalID: 9194985549763154318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3fb9105efb6a530800000000000000
+      internalID: 3865988320439563231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 9360
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dbd9f7811f22f20800000000000000
+      internalID: 3396542156513328541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 9828
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6149d37c31f4ed00800000000000000
+      internalID: 1001190259127042415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 10296
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f741cc74d315da990800000000000000
+      internalID: -7373147691296222081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 10764
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b520753f39be5e6c0800000000000000
+      internalID: -4114623663857794469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 11232
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a6389ec3bd51530800000000000000
+      internalID: 3825204513183328842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 11700
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982e5e67899c8e6f0800000000000000
+      internalID: -655052089115417975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 12168
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85529e4726216880800000000000000
+      internalID: -8619566261546625649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 12636
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71aabff33f0b8af00800000000000000
+      internalID: 1128346265453308439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 13104
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f857e21387f6e42f0800000000000000
+      internalID: -986728706335672945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 13572
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca72b3954eaba5730800000000000000
+      internalID: 3988705909902354348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 14040
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f7435dcf9a62ed0800000000000000
+      internalID: -2439075244800704747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell bash sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 14508
+        y: 0
+        width: 468
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32fcc853525f2240800000000000000
+      internalID: 4769121048334234174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -212,7 +212,7 @@ public class PlayerGUI : MonoBehaviour
         }
         else
         {
-            Debug.Log("SEEET");
+            //Debug.Log("SEEET");
             statusAnimator.SetBool("Cheese Touched",false);
         }
     }
