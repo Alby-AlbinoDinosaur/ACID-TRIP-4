@@ -39,6 +39,10 @@ public class DialogueManagerAlternate : MonoBehaviour {
         {
 			StartDialogue(conversation[0]);
 		}
+		else
+        {
+			finished = true;
+        }
 	}
 
     void Update()
@@ -56,17 +60,21 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
     }
 
-//Called by a DialogueTrigger and stores dialog information into conversation
-//Calls StartDialogue
-	public void BeginConversation(Dialogue[] dialogue)
+	
+	//Calls StartDialogue
+	//Used for buttons and calling manually
+	public void BeginConversation(Conversation converse)
 	{
-		conversation = dialogue;
+
+		conversation = converse.conversation;
 		StartDialogue(conversation[0]);
 	}
 
 //Begins displaying diaglog parameter
 	public void StartDialogue (Dialogue dialogue)
 	{
+		finished = false;
+
 		animator.SetBool("IsOpen", true);
 
 		nameText.text = dialogue.name;

@@ -6273,6 +6273,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77880ddb9fb4ac648bc99e14705af6f7, type: 3}
+--- !u!114 &2330727068192110530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330727068192110532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad66e816355f15647aeb93f1c4db3b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversation:
+  - name: Snail
+    sentences:
+    - adsada
+  - name: Leon Bradley
+    sentences:
+    - asdsadasdsadsadsadaasd AAAAAAAAAAAAAAAAAAAAAAA
+  - name: Statistician
+    sentences:
+    - Nooo
+--- !u!4 &2330727068192110531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330727068192110532}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 232.945, y: 109.449036, z: -7.3012857}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2330727068192110532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2330727068192110531}
+  - component: {fileID: 2330727068192110530}
+  m_Layer: 0
+  m_Name: Conversation1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &3699520954614747510
 Transform:
   m_ObjectHideFlags: 0
@@ -6419,7 +6472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83ce728c5488e746bb1b70e9f2b8250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useStartFunction: 1
+  useStartFunction: 0
   nameText: {fileID: 3699520955357094443}
   dialogueText: {fileID: 3699520955206991771}
   animator: {fileID: 3699520955188178327}
@@ -6691,14 +6744,13 @@ GameObject:
   - component: {fileID: 3699520955190520063}
   - component: {fileID: 3699520955190520062}
   - component: {fileID: 3699520955190520061}
-  - component: {fileID: 3699520955190520058}
   m_Layer: 5
   m_Name: TestButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3699520955190520001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6706,110 +6758,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3699520955190520000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3699520956142910737}
   m_Father: {fileID: 3699520955794774247}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 115}
+  m_AnchoredPosition: {x: 0, y: 114.999954}
   m_SizeDelta: {x: 295, y: 78}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3699520955190520058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3699520955190520000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e8e620e708ee8f4685ab3361f620c99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-  - name: 
-    sentences:
-    - 'Snail enjoys himself at home, playing video games.
-
-'
-  - name: Snail
-    sentences:
-    - "Woop De Doo. I\u2019m Snail. I just finished making a video game by doing
-      absolutely nothing."
-    - What could possibly go wrong?
-  - name: 
-    sentences:
-    - Window Crash. Snails Snails' eyes pop out
-  - name: Snail
-    sentences:
-    - Who are you?
-  - name: Leon Bradely
-    sentences:
-    - "I\u2019m Leon Bradely and he\u2019s the Statistician."
-  - name: Statician
-    sentences:
-    - Sup. (Statistician makes cool poses)
-  - name: Snail
-    sentences:
-    - What are you doing at my house?
-  - name: Statician
-    sentences:
-    - Introducing ourselves to the audience.
-  - name: Leon Bradely
-    sentences:
-    - And avoiding the IRS.
-  - name: Snail
-    sentences:
-    - Why am I asking so many questions.?
-  - name: Statistician
-    sentences:
-    - "Because you\u2019re the na\xEFve main character and audience surrogate. \n"
-    - "It\u2019s a lazy way for writers to justify exposition dumps.\r"
-  - name: Leon Bradely
-    sentences:
-    - "The only dump we\u2019ll be doing is on Mans Undersnail.\r\n"
-  - name: Snail
-    sentences:
-    - Who?
-  - name: 
-    sentences:
-    - 'Mans Undersnail pops out of nowhere.
-
-'
-  - name: Mans Undersnail
-    sentences:
-    - Derp. Derp. Derp. My name is Mans Undersnail?
-  - name: Snail
-    sentences:
-    - Why is your evil laugh so weird?
-  - name: Statistician
-    sentences:
-    - "It\u2019s called characterization. \r\n"
-  - name: Mans Undersnail
-    sentences:
-    - 'Which none of you will get once I devour your eyeballs.
-
-'
-  - name: Statistician
-    sentences:
-    - ' How about we all sit down and solve math problems instead. Somebody has to
-      find the value of X.
-
-'
-  - name: Snail
-    sentences:
-    - Really?
-  - name: Leon Bradely
-    sentences:
-    - You don't have to go home, but you can't stay here!
-  - name: RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
-    sentences:
-    - RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
 --- !u!222 &3699520955190520060
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6877,13 +6838,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3699520955190520058}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
+      - m_Target: {fileID: 3699520954765535010}
+        m_TargetAssemblyTypeName: DialogueManagerAlternate, Assembly-CSharp
+        m_MethodName: BeginConversation
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2330727068192110530}
+          m_ObjectArgumentAssemblyTypeName: Conversation, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7220,8 +7181,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 652306041}
-  - {fileID: 3699520955190520001}
   - {fileID: 3699520956219027860}
+  - {fileID: 3699520955190520001}
   - {fileID: 3699520955188178328}
   m_Father: {fileID: 3699520954614747510}
   m_RootOrder: 1
@@ -7408,7 +7369,7 @@ RectTransform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 3699520955794774247}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
