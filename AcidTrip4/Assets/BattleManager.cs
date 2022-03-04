@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
@@ -16,7 +17,10 @@ public class BattleManager : MonoBehaviour
     public List<Entity> battleEntityList = new List<Entity>();
     bool readyToRun = false;
 
-    public GameObject endTurnButton;
+    public Button endTurnButton;
+    public Button menuButton;
+    public Button fleeButton;
+    public Button turnOrderButton;
 
 
     public bool pauseBattle = false;
@@ -56,6 +60,10 @@ public class BattleManager : MonoBehaviour
         {
             if (playerMover.moveThroughPlayers())
             {
+                //Make character plates and menu items not interactable
+                SetMenuInteractivity(false);
+                
+
 
                 enemyMover.EnemyChoosing();
                 SortEntities();
@@ -119,6 +127,13 @@ public class BattleManager : MonoBehaviour
                     }
 
                 }
+
+                //Select first character UI in playerList
+                UserInterfaceDevice.instance.SetEntitySelected(true);
+
+                //Set interactivity of player plates and menu to true
+                SetMenuInteractivity(true);
+
                 // check if all players are dead and end battle
                 if (playerMover.isAllDefeated())
                 {
@@ -138,14 +153,14 @@ public class BattleManager : MonoBehaviour
                     //Resolve end of turn effects here
                     // A null return from an endTurnEffect means it does not show up in order-
                     // like guard wearing off, happens silently
-                    endTurnButton.SetActive(true); 
+                    endTurnButton.gameObject.SetActive(true); 
                 }
                 battleEntityList.Clear();
             }
             else
             {
                 battleDialogue.WriteLine("You have not selected all moves.");
-                endTurnButton.SetActive(true);
+                endTurnButton.gameObject.SetActive(true);
             }
         }
 
@@ -211,5 +226,18 @@ public class BattleManager : MonoBehaviour
         print("Battle is over");
         pauseBattle = true;
         battleDialogue.WriteLine("Battle is over.");
+    }
+
+    void SetMenuInteractivity(bool b)
+    {
+        endTurnButton.interactable = b;
+        menuButton.interactable = b;
+        fleeButton.interactable = b;
+        turnOrderButton.interactable = b;
+
+        foreach (Entity player in playerMover.playerList)
+        {
+            player.GetComponentInChildren<Button>().interactable = b;
+        }
     }
 }
