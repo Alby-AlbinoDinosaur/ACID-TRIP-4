@@ -10,7 +10,8 @@ using TMPro;
 	*/
 public class DialogueManagerAlternate : MonoBehaviour {
 
-
+	//Whether or not to start the Dialogue on Awake function
+	public bool useStartFunction = true;
 
 //What is currently being displayed:
 	public TextMeshProUGUI nameText;
@@ -33,12 +34,16 @@ public class DialogueManagerAlternate : MonoBehaviour {
 	void Start () {
 		sentences = new Queue<string>();
 		index = 0;
-        StartDialogue(conversation[0]);
+
+		if (useStartFunction)
+        {
+			StartDialogue(conversation[0]);
+		}
 	}
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) || Input.GetButtonDown("Jump"))
         {
             
             if (!finished)

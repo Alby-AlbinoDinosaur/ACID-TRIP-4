@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 563079674}
   - component: {fileID: 563079673}
   m_Layer: 0
-  m_Name: Managers
+  m_Name: Scene Managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1088,7 +1088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.36862746}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6419,6 +6419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83ce728c5488e746bb1b70e9f2b8250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useStartFunction: 1
   nameText: {fileID: 3699520955357094443}
   dialogueText: {fileID: 3699520955206991771}
   animator: {fileID: 3699520955188178327}

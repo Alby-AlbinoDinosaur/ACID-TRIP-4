@@ -11,6 +11,9 @@ public class DialogueTrigger : MonoBehaviour {
 			see Dialogue.cs
 
 	*/
+
+	//********************************* DEPRECATED ******************************
+
 	public Dialogue[] dialogue;
 
 	public void TriggerDialogue ()
