@@ -24,7 +24,7 @@ public class BattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Random.seed = (int)System.DateTime.Now.Ticks;
+        Random.InitState((int)System.DateTime.Now.Ticks);
         DontDestroyOnLoad(gameObject);
         instance = this;
     }
@@ -71,7 +71,8 @@ public class BattleManager : MonoBehaviour
                             battleEventManager.updateGUIS();
                             Debug.Log(current.name);
                             yield return new WaitForSeconds(0.2f);
-                            yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+                            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) ||
+                                                             Input.GetButtonDown("Jump"));
                         }
                         print(current.beforeMoveEffects.Count);
                     }
@@ -85,7 +86,8 @@ public class BattleManager : MonoBehaviour
                     battleEventManager.updateGUIS();
 
                     yield return new WaitForSeconds(0.2f);
-                    yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+                    yield return new WaitUntil(() => Input.GetMouseButtonDown(0) ||
+                                                     Input.GetButtonDown("Jump"));
                 }
 
                 //This second loop is for debug, this is not the right way to do this
@@ -106,7 +108,8 @@ public class BattleManager : MonoBehaviour
                                 battleDialogue.WriteLine(resultText);
                                 battleEventManager.updateGUIS();
                                 yield return new WaitForSeconds(0.2f);
-                                yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+                                yield return new WaitUntil(() => Input.GetMouseButtonDown(0) ||
+                                                                 Input.GetButtonDown("Jump"));
                             }
                         }
                         battleEventManager.updateGUIS();

@@ -6358,7 +6358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &3699520954676524100
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6410,19 +6410,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3699520954837989488}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3699520954765535010}
-        m_TargetAssemblyTypeName: DialogueManagerAlternate, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &3699520954676524104
 GameObject:
   m_ObjectHideFlags: 0
@@ -6474,6 +6462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useStartFunction: 0
+  switchSceneOnEnd: 0
   nameText: {fileID: 3699520955357094443}
   dialogueText: {fileID: 3699520955206991771}
   animator: {fileID: 3699520955188178327}
@@ -6846,6 +6835,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 2330727068192110530}
           m_ObjectArgumentAssemblyTypeName: Conversation, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1149130969}
+        m_TargetAssemblyTypeName: UserInterfaceDevice, Assembly-CSharp
+        m_MethodName: DeselectUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

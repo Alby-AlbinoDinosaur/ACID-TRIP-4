@@ -53,7 +53,10 @@ public class UserInterfaceDevice : MonoBehaviour
                 //Set to keyboard or controller mode for ui buttons
                 mouseMode = false;
 
-                SetSelectedUI(selectedObj);
+                if (selectedObj != null)
+                {
+                    SetSelectedUI(selectedObj);
+                }
             }
 
             
@@ -66,6 +69,8 @@ public class UserInterfaceDevice : MonoBehaviour
         return mouseMode;
     }
 
+
+    //Selects a UI interactable object
     public void SetSelectedUI(GameObject gameObj)
     {
         selectedObj = gameObj;
@@ -81,6 +86,14 @@ public class UserInterfaceDevice : MonoBehaviour
         
     }
 
+    //Deselects a UI object
+    public void DeselectUI()
+    {
+        selectedObj = null;
+
+        //Deselect Button
+        EventSystem.current.SetSelectedGameObject(null);
+    }
 
     //Sets player or enemy button selected; Selects the first player or enemy that is not defeated in the list
     //playerOrEnemy: true, player, false: enemy

@@ -12,6 +12,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 	//Whether or not to start the Dialogue on Awake function
 	public bool useStartFunction = true;
+	public bool switchSceneOnEnd = true;
 
 //What is currently being displayed:
 	public TextMeshProUGUI nameText;
@@ -53,7 +54,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
             if (!finished)
             {
                 DisplayNextSentence();
-				AudioManager.instance.PlayOneShot("menu_hover");
+				AudioManager.instance.PlayOneShot("menu_select");
             }
         }
 
@@ -71,7 +72,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 	}
 
 //Begins displaying diaglog parameter
-	public void StartDialogue (Dialogue dialogue)
+	private void StartDialogue (Dialogue dialogue)
 	{
 		finished = false;
 
@@ -99,7 +100,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 	}
 
 //Called by continue button to move onto next text
-	public void DisplayNextSentence ()
+	private void DisplayNextSentence ()
 	{
 		if (sentences.Count == 0)
 		{
@@ -125,7 +126,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 //Is called everytime StartDialogue() is called
 //Hides Dialog Box if conversation is done
-	void EndDialogue()
+	private void EndDialogue()
 	{
 		if (index + 1 < conversation.Length)
 		{
@@ -137,12 +138,14 @@ public class DialogueManagerAlternate : MonoBehaviour {
 			animator.SetBool("IsOpen", false);
 			index = 0;
             finished = true;
+
+			if (switchSceneOnEnd)
 			manager.nextBattle();
 
 		}
 	}
 	
-	void showSprite(string sprite)
+	private void showSprite(string sprite)
 	{
 		switch (sprite)
 		{
