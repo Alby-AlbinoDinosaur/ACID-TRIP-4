@@ -28,7 +28,6 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 	private Queue<string> sentences;
 	private int index;
-    public Dialogue[] conversation;
     private bool finished = false;
 
     public GameObject next;
@@ -36,7 +35,6 @@ public class DialogueManagerAlternate : MonoBehaviour {
 	public GameObject dialogueCanvas; //The canvas in which the dialogue is held
 	public FadeImage fadeImage;   //The image that will fade into background of the dialogue canvas (manual dialogue)
 	
-	//private Dialogue[] conversation;
 
 	// Use this for initialization
 	void Start () {
