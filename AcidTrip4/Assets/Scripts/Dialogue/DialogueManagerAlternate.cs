@@ -28,6 +28,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 	private Queue<string> sentences;
 	private int index;
+	private Dialogue[] conversation;
     private bool finished = false;
 
     public GameObject next;
