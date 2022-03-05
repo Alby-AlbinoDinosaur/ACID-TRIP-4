@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-	/*
-		Dialogue Manager displays text on screen after being given a list of dialog from BeginConversation(Dialogue dialogue)
-		Requires 2 text objests to display text and an animator for the text box
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
+/*
+Dialogue Manager displays text on screen after being given a list of dialog from BeginConversation(Dialogue dialogue)
+Requires 2 text objests to display text and an animator for the text box
 
-	*/
+*/
 public class DialogueManagerAlternate : MonoBehaviour {
 
 	//Whether or not to start the Dialogue on Awake function
 	public bool useStartFunction = true;
 	public Conversation startFuncConversation;
-
-	public bool switchSceneOnEnd = true;
 	public bool isInBattleDialogue = false;
 
 
@@ -35,7 +36,18 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 	public GameObject dialogueCanvas; //The canvas in which the dialogue is held
 	public FadeImage fadeImage;   //The image that will fade into background of the dialogue canvas (manual dialogue)
-	
+
+
+	//Event for when conversation finishes -------------------------------------------
+	[System.Serializable]
+	public class ConversationEndEvent : UnityEvent { }
+
+	[FormerlySerializedAs("onConversationEnd")]
+	[SerializeField]
+	private ConversationEndEvent onConversationEnd = new ConversationEndEvent();
+	//--------------------------------------------------------------------------------
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -217,8 +229,8 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 		dialogueCanvas.SetActive(false);
 
-		if (switchSceneOnEnd)
-			manager.nextBattle();
+		//Invoke onConversationEnd events
+		onConversationEnd.Invoke();
 	}
 
 }

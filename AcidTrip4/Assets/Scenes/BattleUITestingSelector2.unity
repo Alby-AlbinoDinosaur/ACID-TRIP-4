@@ -8334,6 +8334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958073, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
       propertyPath: switchSceneOnEnd
       value: 0
@@ -8345,6 +8349,38 @@ PrefabInstance:
     - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
       propertyPath: isInBattleDialogue
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1149130969}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetEntitySelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UserInterfaceDevice, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
