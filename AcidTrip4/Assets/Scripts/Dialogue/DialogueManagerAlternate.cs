@@ -12,9 +12,13 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 	//Whether or not to start the Dialogue on Awake function
 	public bool useStartFunction = true;
-	public bool switchSceneOnEnd = true;
+	public Conversation startFuncConversation;
 
-//What is currently being displayed:
+	public bool switchSceneOnEnd = true;
+	public bool isInBattleDialogue = false;
+
+
+	//What is currently being displayed:
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
 	public Animator animator;
@@ -28,6 +32,9 @@ public class DialogueManagerAlternate : MonoBehaviour {
     private bool finished = false;
 
     public GameObject next;
+
+	public GameObject dialogueCanvas; //The canvas in which the dialogue is held
+	public FadeImage fadeImage;   //The image that will fade into background of the dialogue canvas (manual dialogue)
 	
 	//private Dialogue[] conversation;
 
@@ -38,7 +45,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 		if (useStartFunction)
         {
-			StartDialogue(conversation[0]);
+			BeginConversation(startFuncConversation);
 		}
 		else
         {
@@ -63,9 +70,16 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 	
 	//Calls StartDialogue
-	//Used for buttons and calling manually
+	//Used for buttons as well
 	public void BeginConversation(Conversation converse)
 	{
+		dialogueCanvas.SetActive(true);
+		actor.gameObject.SetActive(true);
+
+		if (isInBattleDialogue)
+		{
+			fadeImage.FadeToBlack(true);
+		}
 
 		conversation = converse.conversation;
 		StartDialogue(conversation[0]);
@@ -139,8 +153,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 			index = 0;
             finished = true;
 
-			if (switchSceneOnEnd)
-			manager.nextBattle();
+			StartCoroutine(EndDialogueCoroutine());
 
 		}
 	}
@@ -191,6 +204,22 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 	}
 
+	private IEnumerator EndDialogueCoroutine()
+    {
+		actor.gameObject.SetActive(false);
 
+		if (isInBattleDialogue)
+		{
+			fadeImage.FadeToBlack(false);
+
+			//Wait until it stops fading
+			yield return new WaitUntil(() => !fadeImage.GetIsFading());
+		}
+
+		dialogueCanvas.SetActive(false);
+
+		if (switchSceneOnEnd)
+			manager.nextBattle();
+	}
 
 }
