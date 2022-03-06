@@ -9,6 +9,8 @@ public class TrippyBackgroundLines : MonoBehaviour
 
     List<GameObject> lines = new List<GameObject>();
 
+    bool moveLines = true; // If false, stop moving lines. Used by ToggleLines(), which is used by the button that disables the background.
+
     public enum Orientation { horizontal, vertical };
     public Orientation orientation; // Are the lines flat or do they go upwards?
 
@@ -92,41 +94,51 @@ public class TrippyBackgroundLines : MonoBehaviour
 
     void Update()
     {
-        foreach (GameObject line in lines)
+        if (moveLines)
         {
-            LineRenderer lineRenderer = line.GetComponent<LineRenderer>();
-
-            // Wobble the line in a sine wave.
-            for (int i = 0; i < lineRenderer.positionCount; i++)
+            foreach (GameObject line in lines)
             {
-                float displacement = Mathf.Sin((timer + (i * distanceBetweenPoints)) * wobbleSpeed) * wobbleAmplitude;
+                LineRenderer lineRenderer = line.GetComponent<LineRenderer>();
 
-                Vector3 oldPos = lineRenderer.GetPosition(i);
-                Vector3 newPos;
-
-                switch (orientation) // Completely replaces the displaces axis with the new sine-derived value.
+                // Wobble the line in a sine wave.
+                for (int i = 0; i < lineRenderer.positionCount; i++)
                 {
-                    case Orientation.horizontal: // Wobble a horizontal line vertically.
-                        newPos = new Vector3(oldPos.x, displacement, oldPos.z);
-                        lineRenderer.SetPosition(i, newPos);
-                        break;
-                    case Orientation.vertical: // Wobble a vertical line horizontally.
-                        newPos = new Vector3(displacement, oldPos.y, oldPos.z);
-                        lineRenderer.SetPosition(i, newPos);
-                        break;
+                    float displacement = Mathf.Sin((timer + (i * distanceBetweenPoints)) * wobbleSpeed) * wobbleAmplitude;
+
+                    Vector3 oldPos = lineRenderer.GetPosition(i);
+                    Vector3 newPos;
+
+                    switch (orientation) // Completely replaces the displaces axis with the new sine-derived value.
+                    {
+                        case Orientation.horizontal: // Wobble a horizontal line vertically.
+                            newPos = new Vector3(oldPos.x, displacement, oldPos.z);
+                            lineRenderer.SetPosition(i, newPos);
+                            break;
+                        case Orientation.vertical: // Wobble a vertical line horizontally.
+                            newPos = new Vector3(displacement, oldPos.y, oldPos.z);
+                            lineRenderer.SetPosition(i, newPos);
+                            break;
+                    }
+                }
+
+                // Move the line.
+                line.transform.position += new Vector3(lineHorizontalSpeed, lineVerticalSpeed, 0) * Time.deltaTime;
+
+                // Check if the line is too far away from the parent object (the one this component is attached to). If so, move it back here.
+                if (line.transform.localPosition.magnitude >= recallDistance)
+                {
+                    line.transform.localPosition = Vector3.zero;
                 }
             }
 
-            // Move the line.
-            line.transform.position += new Vector3(lineHorizontalSpeed, lineVerticalSpeed, 0) * Time.deltaTime;
-
-            // Check if the line is too far away from the parent object (the one this component is attached to). If so, move it back here.
-            if (line.transform.localPosition.magnitude >= recallDistance)
-            {
-                line.transform.localPosition = Vector3.zero;
-            }
+            timer += Time.deltaTime;
         }
+    }
 
-        timer += Time.deltaTime;
+    public void ToggleLines()
+    {
+        // Stop or start moving the lines, to avoid nausea.
+        moveLines = !moveLines;
     }
 }
+
