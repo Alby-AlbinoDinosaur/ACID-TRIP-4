@@ -15,6 +15,9 @@ public abstract class Entity : MonoBehaviour
     public string name = "uh oh, we forgot to name this one";
     public int max_health;
 
+    public int currentBattle = 0;
+    public bool isCheesed = false;
+
     //These three functions make up the three parts of a move
     //moveExecute executes the move on selectedTargets when called
     //moveTargets returns all the targets that would be affected by a move if that entity were clicked on as a target

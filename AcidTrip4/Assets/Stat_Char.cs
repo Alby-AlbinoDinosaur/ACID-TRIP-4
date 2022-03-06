@@ -110,9 +110,17 @@ public class Stat_Char : Entity
     private void Ability_1(Entity target)
     {
         base.power_points -= 7;
-        int damage = Mathf.Max((int)((base.ability_stat * Mathf.PI / 5) * (float)(100 - target.spdefense_stat) / 100f), 0);
+        foreach(Entity enemy in playerMover.enemyMover.enemyList)
+        {
+
+            int damage = Mathf.Max((int)((base.ability_stat * Mathf.PI / 2) * (float)(100 - enemy.spdefense_stat) / 100f), 0);
+            // Calculate damage however here
+            enemy.health_stat -= damage;
+        }
+        int recoil = Mathf.Max((int)((base.ability_stat * Mathf.PI / 5) * (float)(100 - target.spdefense_stat) / 100f), 0);
         // Calculate damage however here
-        target.health_stat -= damage;
+        target.health_stat -= recoil;
+
     }
 
     private bool Ability_1_Targets(Entity target)
@@ -125,8 +133,8 @@ public class Stat_Char : Entity
         switch (context)
         {
             case 0: return "Maethstrom";
-            case 1: return "7 PP: Hits all enemies for decreasing damage.";
-            case 2: return base.name + " starts doing math spins!";
+            case 1: return "7 PP: Hits all enemies and himself for impressive damage.";
+            case 2: return base.name + " spins around wildly!";
         }
         return "uh oh move broke";
     }

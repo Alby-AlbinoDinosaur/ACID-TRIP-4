@@ -55,13 +55,13 @@ public class EnemyMover : MonoBehaviour
             {
                 if (!current.IsDefeated())
                 {
-                print("gotcha!");
+                    print("gotcha!");
                     current.AutoChooseNextMove(playerMover.playerList, enemyList);
-                    //Show enemy intent in battle manager
+                //Show enemy intent in battle manager
+                    BattleManager.instance.AddEntity(current);
                 }
 
                 //Add enemy to battle manager
-                BattleManager.instance.AddEntity(current);
             }
         
     }
