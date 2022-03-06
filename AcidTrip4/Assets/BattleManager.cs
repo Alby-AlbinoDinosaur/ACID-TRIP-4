@@ -240,4 +240,9 @@ public class BattleManager : MonoBehaviour
             player.GetComponentInChildren<Button>().interactable = b;
         }
     }
+
+    public void PauseBattle(bool b)
+    {
+        pauseBattle = b;
+    }
 }
