@@ -79,8 +79,8 @@ public class BattleManager : MonoBehaviour
                             battleEventManager.updateGUIS();
                             Debug.Log(current.name);
                             yield return new WaitForSeconds(0.2f);
-                            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) ||
-                                                             Input.GetButtonDown("Jump"));
+                            yield return new WaitUntil((() => (Input.GetMouseButtonDown(0) ||
+                                                             Input.GetButtonDown("Jump")) && !pauseBattle));
                         }
                         print(current.beforeMoveEffects.Count);
                     }
@@ -94,8 +94,8 @@ public class BattleManager : MonoBehaviour
                     battleEventManager.updateGUIS();
 
                     yield return new WaitForSeconds(0.2f);
-                    yield return new WaitUntil(() => Input.GetMouseButtonDown(0) ||
-                                                     Input.GetButtonDown("Jump"));
+                    yield return new WaitUntil(() => (Input.GetMouseButtonDown(0) ||
+                                                     Input.GetButtonDown("Jump")) && !pauseBattle);
                 }
 
                 //This second loop is for debug, this is not the right way to do this
@@ -116,8 +116,8 @@ public class BattleManager : MonoBehaviour
                                 battleDialogue.WriteLine(resultText);
                                 battleEventManager.updateGUIS();
                                 yield return new WaitForSeconds(0.2f);
-                                yield return new WaitUntil(() => Input.GetMouseButtonDown(0) ||
-                                                                 Input.GetButtonDown("Jump"));
+                                yield return new WaitUntil(() => (Input.GetMouseButtonDown(0) ||
+                                                                 Input.GetButtonDown("Jump")) && !pauseBattle);
                             }
                         }
                         battleEventManager.updateGUIS();
@@ -239,5 +239,10 @@ public class BattleManager : MonoBehaviour
         {
             player.GetComponentInChildren<Button>().interactable = b;
         }
+    }
+
+    public void PauseBattle(bool b)
+    {
+        pauseBattle = b;
     }
 }

@@ -38,8 +38,14 @@ public class DialogueManagerAlternate : MonoBehaviour {
 	public GameObject dialogueCanvas; //The canvas in which the dialogue is held
 	public FadeImage fadeImage;   //The image that will fade into background of the dialogue canvas (manual dialogue)
 
-	
+	//Event for when conversation begins -------------------------------------------
+	[System.Serializable]
+	public class ConversationBeginEvent : UnityEvent { }
 
+	[FormerlySerializedAs("onConversationBegin")]
+	[SerializeField]
+	private ConversationBeginEvent onConversationBegin = new ConversationBeginEvent();
+	//--------------------------------------------------------------------------------
 
 	//Event for when conversation finishes -------------------------------------------
 	[System.Serializable]
@@ -49,6 +55,8 @@ public class DialogueManagerAlternate : MonoBehaviour {
 	[SerializeField]
 	private ConversationEndEvent onConversationEnd = new ConversationEndEvent();
 	//--------------------------------------------------------------------------------
+
+	
 
 
 
@@ -87,6 +95,9 @@ public class DialogueManagerAlternate : MonoBehaviour {
 	//Used for buttons as well
 	public void BeginConversation(Conversation converse)
 	{
+		//Invoke onConversationBegin events
+		onConversationBegin.Invoke();
+
 		dialogueCanvas.SetActive(true);
 		actor.gameObject.SetActive(true);
 
