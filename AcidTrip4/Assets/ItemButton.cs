@@ -8,29 +8,37 @@ public class ItemButton : MonoBehaviour
     public Animator buttonAnimator;
     private static bool exploded = false;
     private bool done = false;
+
+
+    //No longer used
     void Start()
     {
+        /*
         if(exploded && !done){
             buttonAnimator.SetTrigger("Disappear");
             done = true;
         }
+        */
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         if(exploded && !done){
             buttonAnimator.SetTrigger("Disappear");
-            done = true;
+            //done = true;
         }
+        */
     }
 
     public void explode()
     {
         
         buttonAnimator.SetTrigger("Explode");
-        exploded = true;
-        done = true;
+        //exploded = true;
+        //done = true;
+        
         
     }
 
