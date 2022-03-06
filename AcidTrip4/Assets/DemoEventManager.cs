@@ -13,6 +13,7 @@ public class DemoEventManager : MonoBehaviour
     public delegate void BattleState();
     public static event BattleState OnBattleStart;
     public static event BattleState OnBattleEnd;
+    public string nextScene = "";
 
      
 
@@ -46,7 +47,10 @@ public class DemoEventManager : MonoBehaviour
         }
         */
         AudioManager.instance.Stop("garfield");
-        SceneManager.LoadScene(2);
+        if(nextScene.Length>0)
+        {
+            SceneManager.LoadScene(nextScene);
+        }
         
     }
 

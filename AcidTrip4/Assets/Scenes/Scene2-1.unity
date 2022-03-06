@@ -666,6 +666,103 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &873903371
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 248.43529
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 127.5808
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1045.968
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528294958073, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_Name
+      value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: startFuncConversation
+      value: 
+      objectReference: {fileID: 69342438549201415}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1106681124}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: nextBattle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DemoEventManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676772529442151019, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047912231314444337, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
 --- !u!4 &1091814595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010438850584, guid: 114d7b3d899a90e428e027916c437635, type: 3}
@@ -700,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a8e027b58eb844fb45d9f7f5850698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Scene2-1
+  nextScene: Scene2-2
 --- !u!4 &1106681125
 Transform:
   m_ObjectHideFlags: 0
@@ -836,107 +933,6 @@ Transform:
   m_Father: {fileID: 358417177}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1684029605
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 248.43529
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 127.5808
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1045.968
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958070, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528294958073, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_Name
-      value: Dialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: startFuncConversation
-      value: 
-      objectReference: {fileID: 2984436191751420330}
-    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: conversation.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1106681124}
-    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: nextBattle
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DemoEventManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772528412124578, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676772529442151019, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9047912231314444337, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 84fe65c97024d834cb6ebd3108815b01, type: 3}
 --- !u!1001 &1900760418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1175,13 +1171,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
---- !u!114 &2984436191751420330
+--- !u!1 &69342438549201409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 69342438549201414}
+  - component: {fileID: 69342438549201415}
+  m_Layer: 0
+  m_Name: Conversation1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &69342438549201414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69342438549201409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 232.945, y: 109.449036, z: -7.3012857}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &69342438549201415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2984436191751420332}
+  m_GameObject: {fileID: 69342438549201409}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad66e816355f15647aeb93f1c4db3b56, type: 3}
@@ -1190,59 +1217,115 @@ MonoBehaviour:
   conversation:
   - name: 
     sentences:
-    - Shredder explodes, blasting the room with cheese
-  - name: Snail
-    sentences:
-    - Aww snail, I just cleaned this place.
-  - name: Statistician
-    sentences:
-    - 'The probability of cleaning this place is 69/420.
-
-'
+    - "The next day\u2026 \r\n"
   - name: Leon Bradley
     sentences:
-    - 'All right everybody, who can come up with the best cheese puns.
-
-'
-    - 'All right everybody, who can come up with the best cheese puns.
-
-'
-  - name: Statistician and Snail
+    - "So what\u2019s the plan for today? Should we head out and look for Mans Undersnail?"
+  - name: Snail
     sentences:
-    - I cant
+    - Who?
+  - name: Leon Bradley
+    sentences:
+    - "The necromancer who summoned that cheese we fought yesterday. If we don\u2019t
+      stop him, his reign of terror will continue"
+  - name: Snail
+    sentences:
+    - "Nah, let\u2019s just stay at this house, it\u2019s too much work to draw another
+      backgrou- I mean\u2026 let\u2019s just wait here and see what happens next."
+  - name: Leon Bradley
+    sentences:
+    - Ok, cool, cool
+  - name: Everyone
+    sentences:
+    - ...
   - name: 
     sentences:
-    - 'The three keep making cheese puns and bond as a group.
+    - Later that day
+  - name: Everyone
+    sentences:
+    - ...
+  - name: Statistician
+    sentences:
+    - Hey you guys wanna learn something cool?
+  - name: Snail
+    sentences:
+    - Sure
+  - name: Leon Bradley
+    sentences:
+    - Let's hear it
+  - name: Statistician
+    sentences:
+    - "Alright, it\u2019s time for Statisticians\u2019 epic and mathemagical\u2026
+      History class!!!"
+  - name: Snail
+    sentences:
+    - ...Huh?
+  - name: Statistician
+    sentences:
+    - Statistics was first coined when the scientist Albert Snailstein wanted to
+      calculate the chances of him getting an Acid Trip after eating an enormous
+      and unhealthy amount of cheese.
+    - "It was with this study that he developed his famous equation. E=MC^2, with
+      E of course being \u2018Ecstacy\u2019 and MC meaning \u2018Mac and Cheese\u2019,
+      obviously."
+    - "You see, it\u2019s thanks to his influential work that mathematicians today
+      are able to\u2026"
+  - name: 
+    sentences:
+    - 'As Statistician began giving a long and detailed description of the history
+      of statistics, a strange, Conche-like creature bursts through the door
 
 '
---- !u!4 &2984436191751420331
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2984436191751420332}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 232.945, y: 109.449036, z: -7.3012857}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2984436191751420332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2984436191751420331}
-  - component: {fileID: 2984436191751420330}
-  m_Layer: 0
-  m_Name: Conversation1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  - name: Conche
+    sentences:
+    - "What is up guys! (Looking at camera/phone) Today, we\u2019re gonna be filming
+      some ASMR at this cool house that I just found!"
+  - name: Snail
+    sentences:
+    - "*Under his breathe* \u201COh thank god something interesting happened"
+  - name: Leon Bradley
+    sentences:
+    - Who the shell are you?
+  - name: Conche
+    sentences:
+    - Only the biggest ASMR streamer west of Two Faced Tower!
+  - name: Leon Bradley
+    sentences:
+    - Really, never heard of you before
+  - name: Conche
+    sentences:
+    - You kiddin? The people love my content, just look at my like to dislike ratio!
+      100:0!
+  - name: Statistician
+    sentences:
+    - That is indeed a praiseworthy ratio
+  - name: Snail
+    sentences:
+    - "Wait, but didn\u2019t snailtube remove-"
+  - name: Conche
+    sentences:
+    - The people love me! So, anyway can I use this place for my stream?
+  - name: Snail
+    sentences:
+    - For real dude? Kinda rude to just bust into our place without warning.
+  - name: Leon Bradley
+    sentences:
+    - "Yeah, plus we\u2019re kinda in the middle of something important here. You
+      ever heard of Man Undersnail? We\u2019ve got some beef to settle with him\u2026"
+  - name: Statistician
+    sentences:
+    - "You\u2019ve got no idea about the atrocities he\u2019s committed\u2026"
+    - "By my calculations, his malevolent influence will plunge the world into despair
+      in mere days if we don\u2019t stop him!"
+  - name: Conche
+    sentences:
+    - ...So anyway, can I use this place for my stream?
+  - name: Everyone
+    sentences:
+    - ...
+  - name: Conche
+    sentences:
+    - ...
+  - name: Snail
+    sentences:
+    - "...Let\u2019s just fight"
