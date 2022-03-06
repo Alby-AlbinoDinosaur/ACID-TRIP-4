@@ -9,7 +9,7 @@ public class LoadDemo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioManager.instance.Play("title");
     }
 
     // Update is called once per frame
@@ -20,6 +20,15 @@ public class LoadDemo : MonoBehaviour
 
     public void loadScene(int sceneNo)
     {
+        
+        //SceneManager.LoadScene(sceneNo);
+        StartCoroutine(transition(sceneNo));
+    }
+
+    IEnumerator transition(int sceneNo){
+
+        yield return new WaitForSeconds(1.1f);
+        AudioManager.instance.Stop("title");
         SceneManager.LoadScene(sceneNo);
     }
 }
