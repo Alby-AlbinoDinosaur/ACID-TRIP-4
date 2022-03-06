@@ -103,10 +103,14 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 		animator.SetBool("IsOpen", true);
 
-		nameText.text = dialogue.name;
-		actor.SetTrigger(dialogue.name);
-
+		
+		
+		setName(dialogue.name);
 		showSprite(dialogue.name);
+		if(dialogue.name.Length > 0){
+			
+			actor.SetTrigger(dialogue.name);
+		}
 
 		
 
@@ -213,6 +217,39 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 		}
 
+	}
+
+	private void setName(string name){
+		switch (name)
+		{
+			case "Snail Sad":
+				nameText.text = "Snail";
+				break;
+			case "Snail Down":
+				nameText.text = "Snail";
+				break;
+			case "Snail Think":
+				nameText.text = "Snail";
+				break;
+
+			case "Mans1":
+				nameText.text = "Mans Undersnail";
+				break;
+			case "Mans2":
+				nameText.text = "Mans Undersnail";
+				break;
+			case "Mans3":
+				nameText.text = "Mans Undersnail";
+				break;
+			case "Mans4":
+				nameText.text = "Mans Undersnail";
+				break;
+			default:
+				nameText.text = name;
+				break;
+		}
+
+		
 	}
 
 	private IEnumerator EndDialogueCoroutine()
