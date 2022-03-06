@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 123334200}
   - component: {fileID: 123334199}
   - component: {fileID: 123334198}
+  - component: {fileID: 123334201}
   m_Layer: 5
   m_Name: Turn Order Button
   m_TagString: Untagged
@@ -266,18 +267,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 494405932}
-        m_TargetAssemblyTypeName: BattleDialogueManager, Assembly-CSharp
-        m_MethodName: WriteLine
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 'Turn 1 -> Turn 2 -> ... -> Turn n-1 -> Turn n '
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1209067742}
         m_TargetAssemblyTypeName: ButtonSoundEvents, Assembly-CSharp
         m_MethodName: Play
@@ -288,6 +277,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: menu_select
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123334201}
+        m_TargetAssemblyTypeName: clockbutton, Assembly-CSharp
+        m_MethodName: displayTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &123334199
@@ -328,6 +329,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123334196}
   m_CullTransparentMesh: 1
+--- !u!114 &123334201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123334196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690e9e1b2f381854098d13d5ef2e3066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleDialogueManager: {fileID: 494405932}
+  hour: 0
+  minute: 0
 --- !u!1 &245800220
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +524,8 @@ MonoBehaviour:
   power_points: 30
   name: Leon Bradley
   max_health: 0
+  currentBattle: 0
+  isCheesed: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
@@ -4131,6 +4149,8 @@ MonoBehaviour:
   power_points: 50
   name: Statistician
   max_health: 0
+  currentBattle: 0
+  isCheesed: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
@@ -5004,6 +5024,8 @@ MonoBehaviour:
   power_points: 20
   name: Snail
   max_health: 0
+  currentBattle: 0
+  isCheesed: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1

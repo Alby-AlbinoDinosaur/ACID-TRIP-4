@@ -22,6 +22,8 @@ public class BattleManager : MonoBehaviour
     public Button fleeButton;
     public Button turnOrderButton;
 
+    public int currentBattle;
+
 
     public bool pauseBattle = false;
 
