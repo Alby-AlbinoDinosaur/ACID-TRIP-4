@@ -26,6 +26,7 @@ public class PlayerGUI : MonoBehaviour
     public Animator plateAnimator;
     public Animator faceAnimator;
     public Animator statusAnimator;
+    public GameObject descriptorMenu;
 
     private int maxHp = 0;
     private int maxPpl = 0;
@@ -58,7 +59,7 @@ public class PlayerGUI : MonoBehaviour
     {
         plateAnimator.SetTrigger("Finished");
         plateButton.interactable = true;
-
+        descriptorMenu.SetActive(false);
         attackButton.interactable = true;
         itemsButton.interactable = true;
         abilitiesButton.interactable = true;
