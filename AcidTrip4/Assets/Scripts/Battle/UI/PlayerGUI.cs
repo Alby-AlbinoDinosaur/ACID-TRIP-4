@@ -58,7 +58,7 @@ public class PlayerGUI : MonoBehaviour
     void finishSelection()
     {
         plateAnimator.SetTrigger("Finished");
-        plateButton.interactable = true;
+        if (!playerEntity.IsDefeated()) { plateButton.interactable = true; }
         descriptorMenu.SetActive(false);
         attackButton.interactable = true;
         itemsButton.interactable = true;
@@ -172,12 +172,11 @@ public class PlayerGUI : MonoBehaviour
         {
             ppBar.fillAmount = (float)playerEntity.power_points/maxPp;
         }
-
         updateText();
 
-        
+        if (playerEntity.IsDefeated()) { plateButton.interactable = false; }
         //nextText.text = "1";
-        
+
     }
     void updateText()
     {

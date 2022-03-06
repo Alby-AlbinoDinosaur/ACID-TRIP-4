@@ -237,7 +237,8 @@ public class BattleManager : MonoBehaviour
 
         foreach (Entity player in playerMover.playerList)
         {
-            player.GetComponentInChildren<Button>().interactable = b;
+            if (!player.IsDefeated())
+            { player.GetComponentInChildren<Button>().interactable = b; }
         }
     }
 
