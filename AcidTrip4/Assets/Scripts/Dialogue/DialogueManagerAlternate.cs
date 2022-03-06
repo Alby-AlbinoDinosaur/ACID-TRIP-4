@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using UnityEngine.SceneManagement;
 /*
 Dialogue Manager displays text on screen after being given a list of dialog from BeginConversation(Dialogue dialogue)
 Requires 2 text objests to display text and an animator for the text box
@@ -36,6 +37,8 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 	public GameObject dialogueCanvas; //The canvas in which the dialogue is held
 	public FadeImage fadeImage;   //The image that will fade into background of the dialogue canvas (manual dialogue)
+
+	
 
 
 	//Event for when conversation finishes -------------------------------------------
@@ -170,6 +173,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 			StartCoroutine(EndDialogueCoroutine());
 
+
 		}
 	}
 	
@@ -195,6 +199,11 @@ public class DialogueManagerAlternate : MonoBehaviour {
 			case "Mans Undersnail":
 				
 				nameText.color = new Color32(0,161,231,255);
+				break;
+			case "Mysterious Shadowy Figure":
+				
+				nameText.color = new Color32(69,61,81,255);
+				fadeImage.FadeToBlack(true);
 				break;
 
 			case "Shredder":
@@ -244,6 +253,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 			case "Mans4":
 				nameText.text = "Mans Undersnail";
 				break;
+			
 			default:
 				nameText.text = name;
 				break;
