@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DemoEventManager : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class DemoEventManager : MonoBehaviour
     public static event BattleState OnBattleStart;
     public static event BattleState OnBattleEnd;
     public string nextScene = "";
+    public FadeImage fade;
+    public bool isBattleNext = false;
+    public bool isBattleBefore = false;
 
      
 
@@ -26,7 +30,14 @@ public class DemoEventManager : MonoBehaviour
     void Start()
     {
         OnDialogueEnd += nextBattle;
-        AudioManager.instance.Play("garfield");
+        AudioManager.instance.Play("field_theme");
+        if(isBattleBefore){
+            Image fadeImage = fade.GetComponent(typeof(Image)) as Image;
+            fadeImage.color = new Color32(178,142,217,0);
+        }
+        if(fade){
+            fade.FadeToBlack(false);
+        }
     }
     public void nextDialogue()
     {
@@ -46,12 +57,40 @@ public class DemoEventManager : MonoBehaviour
             OnBattleStart();
         }
         */
-        AudioManager.instance.Stop("garfield");
+        
         if(nextScene.Length>0)
         {
-            SceneManager.LoadScene(nextScene);
+            if(fade)
+            {
+                if(isBattleNext){
+                    
+                    Image fadeImage = fade.GetComponent(typeof(Image)) as Image;
+                    fadeImage.color = new Color32(178,142,217,0);
+                    
+                    
+                }
+                else{
+                    Image fadeImage = fade.GetComponent(typeof(Image)) as Image;
+                    fadeImage.color = new Color32(0,0,0,0);
+                }
+                fade.FadeToBlack(true);
+                StartCoroutine(transition());
+            }
+            else
+            {
+                AudioManager.instance.Stop("field_theme");
+                SceneManager.LoadScene(nextScene);
+            }
         }
         
+    }
+
+    IEnumerator transition(){
+
+        yield return new WaitForSeconds(1.1f);
+        AudioManager.instance.Stop("field_theme");
+        
+        SceneManager.LoadScene(nextScene);
     }
 
     
