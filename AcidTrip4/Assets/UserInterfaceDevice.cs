@@ -135,6 +135,11 @@ public class UserInterfaceDevice : MonoBehaviour
 
     }
 
+    public GameObject GetLastSelected()
+    {
+        return selectedObj;
+    }
+
 }
 
 
