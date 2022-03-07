@@ -163,7 +163,7 @@ public class Leon_Char : Entity
         }
 
         healTarget = target;
-        healTarget.health_stat = Mathf.Min(target.health_stat + this.ability_stat, target.max_health);
+        healTarget.health_stat = Mathf.Min(target.health_stat + this.ability_stat * 2, target.max_health);
 
     }
 

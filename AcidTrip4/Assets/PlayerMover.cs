@@ -128,8 +128,9 @@ public class PlayerMover : MonoBehaviour
 
         foreach (Entity current in playerList)
         {
+            if (!current.IsDefeated())
             //put in place in battlemanager list
-            BattleManager.instance.AddEntity(current);
+            { BattleManager.instance.AddEntity(current); }
         }
 
 

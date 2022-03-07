@@ -44,7 +44,7 @@ public class enemyGUI : MonoBehaviour
 
     void enableSelector()
     {
-        selector.interactable = true;
+        if (!enemyEntity.IsDefeated()) { selector.interactable = true; }
     }
 
     void disableSelector()

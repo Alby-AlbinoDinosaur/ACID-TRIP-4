@@ -666,6 +666,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &900341762 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8558659933940124057, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+  m_PrefabInstance: {fileID: 8558659933178210715}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57ecb5e66d18de34aad948c30208e091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1091814595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010438850584, guid: 114d7b3d899a90e428e027916c437635, type: 3}
@@ -700,7 +711,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a8e027b58eb844fb45d9f7f5850698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Scene1-2
+  nextScene: Scene1-Battle
+  fade: {fileID: 900341762}
+  isBattleNext: 1
+  isBattleBefore: 0
+  startSong: 1
 --- !u!4 &1106681125
 Transform:
   m_ObjectHideFlags: 0
@@ -1223,13 +1238,13 @@ MonoBehaviour:
     - 'Crash! Leon Bradely, Statistician, and Shredder crashes in
 
 '
-  - name: Snail
+  - name: Snail Sad
     sentences:
     - "\u2026dirties the place up."
   - name: Leon Bradley
     sentences:
     - What the hell are you doing fool? Are you gonna help or not?
-  - name: Snail
+  - name: Snail Think
     sentences:
     - Who are you guys?
   - name: Leon Bradley
@@ -1298,3 +1313,100 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8558659933178210715
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8558659933350318816, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_Name
+      value: Basic Black Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa65c1479835cdc418a2949db7e895de, type: 3}

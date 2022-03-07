@@ -42,7 +42,11 @@ public class FadeImage : MonoBehaviour
             for (float i = 0; i <= fadeMaxAlpha; i += fadeSmooth)
             {
                 yield return new WaitForSeconds(fadeInterval);
-                fadeImage.color = new Color(0, 0, 0, i);
+                Color nextColor = new Color();
+                nextColor = fadeImage.color;
+                Debug.Log("i = " + i);
+                nextColor.a = i;
+                fadeImage.color = nextColor;
             }
         }
         else
@@ -51,7 +55,10 @@ public class FadeImage : MonoBehaviour
             for (float i = fadeMaxAlpha; i >= 0; i -= fadeSmooth)
             {
                 yield return new WaitForSeconds(fadeInterval);
-                fadeImage.color = new Color(0, 0, 0, i);
+                Color nextColor = new Color();
+                nextColor = fadeImage.color;
+                nextColor.a = i;
+                fadeImage.color = nextColor;
             }
         }
 

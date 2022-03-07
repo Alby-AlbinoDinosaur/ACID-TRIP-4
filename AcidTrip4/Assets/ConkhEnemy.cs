@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DemoCheeseEnemy : Entity
+public class ConkhEnemy : Entity
 {
 
+    private List<Entity> infectedTargets;
     private int scratchDamageDealt;
     public EnemyMover enemyMover;
     bool debugflag = false;
     // Start is called before the first frame update
     void Start()
     {   //Add each move to list
+        infectedTargets = new List<Entity>();
 
         base.initialize();
         base.moveExecuteList.Add(Scratch);
@@ -74,26 +76,24 @@ public class DemoCheeseEnemy : Entity
         if (base.power_points >= 5)
         {
             base.power_points -= 5;
+            infectedTargets.Add(target);
 
-            if (target.isCheesed) { return; }
-
-            target.isCheesed = true;
             endTurnEffect action = null; //= (Entity self) => { return "dummytext"; };
 
 
             action = (Entity self) =>
             {
-                int damage = this.ability_stat * Random.Range(0, 4);
+                int damage = this.ability_stat * Random.Range(-1, 4);
                 if (damage <= 0)
                 {
-                    self.isCheesed = false;
+                    this.infectedTargets.Remove(self);
                     return self.name + " no longer has the Cheese Touch.";
                 }
                 else
                 {
                     self.nextTurnEffects.Enqueue(action);
-                    self.health_stat -= (damage);
-                    return self.name + " takes " + (damage) + " from the Cheese Touch!";
+                    self.health_stat -= damage;
+                    return self.name + " takes " + damage + " from the Cheese Touch!";
                 }
 
             };
@@ -105,7 +105,7 @@ public class DemoCheeseEnemy : Entity
 
     private bool BiteTargets(Entity target)
     {
-        return (!target.isCheesed && this.power_points >= 5 && target != this);
+        return (target != this && !infectedTargets.Contains(target) && this.power_points >= 5);
     }
 
     private string BiteText(int context)
@@ -118,7 +118,7 @@ public class DemoCheeseEnemy : Entity
         }
         return "code should not ever get to here";
     }
-    
+
 
 
     public override void AutoChooseNextMove(List<Entity> playerList, List<Entity> enemyList)
@@ -132,14 +132,7 @@ public class DemoCheeseEnemy : Entity
 
 
             print("Enemy selected move");
-            int nextTarget = Random.Range(0, 3);
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
+            int nextTarget = Random.Range(0, 2);
 
             base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
             print("Enemy selected target");

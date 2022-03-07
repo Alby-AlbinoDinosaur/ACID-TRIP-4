@@ -93,6 +93,18 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: title
+    clip: {fileID: 8300000, guid: 9c1e3b5de2e9e594d955742b327a2732, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: field_theme
+    clip: {fileID: 8300000, guid: 6def14470e7e8f14c86d7862c5733716, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!114 &1209067742
 MonoBehaviour:
   m_ObjectHideFlags: 0

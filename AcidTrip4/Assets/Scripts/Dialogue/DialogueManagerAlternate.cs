@@ -119,8 +119,8 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 		
 		
-		setName(dialogue.name);
-		showSprite(dialogue.name);
+		string specialName = setName(dialogue.name);
+		showSprite(specialName);
 		if(dialogue.name.Length > 0){
 			
 			actor.SetTrigger(dialogue.name);
@@ -239,34 +239,42 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 	}
 
-	private void setName(string name){
+	private string setName(string name){
 		switch (name)
 		{
 			case "Snail Sad":
 				nameText.text = "Snail";
+				return "Snail";
 				break;
 			case "Snail Down":
 				nameText.text = "Snail";
+				return "Snail";
 				break;
 			case "Snail Think":
 				nameText.text = "Snail";
+				return "Snail";
 				break;
 
 			case "Mans1":
 				nameText.text = "Mans Undersnail";
+				return "Mans Undersnail";
 				break;
 			case "Mans2":
 				nameText.text = "Mans Undersnail";
+				return "Mans Undersnail";
 				break;
 			case "Mans3":
 				nameText.text = "Mans Undersnail";
+				return "Mans Undersnail";
 				break;
 			case "Mans4":
 				nameText.text = "Mans Undersnail";
+				return "Mans Undersnail";
 				break;
 			
 			default:
 				nameText.text = name;
+				return name;
 				break;
 		}
 

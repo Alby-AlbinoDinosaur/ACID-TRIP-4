@@ -12,17 +12,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene1-1.unity
     guid: 52299ad7720346343bfd90b3b09f2308
   - enabled: 1
+    path: Assets/Scenes/Scene1-Battle.unity
+    guid: 2eb9170c035b35944ad3f2e2c460519c
+  - enabled: 1
     path: Assets/Scenes/Scene1-2.unity
     guid: bc54dda2444ef4e4e8c73214e6f294b2
   - enabled: 1
     path: Assets/Scenes/Scene2-1.unity
     guid: cca8e760d19e78546bd6b08c2e30277e
   - enabled: 1
+    path: Assets/Scenes/Scene2-Battle.unity
+    guid: e605d3f24b332fb439919dcfb4e534fe
+  - enabled: 1
     path: Assets/Scenes/Scene2-2.unity
     guid: c0b35804a39cd0b43abace3e010b3f0d
   - enabled: 1
     path: Assets/Scenes/Scene3-1.unity
     guid: 606e029098840a74fa0a6b9244971691
+  - enabled: 1
+    path: Assets/Scenes/Scene3-Battle.unity
+    guid: 4dfe43d4cb06af942a9e321caddc9e61
   - enabled: 1
     path: Assets/Scenes/Scene3-2.unity
     guid: 5436440d3f1285d48ae822aca88ab11a

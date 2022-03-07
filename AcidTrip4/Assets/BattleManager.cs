@@ -22,6 +22,8 @@ public class BattleManager : MonoBehaviour
     public Button fleeButton;
     public Button turnOrderButton;
 
+    public int currentBattle = 0;
+
 
     public bool pauseBattle = false;
 
@@ -137,16 +139,21 @@ public class BattleManager : MonoBehaviour
                 // check if all players are dead and end battle
                 if (playerMover.isAllDefeated())
                 {
-                    print("you are dead");
+                    battleDialogue.WriteLine("You Lost!");
+                    yield return new WaitUntil(() => (Input.GetMouseButtonDown(0) ||
+                                                                             Input.GetButtonDown("Jump")) && !pauseBattle);
+                    battleDialogue.WriteLine("Battle is over.");
                     EndBattle();
-                    battleDialogue.WriteLine("You Lose!");
                 }
                 // check if all enemies are dead and end battle
                 else if (enemyMover.isAllDefeated())
                 {
                     //End battle
-                    EndBattle();
                     battleDialogue.WriteLine("You Win!");
+                    yield return new WaitUntil(() => (Input.GetMouseButtonDown(0) ||
+                                                                             Input.GetButtonDown("Jump")) && !pauseBattle);
+                    battleDialogue.WriteLine("Battle is over.");
+                    EndBattle();
                 }
                 else
                 {
@@ -223,9 +230,26 @@ public class BattleManager : MonoBehaviour
         // {
         //     DialougeTrigger.instance.
         //  }
-        print("Battle is over");
         pauseBattle = true;
-        battleDialogue.WriteLine("Battle is over.");
+        switch (currentBattle)
+        {
+            case 0:
+                //.stop();
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Scene1-2");
+                break;
+            case 2:
+                break;
+                //AudioManager.stop();
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Scene2-2");
+            case 3:
+                //AudioManager.stop();
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Scene3-2");
+                break;
+            default:
+                battleDialogue.WriteLine("ERR.NEXT_SCENE_MISSING");
+                break;
+
+        }
     }
 
     void SetMenuInteractivity(bool b)
@@ -237,7 +261,8 @@ public class BattleManager : MonoBehaviour
 
         foreach (Entity player in playerMover.playerList)
         {
-            player.GetComponentInChildren<Button>().interactable = b;
+            if (!player.IsDefeated())
+            { player.GetComponentInChildren<Button>().interactable = b; }
         }
     }
 

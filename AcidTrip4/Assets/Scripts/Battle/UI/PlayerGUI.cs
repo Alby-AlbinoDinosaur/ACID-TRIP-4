@@ -58,7 +58,7 @@ public class PlayerGUI : MonoBehaviour
     void finishSelection()
     {
         plateAnimator.SetTrigger("Finished");
-        plateButton.interactable = true;
+        if (!playerEntity.IsDefeated()) { plateButton.interactable = true; }
         descriptorMenu.SetActive(false);
         attackButton.interactable = true;
         itemsButton.interactable = true;
@@ -172,12 +172,11 @@ public class PlayerGUI : MonoBehaviour
         {
             ppBar.fillAmount = (float)playerEntity.power_points/maxPp;
         }
-
         updateText();
 
-        
+        if (playerEntity.IsDefeated()) { plateButton.interactable = false; }
         //nextText.text = "1";
-        
+
     }
     void updateText()
     {
@@ -197,9 +196,9 @@ public class PlayerGUI : MonoBehaviour
     void updateStatus()
     {
         
-        if(playerEntity.thisTurnEffects.Count > 0)
+        if(playerEntity.isCheesed)
         {
-            Debug.Log("AL CHEESED");
+            //Debug.Log("AL CHEESED");
 
             /* I tried to get this done, but the lambdas dont have enough info to differentiate status effects
             foreach(var effect in playerEntity.thisTurnEffects)
