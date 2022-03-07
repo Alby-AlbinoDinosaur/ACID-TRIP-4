@@ -909,6 +909,7 @@ MonoBehaviour:
   fade: {fileID: 214237840}
   isBattleNext: 0
   isBattleBefore: 1
+  startSong: 1
 --- !u!4 &1106681125
 Transform:
   m_ObjectHideFlags: 0
@@ -1333,3 +1334,93 @@ MonoBehaviour:
     sentences:
     - "Can we get this over with? I don\u2019t feel like hearing you monologue right
       now."
+  - name: Mans Undersnail
+    sentences:
+    - 'Ugh, fine. Sorry for stealing your chalk, Statistician. And sorry for killing
+      Papyrock, Bradley.
+
+'
+  - name: Statistician
+    sentences:
+    - 'YOU THINK ALL IT TAKES TO SUBSIDE MY ANGER IS AN APOLOGY?
+
+'
+    - "Because the chances of that happening are 95.5%. Luckily, this ain\u2019t
+      the other 4.5%.\r\n"
+    - "Just buy me some new A5 Wagyu chalk. I suspect that with the 15% inflation
+      of the Acid dollar\u2026\r\n"
+  - name: Leon Bradley
+    sentences:
+    - "Sorry, but an apology can\u2019t bring back Papyrock from the dead. Nothing
+      can.\r\n"
+  - name: Mans Undersnail
+    sentences:
+    - 'Yeah, I know. But I can at least fund your painting career to the best of
+      my abilities.
+
+'
+    - 'Breathe new life for ending a life, you know?
+
+'
+  - name: Leon Bradley
+    sentences:
+    - "That doesn\u2019t really ease the pain of losing a pet, but at least it\u2019s
+      more than an apology.\r\n"
+    - "Sure, why not. Besides, I think Snail\u2019s losing his patience here.\r\n"
+  - name: Snail
+    sentences:
+    - "I am. Since everything seems to be fixed between y\u2019all, how about getting
+      out of my house now?\r\n"
+  - name: Mans Undersnail
+    sentences:
+    - "Yeah, I\u2019ll do that. Sorry. I\u2019m taking Conche ASMR still.\r\n"
+  - name: Snail
+    sentences:
+    - "I don\u2019t care, as long as he\u2019s out of my house.\r\n"
+  - name: 
+    sentences:
+    - '[Undersnail and Conche leave]
+
+'
+  - name: Snail Think
+    sentences:
+    - "You know, I\u2019m surprised nobody cared about the fact that Undersnail\u2019s
+      resurrecting dead bodies.\r\n"
+  - name: Leon Bradley
+    sentences:
+    - "Eh. Dead bodies aren\u2019t as impactful as they used to be around these parts.\r\n"
+  - name: Statistician
+    sentences:
+    - "That\u2019s just a clever move on his part. He gets free labor for eternity!\r\n"
+  - name: Snail Think
+    sentences:
+    - I guess
+  - name: 
+    sentences:
+    - '[Suddenly, Coco gets up! He never turned into cheese!]'
+  - name: Coco the cowboy/cop
+    sentences:
+    - "Wait a minute? YOU GUYS DIDN\u2019T ARREST THEM?\r\n"
+  - name: Snail
+    sentences:
+    - Oh yeah, I forgot about that.
+  - name: Coco the cowboy/cop
+    sentences:
+    - Oh come on! GET BACK HERE, YOU CRIMINALS!
+  - name: 
+    sentences:
+    - '[Coco runs off screen]'
+  - name: Leon Bradley
+    sentences:
+    - 'Hmm, these fights have inspired me to make a new painting!
+
+'
+  - name: Statistician
+    sentences:
+    - "Oh! What\u2019s it gonna be called? I bet there\u2019s a 50% chance it\u2019ll
+      be called \u201CThe Snailing\u201D!\r\n"
+  - name: Leon Bradley
+    sentences:
+    - " Sorry friend, it ain\u2019t called that. I got another name for this one.
+      It\u2019ll be called\u2026\r\n"
+    - The Ballad of Leon Bradley.
