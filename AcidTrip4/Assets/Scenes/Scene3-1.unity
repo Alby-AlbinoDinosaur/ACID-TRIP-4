@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a8e027b58eb844fb45d9f7f5850698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Scene3-2
+  nextScene: Scene3-Battle
   fade: {fileID: 1716547436}
   isBattleNext: 1
   isBattleBefore: 0

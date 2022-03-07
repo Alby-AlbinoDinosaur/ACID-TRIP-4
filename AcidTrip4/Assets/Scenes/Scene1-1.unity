@@ -711,10 +711,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a8e027b58eb844fb45d9f7f5850698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Scene1-2
+  nextScene: Scene1-Battle
   fade: {fileID: 900341762}
   isBattleNext: 1
   isBattleBefore: 0
+  startSong: 1
 --- !u!4 &1106681125
 Transform:
   m_ObjectHideFlags: 0
@@ -1237,13 +1238,13 @@ MonoBehaviour:
     - 'Crash! Leon Bradely, Statistician, and Shredder crashes in
 
 '
-  - name: Snail
+  - name: Snail Sad
     sentences:
     - "\u2026dirties the place up."
   - name: Leon Bradley
     sentences:
     - What the hell are you doing fool? Are you gonna help or not?
-  - name: Snail
+  - name: Snail Think
     sentences:
     - Who are you guys?
   - name: Leon Bradley
