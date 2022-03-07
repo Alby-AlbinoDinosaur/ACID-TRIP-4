@@ -1829,7 +1829,7 @@ MonoBehaviour:
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 799159327}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 1415196786}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
@@ -2011,6 +2011,8 @@ MonoBehaviour:
   power_points: 30
   name: Leon Bradley
   max_health: 0
+  currentBattle: 0
+  isCheesed: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
@@ -2971,6 +2973,7 @@ MonoBehaviour:
   menuButton: {fileID: 422312598}
   fleeButton: {fileID: 1558429500}
   turnOrderButton: {fileID: 123334198}
+  currentBattle: 0
   pauseBattle: 0
 --- !u!4 &563079676
 Transform:
@@ -8054,6 +8057,8 @@ MonoBehaviour:
   power_points: 50
   name: Statistician
   max_health: 0
+  currentBattle: 0
+  isCheesed: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
@@ -8107,7 +8112,7 @@ MonoBehaviour:
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 834116461}
+    m_SelectOnRight: {fileID: 389419115}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -9491,6 +9496,8 @@ MonoBehaviour:
   power_points: 20
   name: Snail
   max_health: 0
+  currentBattle: 0
+  isCheesed: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
@@ -16877,18 +16884,6 @@ MonoBehaviour:
           m_StringArgument: menu_select
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1149130969}
-        m_TargetAssemblyTypeName: UserInterfaceDevice, Assembly-CSharp
-        m_MethodName: SetEntitySelected
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 724906722}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -16956,6 +16951,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1149130969}
+        m_TargetAssemblyTypeName: UserInterfaceDevice, Assembly-CSharp
+        m_MethodName: SetSelectedUI
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1415196785}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
