@@ -18,6 +18,7 @@ public class DemoEventManager : MonoBehaviour
     public FadeImage fade;
     public bool isBattleNext = false;
     public bool isBattleBefore = false;
+    public bool startSong = true;
 
      
 
@@ -30,7 +31,10 @@ public class DemoEventManager : MonoBehaviour
     void Start()
     {
         OnDialogueEnd += nextBattle;
-        AudioManager.instance.Play("field_theme");
+        if(startSong)
+        {
+            AudioManager.instance.Play("field_theme");
+        }
         if(isBattleBefore){
             Image fadeImage = fade.GetComponent(typeof(Image)) as Image;
             fadeImage.color = new Color32(178,142,217,0);
@@ -88,8 +92,10 @@ public class DemoEventManager : MonoBehaviour
     IEnumerator transition(){
 
         yield return new WaitForSeconds(1.1f);
-        AudioManager.instance.Stop("field_theme");
-        
+        if(isBattleNext)
+        {
+            AudioManager.instance.Stop("field_theme");
+        }
         SceneManager.LoadScene(nextScene);
     }
 

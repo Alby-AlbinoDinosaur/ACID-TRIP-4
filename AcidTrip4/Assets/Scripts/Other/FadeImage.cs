@@ -44,6 +44,7 @@ public class FadeImage : MonoBehaviour
                 yield return new WaitForSeconds(fadeInterval);
                 Color nextColor = new Color();
                 nextColor = fadeImage.color;
+                Debug.Log("i = " + i);
                 nextColor.a = i;
                 fadeImage.color = nextColor;
             }
