@@ -87,7 +87,7 @@ public class DemoCheeseEnemy : Entity
                 if (damage <= 0)
                 {
                     self.isCheesed = false;
-                    return self.name + " no longer has the Cheese Touch.";
+                    return "The cheese touch wears off on "+ self.name + ".";
                 }
                 else
                 {

@@ -14,6 +14,7 @@ public abstract class Entity : MonoBehaviour
     public int power_points = 0;
     public string name = "uh oh, we forgot to name this one";
     public int max_health;
+    public int max_pp;
 
     public int currentBattle = 0;
     public bool isCheesed = false;
@@ -85,6 +86,7 @@ public abstract class Entity : MonoBehaviour
         thisTurnEffects = new Queue<endTurnEffect>(); 
         nextTurnEffects = new Queue<endTurnEffect>();
         max_health = health_stat;
+        max_pp = power_points;
     }
     
 

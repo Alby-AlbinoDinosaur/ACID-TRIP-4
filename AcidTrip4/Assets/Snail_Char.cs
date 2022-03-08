@@ -83,6 +83,7 @@ public class Snail_Char : Entity
     //Defend --------------------------------------------------------------------------------
     private void Defend(Entity target)
     {
+        base.power_points = Mathf.Min(this.power_points + 3, this.max_pp);
         target.defense_stat += 20;
         target.beforeMoveEffects.Enqueue((Entity self) =>
         {
@@ -140,9 +141,17 @@ public class Snail_Char : Entity
     private void Ability_2(Entity target)
     {
         base.power_points -= 5;
-        int damage = Mathf.Max((int)(((float)base.defense_stat * 0.75f)* (float)(100-target.spdefense_stat)/100f), 0);
+        int damage = Mathf.Max((int)(((float)base.defense_stat * 1.5f)* (float)(100-target.spdefense_stat)/100f), 0);
+        this.defense_stat -= 60;
+        this.spdefense_stat -= 10;
         // Calculate damage however here
         target.health_stat -= damage;
+        this.thisTurnEffects.Enqueue((Entity self) =>
+        {
+            self.defense_stat += 60;
+            self.spdefense_stat += 10;
+            return self.name + " puts his shell back on.";
+        });
     }
 
     private bool Ability_2_Targets(Entity target)
@@ -156,7 +165,7 @@ public class Snail_Char : Entity
         {
             case 0: return "Shell Bash";
             case 1: return "5 PP: attacks with defense stat.";
-            case 2: return base.name + " bonks " + base.selectedTarget.name + "!";
+            case 2: return base.name + " bonks " + base.selectedTarget.name + " with his shell!";
         }
         return "uh oh move broke";
     }

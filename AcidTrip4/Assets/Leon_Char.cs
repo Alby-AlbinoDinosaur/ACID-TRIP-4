@@ -84,6 +84,7 @@ public class Leon_Char : Entity
     //Defend --------------------------------------------------------------------------------
     private void Defend(Entity target)
     {
+        base.power_points = Mathf.Min(this.power_points + 3, this.max_pp);
         base.defense_stat += 20;
         target.beforeMoveEffects.Enqueue((Entity self) =>
         {
@@ -163,7 +164,8 @@ public class Leon_Char : Entity
         }
 
         healTarget = target;
-        healTarget.health_stat = Mathf.Min(target.health_stat + this.ability_stat * 2, target.max_health);
+        int healAmount = Random.Range(1, 4);
+        healTarget.health_stat = Mathf.Min(target.health_stat + this.ability_stat * healAmount, target.max_health);
 
     }
 

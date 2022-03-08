@@ -81,6 +81,7 @@ public class Stat_Char : Entity
     //Defend --------------------------------------------------------------------------------
     private void Defend(Entity target)
     {
+        base.power_points = Mathf.Min(this.power_points + 3, this.max_pp);
         target.defense_stat += 20;
         target.beforeMoveEffects.Enqueue((Entity self) =>
         {
