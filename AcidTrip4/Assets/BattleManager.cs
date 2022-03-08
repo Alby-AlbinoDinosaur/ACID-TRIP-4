@@ -235,14 +235,20 @@ public class BattleManager : MonoBehaviour
         {
             case 0:
                 //.stop();
+                AudioManager.instance.Stop("battle_music_1");
+                AudioManager.instance.Stop("beatsong");
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Scene1-2");
                 break;
             case 2:
                 break;
                 //AudioManager.stop();
+                AudioManager.instance.Stop("battle_music_1");
+                AudioManager.instance.Stop("beatsong");
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Scene2-2");
             case 3:
                 //AudioManager.stop();
+                AudioManager.instance.Stop("battle_music_1");
+                AudioManager.instance.Stop("beatsong");
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Scene3-2");
                 break;
             default:
