@@ -105,6 +105,30 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: fbi
+    clip: {fileID: 8300000, guid: bfbef7d52a78b594e945bf9bc1480288, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: screech
+    clip: {fileID: 8300000, guid: 1bb21eaf6a2d0464999dc8b3d39b3d7c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: siren
+    clip: {fileID: 8300000, guid: 8d0c368cf32a8484e88ad224f4b4622b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: credits
+    clip: {fileID: 8300000, guid: 321b0a083e5ba494bb6e74380823eb2a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!114 &1209067742
 MonoBehaviour:
   m_ObjectHideFlags: 0

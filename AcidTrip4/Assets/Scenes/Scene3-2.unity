@@ -250,6 +250,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8558659933940124056, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933940124057, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: fadeOnStart
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
 --- !u!114 &214237840 stripped
@@ -905,9 +913,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a8e027b58eb844fb45d9f7f5850698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Title
+  nextScene: Credits
   fade: {fileID: 214237840}
-  isBattleNext: 0
+  isBattleNext: 1
   isBattleBefore: 1
   startSong: 1
 --- !u!4 &1106681125

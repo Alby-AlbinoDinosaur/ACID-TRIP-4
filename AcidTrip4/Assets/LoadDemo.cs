@@ -18,17 +18,17 @@ public class LoadDemo : MonoBehaviour
         
     }
 
-    public void loadScene(int sceneNo)
+    public void loadScene(string scene)
     {
         
         //SceneManager.LoadScene(sceneNo);
-        StartCoroutine(transition(sceneNo));
+        StartCoroutine(transition(scene));
     }
 
-    IEnumerator transition(int sceneNo){
+    IEnumerator transition(string scene){
 
         yield return new WaitForSeconds(1.1f);
         AudioManager.instance.Stop("title");
-        SceneManager.LoadScene(sceneNo);
+        SceneManager.LoadScene(scene);
     }
 }

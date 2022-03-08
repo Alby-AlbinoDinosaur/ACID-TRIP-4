@@ -40,7 +40,7 @@ public class DemoEventManager : MonoBehaviour
             fadeImage.color = new Color32(178,142,217,0);
         }
         if(fade){
-            fade.FadeToBlack(false);
+            //fade.FadeToBlack(false);
         }
     }
     public void nextDialogue()

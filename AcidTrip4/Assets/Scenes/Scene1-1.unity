@@ -1188,6 +1188,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+      propertyPath: sounds.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+      propertyPath: sounds.Array.data[13].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8d0c368cf32a8484e88ad224f4b4622b, type: 3}
+    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+      propertyPath: sounds.Array.data[13].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+      propertyPath: sounds.Array.data[13].name
+      value: siren
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+      propertyPath: sounds.Array.data[13].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123648911067391815, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
+      propertyPath: sounds.Array.data[13].volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 488478aac3e3c964a803cecd3f8a11b6, type: 3}
 --- !u!1 &2984436190613703570
@@ -1233,6 +1257,8 @@ MonoBehaviour:
     sentences:
     - "Finally, I\u2019m done cleaning my house. Let\u2019s hope nothing random happens
       and -\r"
+  - name: playsound explosion
+    sentences: []
   - name: 
     sentences:
     - 'Crash! Leon Bradely, Statistician, and Shredder crashes in
@@ -1407,6 +1433,14 @@ PrefabInstance:
     - target: {fileID: 8558659933350318820, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933940124056, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933940124057, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: fadeOnStart
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa65c1479835cdc418a2949db7e895de, type: 3}

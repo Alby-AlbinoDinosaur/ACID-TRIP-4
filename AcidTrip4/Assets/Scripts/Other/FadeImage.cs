@@ -52,7 +52,9 @@ public class FadeImage : MonoBehaviour
         if (b)
         {
             //fade screen to black
-            fadeImage.enabled = true;
+            if(!fadeImage.enabled){
+                fadeImage.enabled = true;
+            }
             for (float i = 0; i <= fadeMaxAlpha; i += fadeSmooth)
             {
                 yield return new WaitForSeconds(fadeInterval);
@@ -70,7 +72,9 @@ public class FadeImage : MonoBehaviour
         else
         {
             //fade in screen
-            fadeImage.enabled = true;
+            if(!fadeImage.enabled){
+                fadeImage.enabled = true;
+            }
             for (float i = fadeMaxAlpha; i >= 0; i -= fadeSmooth)
             {
                 yield return new WaitForSeconds(fadeInterval);

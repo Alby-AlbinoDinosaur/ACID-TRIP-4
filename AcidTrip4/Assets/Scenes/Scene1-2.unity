@@ -825,6 +825,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8558659933940124056, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558659933940124057, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: fadeOnStart
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
 --- !u!1 &1160148116
@@ -1300,6 +1308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversation:
+  - name: playsound explosion
+    sentences: []
   - name: 
     sentences:
     - Shredder explodes, blasting the room with cheese

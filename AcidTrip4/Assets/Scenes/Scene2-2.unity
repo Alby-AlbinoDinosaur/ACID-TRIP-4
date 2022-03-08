@@ -678,6 +678,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8558659933940124056, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa65c1479835cdc418a2949db7e895de, type: 3}
 --- !u!114 &367537423 stripped
@@ -1339,13 +1343,19 @@ MonoBehaviour:
     sentences:
     - Huff huff, you may have defeated me, but I will stop at nothing to give my
       followers the content they-
+  - name: playsound siren
+    sentences: []
   - name: 
     sentences:
     - Police sirens, door bursts open again
+  - name: playsound fbi
+    sentences: []
   - name: Coco the cowboy/cop
     sentences:
     - "Freeze, punk! This is the fourth time we\u2019ve gotten a report about you
       and your streaming garbage! We\u2019re takin\u2019 you in!"
+  - name: playsound screech
+    sentences: []
   - name: Conche
     sentences:
     - '*Unholy screech*'
