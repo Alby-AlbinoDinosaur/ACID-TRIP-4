@@ -4154,6 +4154,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
       value: Play
       objectReference: {fileID: 0}
+    - target: {fileID: 4250177557538215129, guid: 4841cd8e1ce0651438a40f92a6bccc91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_StringArgument
+      value: blip
+      objectReference: {fileID: 0}
     - target: {fileID: 5810141215975592521, guid: 4841cd8e1ce0651438a40f92a6bccc91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
