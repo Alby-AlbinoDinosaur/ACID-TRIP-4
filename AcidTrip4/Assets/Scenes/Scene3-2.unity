@@ -1330,7 +1330,7 @@ MonoBehaviour:
   - name: Mans Undersnail
     sentences:
     - "No\u2026 My dreams! My ASMR supply! My-"
-  - name: Snail
+  - name: Snail Buff
     sentences:
     - "Can we get this over with? I don\u2019t feel like hearing you monologue right
       now."
@@ -1367,14 +1367,14 @@ MonoBehaviour:
     - "That doesn\u2019t really ease the pain of losing a pet, but at least it\u2019s
       more than an apology.\r\n"
     - "Sure, why not. Besides, I think Snail\u2019s losing his patience here.\r\n"
-  - name: Snail
+  - name: Snail Buff
     sentences:
     - "I am. Since everything seems to be fixed between y\u2019all, how about getting
       out of my house now?\r\n"
   - name: Mans Undersnail
     sentences:
     - "Yeah, I\u2019ll do that. Sorry. I\u2019m taking Conche ASMR still.\r\n"
-  - name: Snail
+  - name: Snail Buff
     sentences:
     - "I don\u2019t care, as long as he\u2019s out of my house.\r\n"
   - name: 

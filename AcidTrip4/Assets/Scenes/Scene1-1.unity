@@ -1260,7 +1260,7 @@ MonoBehaviour:
     sentences:
     - That cheese monster over there is a Shredder. Undead cheese corpses brought
       back to life.
-  - name: Snail
+  - name: Snail Think
     sentences:
     - How did you know I was going to ask?
   - name: Statistician
@@ -1275,7 +1275,7 @@ MonoBehaviour:
   - name: Shredder
     sentences:
     - Shredder screeches and breaks some stuff
-  - name: Snail
+  - name: Snail Down
     sentences:
     - My house! But I just cleaned it.
   - name: Statistician
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   - name: Shredder
     sentences:
     - Screech!!!!
-  - name: Snail
+  - name: Snail Buff
     sentences:
     - All right, here we go!
 --- !u!4 &2984436190613703573

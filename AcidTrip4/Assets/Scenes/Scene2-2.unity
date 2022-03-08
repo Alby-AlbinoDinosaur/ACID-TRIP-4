@@ -917,6 +917,7 @@ MonoBehaviour:
   fade: {fileID: 367537423}
   isBattleNext: 0
   isBattleBefore: 1
+  startSong: 1
 --- !u!4 &1106681125
 Transform:
   m_ObjectHideFlags: 0
@@ -1370,4 +1371,4 @@ MonoBehaviour:
     sentences:
     - "*watching Conche\u2019s stream* \u201CDon\u2019t worry Conche! I\u2019m on
       my way!"
-    - "That accursed Snail! Him and \r\n"
+    - That accursed Snail will rue the day he decided to mess with MY favorite streamer!

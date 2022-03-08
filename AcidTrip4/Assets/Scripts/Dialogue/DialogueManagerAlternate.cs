@@ -217,6 +217,11 @@ public class DialogueManagerAlternate : MonoBehaviour {
 				fadeImage.FadeToBlack(true);
 				break;
 
+			case "Neck R.O. Manser":
+				nameText.color = new Color32(69,61,81,255);
+				fadeImage.FadeToBlack(true);
+				break;
+
 			case "Shredder":
 				
 				nameText.color = new Color32(253,253,112,255);
@@ -238,7 +243,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 		}
 
 	}
-
+//Finds correct names for specific sprites
 	private string setName(string name){
 		switch (name)
 		{
@@ -251,6 +256,10 @@ public class DialogueManagerAlternate : MonoBehaviour {
 				return "Snail";
 				break;
 			case "Snail Think":
+				nameText.text = "Snail";
+				return "Snail";
+				break;
+			case "Snail Buff":
 				nameText.text = "Snail";
 				return "Snail";
 				break;

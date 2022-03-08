@@ -1333,7 +1333,7 @@ MonoBehaviour:
   - name: Leon Bradley
     sentences:
     - "So what\u2019s the plan for today? Should we head out and look for Mans Undersnail?"
-  - name: Snail
+  - name: Snail Think
     sentences:
     - Who?
   - name: Leon Bradley
@@ -1369,7 +1369,7 @@ MonoBehaviour:
     sentences:
     - "Alright, it\u2019s time for Statisticians\u2019 epic and mathemagical\u2026
       History class!!!"
-  - name: Snail
+  - name: Snail Think
     sentences:
     - ...Huh?
   - name: Statistician
@@ -1411,7 +1411,7 @@ MonoBehaviour:
   - name: Statistician
     sentences:
     - That is indeed a praiseworthy ratio
-  - name: Snail
+  - name: Snail Think
     sentences:
     - "Wait, but didn\u2019t snailtube remove-"
   - name: Conche
@@ -1438,6 +1438,6 @@ MonoBehaviour:
   - name: Conche
     sentences:
     - ...
-  - name: Snail
+  - name: Snail Buff
     sentences:
     - "...Let\u2019s just fight"

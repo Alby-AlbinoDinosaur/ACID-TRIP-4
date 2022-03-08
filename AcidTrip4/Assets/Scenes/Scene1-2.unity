@@ -715,6 +715,7 @@ MonoBehaviour:
   fade: {fileID: 42180170}
   isBattleNext: 0
   isBattleBefore: 1
+  startSong: 1
 --- !u!4 &1106681125
 Transform:
   m_ObjectHideFlags: 0
@@ -1302,7 +1303,7 @@ MonoBehaviour:
   - name: 
     sentences:
     - Shredder explodes, blasting the room with cheese
-  - name: Snail
+  - name: Snail Sad
     sentences:
     - Aww snail, I just cleaned this place.
   - name: Statistician

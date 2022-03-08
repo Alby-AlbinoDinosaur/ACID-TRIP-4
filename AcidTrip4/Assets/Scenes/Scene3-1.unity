@@ -1329,19 +1329,30 @@ MonoBehaviour:
   conversation:
   - name: Snail
     sentences:
-    - 'Phew, at least now we can get some peace and quie-
-
-'
-  - name: Mans Undersnail
+    - Phew, at least now we can get some peace and quie-
+  - name: ???
     sentences:
     - HOLD IT!
-  - name: Leon Bradley
+  - name: 
     sentences:
     - The trio and Coco spin around to see a big snail dude in the door. This is
       Mans Undersnail!
+  - name: Leon Bradley
+    sentences:
+    - What the hell?! Who are you?!
+  - name: Neck R.O. Manser
+    sentences:
+    - "My name\u2026 is Neck R.O. Manser!"
+  - name: Leon Bradley
+    sentences:
+    - "Wait a minute! That voice! No matter how many voice changers you use, I will
+      never forget the voice of\u2026\r"
+    - MANS UNDERSNAIL!
   - name: Mans Undersnail
     sentences:
-    - "Yes, that is me. But more importantly, I WON\u2019T LET YOU ARREST CONCHE!\r"
+    - Wow, that Neck. R.O. Manser identity was really useless.
+    - But yes, my name is Mans Undersnail! And most importantly, YOU WILL UNHAND
+      CONCHE ASMR!
   - name: Coco the cowboy/cop
     sentences:
     - 'What the-
@@ -1368,9 +1379,9 @@ MonoBehaviour:
       chalk for dinner, and you were the closest supply.
 
 '
-  - name: Statistician
+  - name: Leon Bradley
     sentences:
-    - 'MANS UNDERSNAIL! You murdered my pet rock, Papyrock! I was just taking him
+    - ' MANS UNDERSNAIL! You murdered my pet rock, Papyrock! I was just taking him
       out for a walk, and then you drove him over with a car and shattered him!
 
 '
@@ -1380,18 +1391,18 @@ MonoBehaviour:
       important things here than your chalk and your pet rock!
 
 '
-  - name: Snail
+  - name: Snail Think
     sentences:
     - 'Like what?
 
 '
   - name: Mans Undersnail
     sentences:
-    - "LIKE CONCHE ASMR\u2019S ARREST!\r\n"
-  - name: Snail
+    - "LIKE CONCHE ASMR\u2019S ARREST!"
+  - name: Snail Think
     sentences:
     - "Wait a minute, why do you care so much about this dude? Isn\u2019t he just
-      an ASMR Snailtuber?\r\n"
+      an ASMR Snailtuber?"
   - name: Mans Undersnail
     sentences:
     - "No, he\u2019s not just an ASMRtist. He is THE ASMRtist! He has pleased the
@@ -1406,8 +1417,10 @@ MonoBehaviour:
     - "\u2026$100,000? Oh lord, that\u2019s worse than killing Papyrock.\r\n"
   - name: Leon Bradley
     sentences:
-    - "What did you just say?\r"
-  - name: Snail
+    - 'What did you just say?
+
+'
+  - name: Snail Sad
     sentences:
     - Nothing.
   - name: Mans Undersnail
@@ -1417,36 +1430,34 @@ MonoBehaviour:
   - name: Statistician
     sentences:
     - "No way! I\u2019ve calculated how much hatred I have for you since the day
-      you stole my chalk, and the answer is that I 100% WANT TO KICK YOUR ASS!\r\n"
+      you stole my chalk, and the answer is that I 100% WANT TO KICK YOUR ASS!"
   - name: Leon Bradley
     sentences:
     - "I\u2019m going to paint the walls of this house in your blood! Just like how
-      you painted the sidewalk with Papyrock\u2019s blood!\r\n"
-  - name: Snail
+      you painted the sidewalk with Papyrock\u2019s blood!"
+  - name: Snail Sad
     sentences:
     - "Please don\u2019t do that. I don\u2019t want to clean up this place more than
-      I have to.\r\n"
+      I have to."
   - name: Mans Undersnail
     sentences:
     - "Ugh! Fine! I\u2019ll beat you guys up, and then save Conche ASMR! Shredders,
-      help me!\r\n"
+      help me!"
   - name: Conche
     sentences:
     - "Don\u2019t count me out! I can\u2019t let my top Snailchat supporter fight
       three people by himself!\r\n"
   - name: Mans Undersnail
     sentences:
-    - 'Wait, Conche ASMR, helping me? This is a dream come true!
-
-'
+    - Wait, Conche ASMR, helping me? This is a dream come true!
   - name: Snail
     sentences:
-    - 'Can we just take this outside please?
-
-'
+    - Can we just take this outside please?
   - name: Mans Undersnail
     sentences:
     - No.
-  - name: Snail
+    - Because right now, I will be showing my TRUE FORM! Prepare yourselves for my
+      TRUE POWER!
+  - name: Snail Sad
     sentences:
     - Oh for fu-
