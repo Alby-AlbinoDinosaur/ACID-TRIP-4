@@ -2650,6 +2650,7 @@ GameObject:
   - component: {fileID: 5810141216405153858}
   - component: {fileID: 8483045005185827831}
   - component: {fileID: 4250177557149359252}
+  - component: {fileID: 5665399557251244089}
   m_Layer: 5
   m_Name: Statistician
   m_TagString: Untagged
@@ -2757,11 +2758,25 @@ MonoBehaviour:
   power_points: 50
   name: Statistician
   max_health: 0
+  currentBattle: 0
+  isCheesed: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
   attackPrefab: {fileID: 0}
   playerMover: {fileID: 0}
+--- !u!114 &5665399557251244089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5810141216405153860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a5b472c6406ea41bc33c6539665dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5810141216700673290
 GameObject:
   m_ObjectHideFlags: 0

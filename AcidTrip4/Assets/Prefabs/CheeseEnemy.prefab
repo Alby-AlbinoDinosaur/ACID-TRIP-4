@@ -334,6 +334,18 @@ MonoBehaviour:
           m_StringArgument: blip
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3744041574513399924}
+        m_TargetAssemblyTypeName: ButtonSoundEvents, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: blip
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6061990247838607691
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +708,7 @@ GameObject:
   - component: {fileID: 6061990248912279691}
   - component: {fileID: 6061990248912279690}
   - component: {fileID: 6061990248912279693}
+  - component: {fileID: 3744041574513399924}
   m_Layer: 0
   m_Name: CheeseEnemy
   m_TagString: Untagged
@@ -753,9 +766,12 @@ MonoBehaviour:
   power_points: 0
   name: Enemy
   max_health: 0
+  currentBattle: 0
+  isCheesed: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
+  attackPrefab: {fileID: 0}
   enemyMover: {fileID: 0}
 --- !u!114 &6061990248912279693
 MonoBehaviour:
@@ -774,3 +790,15 @@ MonoBehaviour:
   selector: {fileID: 6061990247781813349}
   damagePrefab: {fileID: 5364885180368766624, guid: c40c092658d347044891b3b72684f0a2, type: 3}
   enemyEntity: {fileID: 6061990248912279690}
+--- !u!114 &3744041574513399924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6061990248912279689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a5b472c6406ea41bc33c6539665dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

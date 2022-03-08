@@ -2058,6 +2058,7 @@ GameObject:
   - component: {fileID: 2913816130266905033}
   - component: {fileID: 970495545543168636}
   - component: {fileID: 1195816470844081437}
+  - component: {fileID: 6284862108174324948}
   m_Layer: 5
   m_Name: Leon Plate
   m_TagString: Untagged
@@ -2165,11 +2166,25 @@ MonoBehaviour:
   power_points: 30
   name: Leon Bradley
   max_health: 0
+  currentBattle: 0
+  isCheesed: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
   attackPrefab: {fileID: 0}
   playerMover: {fileID: 0}
+--- !u!114 &6284862108174324948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913816130266905039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a5b472c6406ea41bc33c6539665dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2913816130644417621
 GameObject:
   m_ObjectHideFlags: 0
