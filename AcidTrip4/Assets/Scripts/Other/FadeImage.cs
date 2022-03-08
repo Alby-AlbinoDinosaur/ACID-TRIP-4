@@ -13,11 +13,23 @@ public class FadeImage : MonoBehaviour
 	public float fadeInterval; //Interval between each fadeSmooth interpolation
 
     private bool isFading = false; //is in the process of fading?
+    public bool fadeOnStart = false;
 
 
     private void Start()
     {
         fadeImage = GetComponent<Image>();
+        if(fadeOnStart){
+            fadeImage.enabled = true;
+            FadeToBlack(false);
+        }
+        else{
+            Color finalColor = new Color();
+            finalColor = fadeImage.color;
+            finalColor.a = 0;
+            fadeImage.color = finalColor;
+            fadeImage.enabled = false;
+        }
     }
 
     public void FadeToBlack(bool b)
@@ -33,12 +45,14 @@ public class FadeImage : MonoBehaviour
         }
     }
 
+
     private IEnumerator Fade(bool b)
     {
 
         if (b)
         {
             //fade screen to black
+            fadeImage.enabled = true;
             for (float i = 0; i <= fadeMaxAlpha; i += fadeSmooth)
             {
                 yield return new WaitForSeconds(fadeInterval);
@@ -48,10 +62,15 @@ public class FadeImage : MonoBehaviour
                 nextColor.a = i;
                 fadeImage.color = nextColor;
             }
+            Color finalColor = new Color();
+            finalColor = fadeImage.color;
+            finalColor.a = fadeMaxAlpha;
+            fadeImage.color = finalColor;
         }
         else
         {
             //fade in screen
+            fadeImage.enabled = true;
             for (float i = fadeMaxAlpha; i >= 0; i -= fadeSmooth)
             {
                 yield return new WaitForSeconds(fadeInterval);
@@ -60,9 +79,24 @@ public class FadeImage : MonoBehaviour
                 nextColor.a = i;
                 fadeImage.color = nextColor;
             }
+            Color finalColor = new Color();
+            finalColor = fadeImage.color;
+            finalColor.a = 0;
+            fadeImage.color = finalColor;
+            fadeImage.enabled = false;
         }
 
         isFading = false;
+    }
+
+    public void setBlack(){
+        Color newColor = new Color();
+        newColor = fadeImage.color;
+        newColor.r = 0;
+        newColor.g = 0;
+        newColor.b = 0;
+        fadeImage.color = newColor;
+        
     }
 
     public bool GetIsFading()

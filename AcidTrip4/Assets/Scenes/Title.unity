@@ -902,6 +902,7 @@ MonoBehaviour:
   fadeMaxAlpha: 1
   fadeSmooth: 0.01
   fadeInterval: 0.01
+  fadeOnStart: 1
 --- !u!1 &1041036098
 GameObject:
   m_ObjectHideFlags: 0
