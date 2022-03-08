@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Audio\BackgroundMusic.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+    <Compile Include="Assets\endCredits.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
     <Compile Include="Assets\Scripts\Battle\enemyGUI.cs" />
     <Compile Include="Assets\Scripts\Battle\UI\PlayerGUI.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+    <Compile Include="Assets\ConkhEnemy.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
     <Compile Include="Assets\Scripts\Battle\LoadStats.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Conversation.cs" />
@@ -105,15 +107,18 @@
     <Compile Include="Assets\Scripts\Other\TrippyBackgroundLines.cs" />
     <Compile Include="Assets\Scripts\Test-Debug\EnemyTest.cs" />
     <Compile Include="Assets\Entity.cs" />
+    <Compile Include="Assets\settingsMenu.cs" />
     <Compile Include="Assets\Stat_Char.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
     <Compile Include="Assets\Scripts\Test-Debug\DemoEventHelper.cs" />
+    <Compile Include="Assets\RouteSelection.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\Scripts\Dialogue\BattleDialogueManager.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+    <Compile Include="Assets\UndersnailEnemy.cs" />
     <Compile Include="Assets\EnemyMover.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
     <Compile Include="Assets\Scripts\Battle\PlayerUnitAction.cs" />
@@ -144,11 +149,11 @@
     <Compile Include="Assets\Scripts\Battle\EnemyUnitAction.cs" />
     <Compile Include="Assets\ItemButton.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
+    <Compile Include="Assets\Scripts\Battle\UI\clockbutton.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
     <Compile Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
     <Compile Include="Assets\Scripts\AttackAnimationEnd.cs" />
     <Compile Include="Assets\Scripts\Battle\SelectUnit.cs" />
-    <Compile Include="Assets\RouteSelection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DialogueEnvironment\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
