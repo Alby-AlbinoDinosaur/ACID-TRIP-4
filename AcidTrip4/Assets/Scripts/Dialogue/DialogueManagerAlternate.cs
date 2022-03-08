@@ -117,29 +117,36 @@ public class DialogueManagerAlternate : MonoBehaviour {
 
 		animator.SetBool("IsOpen", true);
 
+		string[] soundCheck = dialogue.name.Split(' ');
 		
-		
-		string specialName = setName(dialogue.name);
-		showSprite(specialName);
-		if(dialogue.name.Length > 0){
+		if(soundCheck[0] == "playsound"){
+			AudioManager.instance.PlayOneShot(soundCheck[1]);
+			DisplayNextSentence();
 			
-			actor.SetTrigger(dialogue.name);
 		}
+		else{
+			string specialName = setName(dialogue.name);
+			showSprite(specialName);
+			if(dialogue.name.Length > 0){
+				
+				actor.SetTrigger(dialogue.name);
+			}
 
-		
+			
 
 
-		sentences.Clear();
+			sentences.Clear();
 
-		
-		
+			
+			
 
-		foreach (string sentence in dialogue.sentences)
-		{
-			sentences.Enqueue(sentence);
+			foreach (string sentence in dialogue.sentences)
+			{
+				sentences.Enqueue(sentence);
+			}
+
+			DisplayNextSentence();
 		}
-
-		DisplayNextSentence();
 	}
 
 //Called by continue button to move onto next text
