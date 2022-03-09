@@ -5,22 +5,20 @@ using UnityEngine;
 public class UndersnailEnemy : Entity
 {
 
-    private List<Entity> infectedTargets;
     private int scratchDamageDealt;
     public EnemyMover enemyMover;
     bool debugflag = false;
     // Start is called before the first frame update
     void Start()
     {   //Add each move to list
-        infectedTargets = new List<Entity>();
 
         base.initialize();
-        base.moveExecuteList.Add(Scratch);
-        base.moveExecuteList.Add(Bite);
-        base.moveTargetList.Add(ScratchTargets);
-        base.moveTargetList.Add(BiteTargets);
-        base.moveTextList.Add(ScratchText);
-        base.moveTextList.Add(BiteText);
+        base.moveExecuteList.Add(Bones);
+        base.moveExecuteList.Add(Buff);
+        base.moveTargetList.Add(BonesTargets);
+        base.moveTargetList.Add(BuffTargets);
+        base.moveTextList.Add(BonesText);
+        base.moveTextList.Add(BuffText);
 
         base.health_stat = 150;
         base.defense_stat = 15;
@@ -33,7 +31,7 @@ public class UndersnailEnemy : Entity
 
         base.nextMove = 0;
         base.selectedTarget = this;
-        base.name = "Shreddar";
+        base.name = "Mans";
         enemyMover.addEnemy(this);
 
     }
@@ -45,76 +43,67 @@ public class UndersnailEnemy : Entity
     }
 
 
-    private void Scratch(Entity target)
+    private void Bones(Entity target)
     {
+        foreach (Entity enemy in enemyMover.playerMover.playerList)
+        {
 
-        scratchDamageDealt = Mathf.Max(base.attack_stat + Random.Range(0, 30) - target.defense_stat, 0);
+            int damage = Mathf.Max((int)((base.ability_stat * 2) * (float)(100 - enemy.spdefense_stat) / 100f), 0);
+            // Calculate damage however here
+            enemy.health_stat -= damage;
+        }
+        int recoil = Mathf.Max((int)((base.attack_stat * 2) - target.defense_stat), 0);
         // Calculate damage however here
-        target.health_stat -= scratchDamageDealt;
-        //print("did a scratch");
+        target.health_stat -= recoil;
     }
 
 
-    private bool ScratchTargets(Entity target)
+    private bool BonesTargets(Entity target)
     {
         return target != this;
     }
 
-    private string ScratchText(int context)
+    private string BonesText(int context)
     {
         switch (context)
         {
-            case 0: return "Scratch";
-            case 1: return "Scratch: Does a basic physical attack to the target.";
-            case 2: return base.name + " scratches " + base.selectedTarget.name + " ! It does " + scratchDamageDealt + " damage!";
+            case 0: return "Summons Bones";
+            case 1: return "Summon Bones: Deals collateral damage to entire party.";
+            case 2: return base.name + " Summons Bones around " + base.selectedTarget.name + " !";
         }
         return "code should not ever get to here";
     }
 
-    private void Bite(Entity target)
+    private void Buff(Entity target)
     {
         if (base.power_points >= 5)
         {
             base.power_points -= 5;
-            infectedTargets.Add(target);
-
-            endTurnEffect action = null; //= (Entity self) => { return "dummytext"; };
-
-
-            action = (Entity self) =>
+            target.attack_stat += 20;
+            target.ability_stat += 20;
+            target.nextTurnEffects.Enqueue((Entity self) =>
             {
-                int damage = this.ability_stat * Random.Range(-1, 4);
-                if (damage <= 0)
-                {
-                    this.infectedTargets.Remove(self);
-                    return self.name + " no longer has the Cheese Touch.";
-                }
-                else
-                {
-                    self.nextTurnEffects.Enqueue(action);
-                    self.health_stat -= damage;
-                    return self.name + " takes " + damage + " from the Cheese Touch!";
-                }
-
-            };
-            target.thisTurnEffects.Enqueue(action);
+                self.attack_stat -= 20;
+                self.ability_stat -= 20;
+                return self.name + "'s buff wears off.";
+            });
         }
     }
 
 
 
-    private bool BiteTargets(Entity target)
+    private bool BuffTargets(Entity target)
     {
-        return (target != this && !infectedTargets.Contains(target) && this.power_points >= 5);
+        return (this.power_points >= 5);
     }
 
-    private string BiteText(int context)
+    private string BuffText(int context)
     {
         switch (context)
         {
-            case 0: return "Bite";
-            case 1: return "Bite: Infects target with the Cheese Touch.";
-            case 2: return base.name + " bites " + base.selectedTarget.name + "! He is cheese touch'd!";
+            case 0: return "Boast";
+            case 1: return "Boast: Buffs the next stats ";
+            case 2: return base.name + " powers up " + base.selectedTarget.name +"'s next move!";
         }
         return "code should not ever get to here";
     }

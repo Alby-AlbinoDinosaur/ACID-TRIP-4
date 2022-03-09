@@ -85,8 +85,16 @@ public class ConkhEnemy : Entity
             base.power_points -= 5;
             foreach (Entity enemy in enemyMover.enemyList)
             {
-                int healAmount = Random.Range(1, 3);
-                enemy.health_stat = Mathf.Min(enemy.health_stat + this.ability_stat * healAmount, enemy.max_health);
+                if (enemy == this)
+                {
+                    int healAmount = Random.Range(1, 3);
+                    target.health_stat = Mathf.Min(target.health_stat + this.ability_stat * healAmount, target.max_health);
+                }
+                else
+                {
+                    int healAmount = Random.Range(1, 3);
+                    enemy.health_stat = Mathf.Min(enemy.health_stat + this.ability_stat * healAmount, enemy.max_health);
+                }
             }
             
         }
@@ -96,7 +104,7 @@ public class ConkhEnemy : Entity
 
     private bool SongTargets(Entity target)
     {
-        if (target == this && this.power_points >= 5)
+        if (this.power_points >= 5)
         {
             foreach (Entity enemy in enemyMover.enemyList)
             {

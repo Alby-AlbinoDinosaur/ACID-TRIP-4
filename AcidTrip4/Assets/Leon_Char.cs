@@ -124,11 +124,8 @@ public class Leon_Char : Entity
 
                 int damage = (int)((this.ability_stat * 0.3) / 100 * self.health_stat);
                 int wearoff = Random.Range(0, 4);
-                while (wearoff == 0 && self.thinnerstacks > 0)
-                {
+                if (wearoff == 0) {
                     self.thinnerstacks--;
-                    wearoff = Random.Range(0, 4);
-    
                 }
                 if (self.thinnerstacks > 0)
                 {
