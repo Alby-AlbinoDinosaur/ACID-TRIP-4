@@ -115,10 +115,22 @@ public class Snail_Char : Entity
     {
         isAttacking = true;
         base.power_points -= 3;
-        target.beforeMoveEffects.Enqueue((Entity self) =>
+        target.thisTurnEffects.Enqueue((Entity self) =>
         {
-            self.selectedTarget = this;
-            return self.name + " is enraged at " + this.name + "!";
+//            int rollToResist = Random.Range(0,2)
+//            if (rollToResist == 0)
+//            {
+                self.beforeMoveEffects.Enqueue(
+                    (Entity self) =>
+                    {
+                        self.selectedTarget = this;
+                        return self.name + " is enraged at " + this.name + "!";
+                    });
+                return self.name + " falls for " + this.name + "'s taunting!";
+//            }
+//            else
+//            { 
+//            }
         });
     }
 
