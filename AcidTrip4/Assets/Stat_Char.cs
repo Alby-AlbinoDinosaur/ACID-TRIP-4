@@ -59,6 +59,9 @@ public class Stat_Char : Entity
         int damage = Mathf.Max(base.attack_stat + 15 - target.defense_stat, 0);
         // Calculate damage however here
         target.health_stat -= damage;
+        isAttacking = true;
+        print("did a scratch");
+        
     }
 
     private bool AttackTargets(Entity target)
@@ -110,6 +113,7 @@ public class Stat_Char : Entity
     //Ability_1 -----------------------------------------------------------------------------
     private void Ability_1(Entity target)
     {
+        isAttacking = true;
         base.power_points -= 7;
         foreach(Entity enemy in playerMover.enemyMover.enemyList)
         {
@@ -145,6 +149,7 @@ public class Stat_Char : Entity
     //Ability_2 -----------------------------------------------------------------------------
     private void Ability_2(Entity target)
     {
+        isAttacking = true;
         base.power_points -= 15;
         int random = Random.Range(0, 8);
         switch (random)

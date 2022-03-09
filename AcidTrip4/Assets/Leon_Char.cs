@@ -62,6 +62,7 @@ public class Leon_Char : Entity
         int damage = Mathf.Max(base.attack_stat + 15 - target.defense_stat, 0);
         // Calculate damage however here
         target.health_stat -= damage;
+        isAttacking = true;
     }
 
     private bool AttackTargets(Entity target)
@@ -113,6 +114,7 @@ public class Leon_Char : Entity
     //Ability_1 -----------------------------------------------------------------------------
     private void Ability_1(Entity target)
     {
+        isAttacking = true;
         base.power_points -= 10;
         target.thinnerstacks++;
         if (target.thinnerstacks == 1)

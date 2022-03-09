@@ -86,31 +86,28 @@ public class PlayerGUI : MonoBehaviour
                     {   
                         //Debug.Log("Set State 0");
                         faceAnimator.SetInteger("State", 0);
-                        if(hit_sound.Length > 0){
-                            AudioManager.instance.Play(hit_sound);
-                        }
+                        
                     }
                     else if(ratio > (float)1/3)
                     {   
                         //Debug.Log("Set State 1");
                         faceAnimator.SetInteger("State", 1);
-                        if(hit_sound.Length > 0){
-                            AudioManager.instance.Play(hit_sound);
-                        }
+                        
                     }
                     else if(ratio > (float)0)
                     {   
                         //Debug.Log("Set State 2");
                         faceAnimator.SetInteger("State", 2);
-                        if(hit_sound.Length > 0){
-                            AudioManager.instance.Play(hit_sound);
-                        }
+                        
                     }
                     else 
                     {   
                         //Debug.Log("Set State 3");
                         faceAnimator.SetInteger("State", 3);
                         plateAnimator.SetTrigger("DamageDead");
+                        if(hit_sound.Length > 0){
+                            AudioManager.instance.Stop(hit_sound);
+                        }
                         if(death_sound.Length > 0){
                             AudioManager.instance.Play(death_sound);
                         }
@@ -142,6 +139,9 @@ public class PlayerGUI : MonoBehaviour
                 
                 if(playerEntity.health_stat < currentHp)
                 {
+                    if(hit_sound.Length > 0){
+                            AudioManager.instance.Play(hit_sound);
+                    }
                     
                     faceAnimator.SetTrigger("Damage");
                     plateAnimator.SetTrigger("Damage");

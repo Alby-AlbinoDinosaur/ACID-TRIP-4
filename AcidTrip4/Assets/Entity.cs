@@ -18,6 +18,7 @@ public abstract class Entity : MonoBehaviour
 
     public int currentBattle = 0;
     public bool isCheesed = false;
+    public bool isAttacking = false;
     public int thinnerstacks = 0;
 
     //These three functions make up the three parts of a move
@@ -50,12 +51,14 @@ public abstract class Entity : MonoBehaviour
 
     public void Run()
     {
-        if(attackPrefab){
+        
+        moveExecuteList[nextMove](selectedTarget);
+        if(attackPrefab && isAttacking){
             GameObject vfx = Instantiate(attackPrefab, selectedTarget.transform.position, Quaternion.identity);
             vfx.transform.SetParent(selectedTarget.transform);
+            isAttacking = false;
         }
 
-        moveExecuteList[nextMove](selectedTarget);
         nextMoveHasAlreadyBeenRun = true;
         
     }

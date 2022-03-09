@@ -60,6 +60,7 @@ public class Snail_Char : Entity
         int damage = Mathf.Max(base.attack_stat + 15 - target.defense_stat, 0);
         // Calculate damage however here
         target.health_stat -= damage;
+        isAttacking = true;
         print("did a scratch");
     }
 
@@ -112,6 +113,7 @@ public class Snail_Char : Entity
     //Ability_1 -----------------------------------------------------------------------------
     private void Ability_1(Entity target)
     {
+        isAttacking = true;
         base.power_points -= 3;
         target.beforeMoveEffects.Enqueue((Entity self) =>
         {
@@ -127,6 +129,7 @@ public class Snail_Char : Entity
 
     private string Ability_1_Text(int context)
     {
+        
         switch (context)
         {
             case 0: return "Taunt";
@@ -140,6 +143,7 @@ public class Snail_Char : Entity
     //Ability_2 -----------------------------------------------------------------------------
     private void Ability_2(Entity target)
     {
+        isAttacking = true;
         base.power_points -= 5;
         int damage = Mathf.Max((int)(((float)base.defense_stat * 1.5f)* (float)(100-target.spdefense_stat)/100f), 0);
         this.defense_stat -= 60;
