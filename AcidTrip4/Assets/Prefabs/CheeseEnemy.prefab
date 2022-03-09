@@ -709,6 +709,7 @@ GameObject:
   - component: {fileID: 6061990248912279690}
   - component: {fileID: 6061990248912279693}
   - component: {fileID: 3744041574513399924}
+  - component: {fileID: 3675338322989552386}
   m_Layer: 0
   m_Name: CheeseEnemy
   m_TagString: Untagged
@@ -769,6 +770,7 @@ MonoBehaviour:
   max_pp: 0
   currentBattle: 0
   isCheesed: 0
+  thinnerstacks: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1
@@ -793,6 +795,7 @@ MonoBehaviour:
   enemyEntity: {fileID: 6061990248912279690}
   hit_sound: shredder_hit
   death_sound: shredder_death
+  deathAnimator: {fileID: 3675338322989552386}
 --- !u!114 &3744041574513399924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -805,3 +808,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a5b472c6406ea41bc33c6539665dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &3675338322989552386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6061990248912279689}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b19b1adc950dcb745a3a4437b78631b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

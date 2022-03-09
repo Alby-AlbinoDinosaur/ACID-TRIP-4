@@ -20,9 +20,11 @@ public class enemyGUI : MonoBehaviour
     public Entity enemyEntity;
     public string hit_sound;
     public string death_sound;
+    public Animator deathAnimator;
     private int maxHp = 0;
     
     private int currentHp = 0;
+    private bool dead = false;
 
     void Start()
     {
@@ -62,7 +64,7 @@ public class enemyGUI : MonoBehaviour
 
             hpBar.fillAmount = (float)enemyEntity.health_stat/maxHp;
 
-            if(enemyEntity.health_stat<currentHp){
+            if(enemyEntity.health_stat<currentHp && !dead){
                 animator.DamageAnimation();
                 //Debug.Log("DAMAGED");
                 GameObject canvas = Instantiate(damagePrefab, gameObject.transform.position, Quaternion.identity);
@@ -73,11 +75,16 @@ public class enemyGUI : MonoBehaviour
                     if(death_sound.Length > 0){
                             AudioManager.instance.Play(death_sound);
                     }
+                    if(deathAnimator){
+                        deathAnimator.SetBool("Dead",true);
+                    }
+                    dead = true;
                 }
                 else if(enemyEntity.health_stat > 0){
                     if(hit_sound.Length > 0){
                             AudioManager.instance.Play(hit_sound);
                     }
+
 
                 }
             }

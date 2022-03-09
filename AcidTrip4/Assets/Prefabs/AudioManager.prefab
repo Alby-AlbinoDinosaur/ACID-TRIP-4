@@ -215,6 +215,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: leon_attack
     clip: {fileID: 8300000, guid: 54fa6f902dcada64b84cd0954e37f888, type: 3}
+    volume: 0.813
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: shredder_attack
+    clip: {fileID: 8300000, guid: 11fb13a7f136932418da00b16809363a, type: 3}
     volume: 1
     pitch: 1
     loop: 0
