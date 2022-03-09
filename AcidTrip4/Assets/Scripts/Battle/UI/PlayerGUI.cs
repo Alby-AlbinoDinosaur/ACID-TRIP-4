@@ -40,6 +40,7 @@ public class PlayerGUI : MonoBehaviour
     
     void Start()
     {
+
         BattleEventManager.OnEnemySelected += finishSelection;
         //BattleEventManager.OnEnemyRevealSelect += startSelection;
         BattleEventManager.OnGUIUpdate += updateGUI;
@@ -109,6 +110,7 @@ public class PlayerGUI : MonoBehaviour
                     {   
                         //Debug.Log("Set State 3");
                         faceAnimator.SetInteger("State", 3);
+                        plateAnimator.SetTrigger("DamageDead");
                         if(death_sound.Length > 0){
                             AudioManager.instance.Play(death_sound);
                         }
