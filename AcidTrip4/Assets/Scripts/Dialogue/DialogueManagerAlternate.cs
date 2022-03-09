@@ -283,9 +283,14 @@ public class DialogueManagerAlternate : MonoBehaviour {
 				nameText.text = "Mans Undersnail";
 				return "Mans Undersnail";
 				break;
-			case "Mans4":
+			case "Mans Reveal":
 				nameText.text = "Mans Undersnail";
 				return "Mans Undersnail";
+				break;
+
+			case "Coco Punch":
+				nameText.text = "";
+				return "";
 				break;
 			
 			default:

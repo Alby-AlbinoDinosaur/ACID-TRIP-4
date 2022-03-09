@@ -1366,7 +1366,9 @@ MonoBehaviour:
     - 'What the-
 
 '
-  - name: 
+  - name: playsound punch
+    sentences: []
+  - name: Coco Punch
     sentences:
     - 'Mans Undersnail liver punches Coco, taking him out of the fight '
   - name: Mans Undersnail
@@ -1446,7 +1448,7 @@ MonoBehaviour:
     sentences:
     - "Please don\u2019t do that. I don\u2019t want to clean up this place more than
       I have to."
-  - name: Mans Undersnail
+  - name: Mans Reveal
     sentences:
     - "Ugh! Fine! I\u2019ll beat you guys up, and then save Conche ASMR! Shredders,
       help me!"
@@ -1454,13 +1456,13 @@ MonoBehaviour:
     sentences:
     - "Don\u2019t count me out! I can\u2019t let my top Snailchat supporter fight
       three people by himself!\r\n"
-  - name: Mans Undersnail
+  - name: Mans2
     sentences:
     - Wait, Conche ASMR, helping me? This is a dream come true!
   - name: Snail
     sentences:
     - Can we just take this outside please?
-  - name: Mans Undersnail
+  - name: Mans2
     sentences:
     - No.
     - Because right now, I will be showing my TRUE FORM! Prepare yourselves for my

@@ -1335,14 +1335,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversation:
-  - name: Mans Undersnail
+  - name: Mans2
     sentences:
     - "No\u2026 My dreams! My ASMR supply! My-"
   - name: Snail Buff
     sentences:
     - "Can we get this over with? I don\u2019t feel like hearing you monologue right
       now."
-  - name: Mans Undersnail
+  - name: Mans2
     sentences:
     - 'Ugh, fine. Sorry for stealing your chalk, Statistician. And sorry for killing
       Papyrock, Bradley.
@@ -1361,7 +1361,7 @@ MonoBehaviour:
     sentences:
     - "Sorry, but an apology can\u2019t bring back Papyrock from the dead. Nothing
       can.\r\n"
-  - name: Mans Undersnail
+  - name: Mans2
     sentences:
     - 'Yeah, I know. But I can at least fund your painting career to the best of
       my abilities.
@@ -1379,7 +1379,7 @@ MonoBehaviour:
     sentences:
     - "I am. Since everything seems to be fixed between y\u2019all, how about getting
       out of my house now?\r\n"
-  - name: Mans Undersnail
+  - name: Mans2
     sentences:
     - "Yeah, I\u2019ll do that. Sorry. I\u2019m taking Conche ASMR still.\r\n"
   - name: Snail Buff
