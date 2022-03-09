@@ -142,7 +142,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: leon_hit
-    clip: {fileID: 8300000, guid: f73aeeccc194ae549a50c08fe2ef7cba, type: 3}
+    clip: {fileID: 8300000, guid: f40be0ec612a642419545bb138b74b5a, type: 3}
     volume: 1
     pitch: 1
     loop: 0

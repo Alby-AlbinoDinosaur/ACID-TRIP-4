@@ -3052,6 +3052,8 @@ MonoBehaviour:
   faceAnimator: {fileID: 4845302270736531591}
   statusAnimator: {fileID: 7461384107137788938}
   descriptorMenu: {fileID: 5063590482942410768}
+  hit_sound: stat_hit
+  death_sound: stat_death
 --- !u!114 &5063590482339515085
 MonoBehaviour:
   m_ObjectHideFlags: 0

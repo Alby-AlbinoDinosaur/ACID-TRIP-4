@@ -3829,6 +3829,8 @@ MonoBehaviour:
   faceAnimator: {fileID: 7971179086142040691}
   statusAnimator: {fileID: 5345351417581307646}
   descriptorMenu: {fileID: 4128156645694547219}
+  hit_sound: leon_hit
+  death_sound: leon_death
 --- !u!114 &4128156645986920507
 MonoBehaviour:
   m_ObjectHideFlags: 0

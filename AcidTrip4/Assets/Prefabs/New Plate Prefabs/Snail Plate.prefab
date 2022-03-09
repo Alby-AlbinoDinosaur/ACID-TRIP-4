@@ -3009,6 +3009,8 @@ MonoBehaviour:
   faceAnimator: {fileID: 7156658201558388662}
   statusAnimator: {fileID: 5179244408017675067}
   descriptorMenu: {fileID: 897174967971304691}
+  hit_sound: snail_hit
+  death_sound: snail_death
 --- !u!114 &897174967064472156
 MonoBehaviour:
   m_ObjectHideFlags: 0

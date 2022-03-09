@@ -28,10 +28,15 @@ public class PlayerGUI : MonoBehaviour
     public Animator statusAnimator;
     public GameObject descriptorMenu;
 
+    public string hit_sound;
+    public string death_sound;
+
     private int maxHp = 0;
     private int maxPpl = 0;
     private int currentHp = 0;
     private int maxPp = 0;
+
+
     
     void Start()
     {
@@ -80,21 +85,33 @@ public class PlayerGUI : MonoBehaviour
                     {   
                         //Debug.Log("Set State 0");
                         faceAnimator.SetInteger("State", 0);
+                        if(hit_sound.Length > 0){
+                            AudioManager.instance.Play(hit_sound);
+                        }
                     }
                     else if(ratio > (float)1/3)
                     {   
                         //Debug.Log("Set State 1");
                         faceAnimator.SetInteger("State", 1);
+                        if(hit_sound.Length > 0){
+                            AudioManager.instance.Play(hit_sound);
+                        }
                     }
                     else if(ratio > (float)0)
                     {   
                         //Debug.Log("Set State 2");
                         faceAnimator.SetInteger("State", 2);
+                        if(hit_sound.Length > 0){
+                            AudioManager.instance.Play(hit_sound);
+                        }
                     }
                     else 
                     {   
                         //Debug.Log("Set State 3");
                         faceAnimator.SetInteger("State", 3);
+                        if(death_sound.Length > 0){
+                            AudioManager.instance.Play(death_sound);
+                        }
                     }
                     
     }
