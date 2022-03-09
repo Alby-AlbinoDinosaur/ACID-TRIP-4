@@ -129,6 +129,78 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: snail_hit
+    clip: {fileID: 8300000, guid: af4385ad6be43fe42a1b70b903d6069d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: snail_death
+    clip: {fileID: 8300000, guid: 290a2fb263470d3468715ecfdb2e2859, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: leon_hit
+    clip: {fileID: 8300000, guid: f73aeeccc194ae549a50c08fe2ef7cba, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: leon_death
+    clip: {fileID: 8300000, guid: f73aeeccc194ae549a50c08fe2ef7cba, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: stat_hit
+    clip: {fileID: 8300000, guid: 94b30366489c7844eb3f30663e4d3c68, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: stat_death
+    clip: {fileID: 8300000, guid: f7066e4a8453f5047823d2abb25450a0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: shredder_hit
+    clip: {fileID: 8300000, guid: 303849b23e8ddb94f944a4064a8c9be5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: shredder_death
+    clip: {fileID: 8300000, guid: a5b7759164831b74cb0d6ec24fe13c22, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: conch_hit
+    clip: {fileID: 8300000, guid: b785ba4a3da5a05429aca586823f6018, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: conch_death
+    clip: {fileID: 8300000, guid: d0504bbe4284ece4d9b3de0dbcc6fa45, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: mans_hit
+    clip: {fileID: 8300000, guid: a7cf8230ef6922b4c84074e02e448e1c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: mans_death
+    clip: {fileID: 8300000, guid: 6c5a663e2d76a024ea426ccd17a4d336, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!114 &1209067742
 MonoBehaviour:
   m_ObjectHideFlags: 0
