@@ -1368,8 +1368,7 @@ MonoBehaviour:
 '
   - name: 
     sentences:
-    - Mans Undersnail liver punches Coco, taking him out of the fight (maybe explodes
-      him)
+    - 'Mans Undersnail liver punches Coco, taking him out of the fight '
   - name: Mans Undersnail
     sentences:
     - 'I will fight the law if it means protecting Conche!
