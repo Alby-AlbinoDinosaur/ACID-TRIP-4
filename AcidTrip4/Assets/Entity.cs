@@ -18,6 +18,7 @@ public abstract class Entity : MonoBehaviour
 
     public int currentBattle = 0;
     public bool isCheesed = false;
+    public int thinnerstacks = 0;
 
     //These three functions make up the three parts of a move
     //moveExecute executes the move on selectedTargets when called

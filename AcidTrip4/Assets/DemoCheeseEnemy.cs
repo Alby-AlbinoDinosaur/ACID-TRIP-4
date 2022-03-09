@@ -75,7 +75,7 @@ public class DemoCheeseEnemy : Entity
         {
             base.power_points -= 5;
 
-            if (target.isCheesed) { return; }
+            if (target.isCheesed) { Scratch(target); base.nextMove = 0; return; }
 
             target.isCheesed = true;
             endTurnEffect action = null; //= (Entity self) => { return "dummytext"; };
@@ -97,7 +97,19 @@ public class DemoCheeseEnemy : Entity
                 }
 
             };
-            target.thisTurnEffects.Enqueue(action);
+
+            endTurnEffect reaction = null; //= (Entity self) => { return "dummytext"; };
+
+
+            reaction = (Entity self) =>
+            {
+                int damage = this.ability_stat * Random.Range(1, 4);
+                self.health_stat -= (damage);
+                return self.name + " takes " + (damage) + " from the Cheese Touch!";
+            };
+
+            target.nextTurnEffects.Enqueue(action);
+            target.thisTurnEffects.Enqueue(reaction);
         }
     }
 
@@ -133,13 +145,6 @@ public class DemoCheeseEnemy : Entity
 
             print("Enemy selected move");
             int nextTarget = Random.Range(0, 3);
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
-            print(Random.Range(0, 3));
 
             base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
             print("Enemy selected target");
