@@ -201,6 +201,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: snail_attack
+    clip: {fileID: 8300000, guid: 6f358fb9757b36f4f93c36a5bc076254, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: stat_attack
+    clip: {fileID: 8300000, guid: 6778535f9f7ae524abfd8a4610e662d5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: leon_attack
+    clip: {fileID: 8300000, guid: 54fa6f902dcada64b84cd0954e37f888, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!114 &1209067742
 MonoBehaviour:
   m_ObjectHideFlags: 0
