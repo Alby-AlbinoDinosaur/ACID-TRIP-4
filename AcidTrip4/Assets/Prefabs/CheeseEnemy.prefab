@@ -766,6 +766,7 @@ MonoBehaviour:
   power_points: 0
   name: Enemy
   max_health: 0
+  max_pp: 0
   currentBattle: 0
   isCheesed: 0
   nextMove: -1
@@ -790,6 +791,8 @@ MonoBehaviour:
   selector: {fileID: 6061990247781813349}
   damagePrefab: {fileID: 5364885180368766624, guid: c40c092658d347044891b3b72684f0a2, type: 3}
   enemyEntity: {fileID: 6061990248912279690}
+  hit_sound: shredder_hit
+  death_sound: shredder_death
 --- !u!114 &3744041574513399924
 MonoBehaviour:
   m_ObjectHideFlags: 0

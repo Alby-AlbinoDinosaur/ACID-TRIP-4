@@ -18,6 +18,8 @@ public class enemyGUI : MonoBehaviour
     
 
     public Entity enemyEntity;
+    public string hit_sound;
+    public string death_sound;
     private int maxHp = 0;
     
     private int currentHp = 0;
@@ -67,6 +69,17 @@ public class enemyGUI : MonoBehaviour
                 //canvas.transform.parent = gameObject.transform;
                 TextMeshProUGUI text = canvas.transform.GetChild(0).gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
                 text.text = (enemyEntity.health_stat-currentHp).ToString();
+                if(enemyEntity.health_stat <= 0){
+                    if(death_sound.Length > 0){
+                            AudioManager.instance.Play(death_sound);
+                    }
+                }
+                else if(enemyEntity.health_stat > 0){
+                    if(hit_sound.Length > 0){
+                            AudioManager.instance.Play(hit_sound);
+                    }
+
+                }
             }
             currentHp = enemyEntity.health_stat;
             
