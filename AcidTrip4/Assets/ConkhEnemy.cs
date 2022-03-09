@@ -4,36 +4,33 @@ using UnityEngine;
 
 public class ConkhEnemy : Entity
 {
-
-    private List<Entity> infectedTargets;
     private int scratchDamageDealt;
     public EnemyMover enemyMover;
     bool debugflag = false;
     // Start is called before the first frame update
     void Start()
     {   //Add each move to list
-        infectedTargets = new List<Entity>();
 
         base.initialize();
-        base.moveExecuteList.Add(Scratch);
-        base.moveExecuteList.Add(Bite);
-        base.moveTargetList.Add(ScratchTargets);
-        base.moveTargetList.Add(BiteTargets);
-        base.moveTextList.Add(ScratchText);
-        base.moveTextList.Add(BiteText);
+        base.moveExecuteList.Add(Bash);
+        base.moveExecuteList.Add(Song);
+        base.moveTargetList.Add(BashTargets);
+        base.moveTargetList.Add(SongTargets);
+        base.moveTextList.Add(BashText);
+        base.moveTextList.Add(SongText);
 
-        base.health_stat = 150;
-        base.defense_stat = 15;
-        base.spdefense_stat = 15;
-        base.attack_stat = 15;
-        base.ability_stat = 15;
-        base.power_points = 30;
-        base.speed_stat = 10;
+        base.health_stat = 300;
+        base.defense_stat = 20;
+        base.spdefense_stat = 30;
+        base.attack_stat = 30;
+        base.ability_stat = 25;
+        base.power_points = 20;
+        base.speed_stat = 5;
 
 
         base.nextMove = 0;
         base.selectedTarget = this;
-        base.name = "Shreddar";
+        base.name = "Conkhe";
         enemyMover.addEnemy(this);
 
     }
@@ -45,76 +42,77 @@ public class ConkhEnemy : Entity
     }
 
 
-    private void Scratch(Entity target)
+    private void Bash(Entity target)
     {
 
         scratchDamageDealt = Mathf.Max(base.attack_stat + Random.Range(0, 30) - target.defense_stat, 0);
         // Calculate damage however here
         target.health_stat -= scratchDamageDealt;
+
+        this.defense_stat -= 30;
+        this.spdefense_stat -= 10;
+        // Calculate damage however here
+        this.thisTurnEffects.Enqueue((Entity self) =>
+        {
+            self.defense_stat += 30;
+            self.spdefense_stat += 10;
+            return self.name + " puts its shell back on.";
+        });
         //print("did a scratch");
     }
 
 
-    private bool ScratchTargets(Entity target)
+    private bool BashTargets(Entity target)
     {
         return target != this;
     }
 
-    private string ScratchText(int context)
+    private string BashText(int context)
     {
         switch (context)
         {
-            case 0: return "Scratch";
-            case 1: return "Scratch: Does a basic physical attack to the target.";
-            case 2: return base.name + " scratches " + base.selectedTarget.name + " ! It does " + scratchDamageDealt + " damage!";
+            case 0: return "Shell Bash";
+            case 1: return "Shell Bash: A strong attack, but leaves the user vulnerable.";
+            case 2: return base.name + " bashes " + base.selectedTarget.name + " ! It does " + scratchDamageDealt + " damage!";
         }
         return "code should not ever get to here";
     }
 
-    private void Bite(Entity target)
+    private void Song(Entity target)
     {
         if (base.power_points >= 5)
         {
             base.power_points -= 5;
-            infectedTargets.Add(target);
-
-            endTurnEffect action = null; //= (Entity self) => { return "dummytext"; };
-
-
-            action = (Entity self) =>
+            foreach (Entity enemy in enemyMover.enemyList)
             {
-                int damage = this.ability_stat * Random.Range(-1, 4);
-                if (damage <= 0)
-                {
-                    this.infectedTargets.Remove(self);
-                    return self.name + " no longer has the Cheese Touch.";
-                }
-                else
-                {
-                    self.nextTurnEffects.Enqueue(action);
-                    self.health_stat -= damage;
-                    return self.name + " takes " + damage + " from the Cheese Touch!";
-                }
-
-            };
-            target.thisTurnEffects.Enqueue(action);
+                int healAmount = Random.Range(1, 3);
+                enemy.health_stat = Mathf.Min(enemy.health_stat + this.ability_stat * healAmount, enemy.max_health);
+            }
+            
         }
     }
 
 
 
-    private bool BiteTargets(Entity target)
+    private bool SongTargets(Entity target)
     {
-        return (target != this && !infectedTargets.Contains(target) && this.power_points >= 5);
+        if (target == this && this.power_points >= 5)
+        {
+            foreach (Entity enemy in enemyMover.enemyList)
+            {
+                if (enemy.health_stat < enemy.max_health) { return true; }
+            }
+        }
+        return false;
     }
 
-    private string BiteText(int context)
+    private string SongText(int context)
     {
         switch (context)
         {
-            case 0: return "Bite";
-            case 1: return "Bite: Infects target with the Cheese Touch.";
-            case 2: return base.name + " bites " + base.selectedTarget.name + "! He is cheese touch'd!";
+            case 0: return "Song";
+            case 1: return "Song: Heals entire enemy team.";
+            case 2: return base.name + " soothes your opponents with its voice!";
         }
         return "code should not ever get to here";
     }
@@ -126,15 +124,22 @@ public class ConkhEnemy : Entity
         //set selected targets and next move
         int moveCount = base.moveExecuteList.Count;
         base.selectedTarget = this;
+        base.nextMove = 0;
         while (!base.moveTargetList[base.nextMove](base.selectedTarget))
         {
             base.nextMove = Random.Range(0, moveCount);
 
-
             print("Enemy selected move");
-            int nextTarget = Random.Range(0, 2);
+            int nextTarget = Random.Range(0, 3);
 
-            base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
+            if (base.nextMove == 1)
+            {
+                base.selectedTarget = this;
+            }
+            else
+            {
+                base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
+            }
             print("Enemy selected target");
         }
         base.nextMoveHasAlreadyBeenRun = false;

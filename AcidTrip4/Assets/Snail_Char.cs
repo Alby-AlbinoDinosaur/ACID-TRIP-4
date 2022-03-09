@@ -164,7 +164,7 @@ public class Snail_Char : Entity
         switch (context)
         {
             case 0: return "Shell Bash";
-            case 1: return "5 PP: attacks with defense stat.";
+            case 1: return "5 PP: strong attack, but leaves the user vulnerable.";
             case 2: return base.name + " bonks " + base.selectedTarget.name + " with his shell!";
         }
         return "uh oh move broke";

@@ -114,26 +114,44 @@ public class Leon_Char : Entity
     private void Ability_1(Entity target)
     {
         base.power_points -= 10;
-        endTurnEffect action = null; //= (Entity self) => { return "dummytext"; };
+        target.thinnerstacks++;
+        if (target.thinnerstacks == 1)
+        {
+            endTurnEffect action = null; //= (Entity self) => { return "dummytext"; };
+            action = (Entity self) => {
+
+                int damage = (int)((this.ability_stat * 0.3) / 100 * self.health_stat);
+                int wearoff = Random.Range(0, 4);
+                while (wearoff == 0 && self.thinnerstacks > 0)
+                {
+                    self.thinnerstacks--;
+                    wearoff = Random.Range(0, 4);
+    
+                }
+                if (self.thinnerstacks > 0)
+                {
+                    self.nextTurnEffects.Enqueue(action);
+                    self.health_stat -= damage * self.thinnerstacks;
+                    return self.name + " takes " + damage * self.thinnerstacks + " from the thinner!";
+
+                }
+                return self.name + " is no longer covered in thinner.";
+                return "uuuh thinner machine broke";
+
+            };
+            target.nextTurnEffects.Enqueue(action);
+        }
+        endTurnEffect reaction = null; //= (Entity self) => { return "dummytext"; };
 
 
-        action = (Entity self) => {
-
-            int damage = (int)((this.ability_stat * 0.3)/100 * self.health_stat);
-            if (damage <= 0)
-            {
-                return self.name + " shakes off paint thinner.";
-            }
-            else
-            {
-                self.nextTurnEffects.Enqueue(action);
-                self.health_stat -= damage;
-                return self.name + " takes " + damage + " from the paint thinner!";
-            }
-            return "uuuh thinner machine broke";
-
+        reaction = (Entity self) =>
+        {
+            int damage = (int)((this.ability_stat * 0.3) / 100 * self.health_stat);
+            self.health_stat -= damage * self.thinnerstacks;
+            return self.name + " takes " + damage * self.thinnerstacks + " from being splashed with thinner!";
         };
-        target.thisTurnEffects.Enqueue(action);
+
+        target.thisTurnEffects.Enqueue(reaction);
     }
 
     private bool Ability_1_Targets(Entity target)
