@@ -152,19 +152,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d623ee842023e5a4d8d6d6c941bf1f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientation: 0
-  numOfLines: 16
+  orientation: 1
+  numOfLines: 32
   spacing: 1
-  lineLength: 30
+  lineLength: 20
   lineGranulation: 80
   width: 0.2
   color: {r: 0.6792453, g: 0.35500178, b: 0.5772106, a: 1}
   material: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   wobbleSpeed: 3
   wobbleAmplitude: 0.8
-  lineHorizontalSpeed: 0
-  lineVerticalSpeed: 1
-  recallDistance: 16
+  lineHorizontalSpeed: 1
+  lineVerticalSpeed: 0
+  recallDistance: 32
 --- !u!4 &4701306
 Transform:
   m_ObjectHideFlags: 0
