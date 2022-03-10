@@ -11,10 +11,17 @@ public class UserInterfaceDevice : MonoBehaviour
 
     private GameObject selectedObj; //The last thing that was selected by SetSelectedUI()
 
+    //Priority list for player selection once returning to main battle menu state (ex: after picking an attack)
+    //Should have all the players in the battle but in order of highest selection priority (top = highest)
+    [SerializeField]
+    private List<Entity> playerSelectionPriority;
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        instance = this;
+
+        //NOOO
+        /*DontDestroyOnLoad(gameObject);
 
         if (instance == null)
             instance = this;
@@ -22,7 +29,7 @@ public class UserInterfaceDevice : MonoBehaviour
         {
             Destroy(gameObject);
             return;
-        }
+        }*/
 
     }
 
@@ -105,7 +112,6 @@ public class UserInterfaceDevice : MonoBehaviour
         {
             //get player list
             entityList = BattleManager.instance.playerMover.playerList;
-
         }
         else
         {
@@ -115,18 +121,39 @@ public class UserInterfaceDevice : MonoBehaviour
 
         if (entityList != null)
         {
-            //Select the first undefeated enemy/player in the list of entities
-            foreach (Entity entity in entityList)
+            if (playerOrEnemy)
             {
-                if (!entity.IsDefeated())
+                //FOR PLAYERS
+                //New method, go off priority list
+                foreach (Entity entity in playerSelectionPriority)
                 {
-                    //Select the child object button of the enemy/player
-                    GameObject buttonObj = entity.GetComponentInChildren<Button>().gameObject;
-                    SetSelectedUI(buttonObj);
+                    if (!entity.IsDefeated())
+                    {
+                        //Select the child object button of the enemy/player
+                        GameObject buttonObj = entity.GetComponentInChildren<Button>().gameObject;
+                        SetSelectedUI(buttonObj);
 
-                    break;
+                        break;
+                    }
                 }
             }
+            else
+            {
+                //FOR ENEMIES
+                //Select the first undefeated enemy/player in the list of entities
+                foreach (Entity entity in entityList)
+                {
+                    if (!entity.IsDefeated())
+                    {
+                        //Select the child object button of the enemy/player
+                        GameObject buttonObj = entity.GetComponentInChildren<Button>().gameObject;
+                        SetSelectedUI(buttonObj);
+
+                        break;
+                    }
+                }
+            }
+            
         }
         else
         {
