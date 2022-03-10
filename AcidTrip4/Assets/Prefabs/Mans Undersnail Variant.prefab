@@ -199,6 +199,14 @@ PrefabInstance:
       propertyPath: health_stat
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 6061990248912279693, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
+      propertyPath: hit_sound
+      value: mans_hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061990248912279693, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
+      propertyPath: death_sound
+      value: mans_death
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
 --- !u!114 &5485045742115688822 stripped
