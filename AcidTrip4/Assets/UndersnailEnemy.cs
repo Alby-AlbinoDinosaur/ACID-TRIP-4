@@ -20,12 +20,12 @@ public class UndersnailEnemy : Entity
         base.moveTextList.Add(BonesText);
         base.moveTextList.Add(BuffText);
 
-        base.health_stat = 150;
-        base.defense_stat = 15;
-        base.spdefense_stat = 15;
-        base.attack_stat = 15;
-        base.ability_stat = 15;
-        base.power_points = 30;
+        base.health_stat = 300;
+        base.defense_stat = 20;
+        base.spdefense_stat = 30;
+        base.attack_stat = 30;
+        base.ability_stat = 25;
+        base.power_points = 40;
         base.speed_stat = 10;
 
 
@@ -79,13 +79,17 @@ public class UndersnailEnemy : Entity
         if (base.power_points >= 5)
         {
             base.power_points -= 5;
-            target.attack_stat += 20;
-            target.ability_stat += 20;
+            target.attack_stat += 30;
+            target.ability_stat += 30;
             target.nextTurnEffects.Enqueue((Entity self) =>
             {
-                self.attack_stat -= 20;
-                self.ability_stat -= 20;
-                return self.name + "'s buff wears off.";
+                self.nextTurnEffects.Enqueue((Entity me) =>
+                {
+                    me.attack_stat -= 30;
+                    me.ability_stat -= 30;
+                    return me.name + "'s buff wears off.";
+                });
+                return self.name + "is buffed up!";
             });
         }
     }
@@ -115,16 +119,25 @@ public class UndersnailEnemy : Entity
         //set selected targets and next move
         int moveCount = base.moveExecuteList.Count;
         base.selectedTarget = this;
+        base.nextMove = 1;
         while (!base.moveTargetList[base.nextMove](base.selectedTarget))
         {
             base.nextMove = Random.Range(0, moveCount);
 
 
             print("Enemy selected move");
-            int nextTarget = Random.Range(0, 2);
+            if (base.nextMove == 1)
+            {
+                base.selectedTarget = this;
 
-            base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
-            print("Enemy selected target");
+            }
+            else
+            {
+                int nextTarget = Random.Range(0, 2);
+
+                base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
+                print("Enemy selected target");
+            }
         }
         base.nextMoveHasAlreadyBeenRun = false;
     }
