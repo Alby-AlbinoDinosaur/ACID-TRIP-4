@@ -225,6 +225,18 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: punch
+    clip: {fileID: 8300000, guid: 3f7f63f08dade7d41bf0cac11b1d3e98, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: drama
+    clip: {fileID: 8300000, guid: aa0e86e95ed49754494178e606e3a738, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!114 &1209067742
 MonoBehaviour:
   m_ObjectHideFlags: 0
