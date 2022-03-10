@@ -230,6 +230,7 @@ public class BattleManager : MonoBehaviour
         // {
         //     DialougeTrigger.instance.
         //  }
+        print("");
         pauseBattle = true;
         switch (currentBattle)
         {
@@ -240,11 +241,11 @@ public class BattleManager : MonoBehaviour
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Scene1-2");
                 break;
             case 2:
-                break;
                 //AudioManager.stop();
                 AudioManager.instance.Stop("battle_music_1");
                 AudioManager.instance.Stop("beatsong");
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Scene2-2");
+                break;
             case 3:
                 //AudioManager.stop();
                 AudioManager.instance.Stop("battle_music_1");
