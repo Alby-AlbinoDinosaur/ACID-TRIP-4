@@ -122,7 +122,7 @@ public class Leon_Char : Entity
             endTurnEffect action = null; //= (Entity self) => { return "dummytext"; };
             action = (Entity self) => {
 
-                int damage = (int)((this.ability_stat * 0.3) / 100 * self.health_stat);
+                int damage = (int)((this.ability_stat * 0.6) / 100 * self.health_stat);
                 int wearoff = Random.Range(0, 4);
                 if (wearoff == 0) {
                     self.thinnerstacks--;
