@@ -153,17 +153,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orientation: 0
-  numOfLines: 16
-  spacing: 1
+  numOfLines: 30
+  spacing: 0.8
   lineLength: 30
-  lineGranulation: 80
+  lineGranulation: 90
   width: 0.2
-  color: {r: 0.6792453, g: 0.35500178, b: 0.5772106, a: 1}
+  color: {r: 0.5379378, g: 0.3513706, b: 0.6603774, a: 1}
   material: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   wobbleSpeed: 3
-  wobbleAmplitude: 0.8
+  wobbleAmplitude: 0.5
   lineHorizontalSpeed: 0
-  lineVerticalSpeed: 1
+  lineVerticalSpeed: 2
   recallDistance: 16
 --- !u!4 &4701306
 Transform:
@@ -421,7 +421,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.69877696, g: 0.55589175, b: 0.8490566, a: 0}
+  m_BackGroundColor: {r: 0.4811321, g: 0.16067994, b: 0.2944484, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -785,6 +785,18 @@ PrefabInstance:
     - target: {fileID: 3155837996605080935, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: Entity, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
+      propertyPath: squashSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
+      propertyPath: squashAmplitude
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
+      propertyPath: squashXMultiplier
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3155837997756518792, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
       propertyPath: enemyMover
