@@ -787,16 +787,32 @@ PrefabInstance:
       value: Entity, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
+      propertyPath: damageSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
       propertyPath: squashSpeed
-      value: 3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
+      propertyPath: damageIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
       propertyPath: squashAmplitude
-      value: 0.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
       propertyPath: squashXMultiplier
-      value: 0.1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
+      propertyPath: damageSpeedFalloff
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155837997658268328, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
+      propertyPath: damageIntensityFalloff
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3155837997756518792, guid: f557e5f03a58ec74aaecefdde0d04672, type: 3}
       propertyPath: enemyMover
