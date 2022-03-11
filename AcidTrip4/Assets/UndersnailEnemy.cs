@@ -21,8 +21,8 @@ public class UndersnailEnemy : Entity
         base.moveTextList.Add(BuffText);
 
         base.health_stat = 300;
-        base.defense_stat = 20;
-        base.spdefense_stat = 30;
+        base.defense_stat = 15;
+        base.spdefense_stat = 25;
         base.attack_stat = 30;
         base.ability_stat = 25;
         base.power_points = 40;
