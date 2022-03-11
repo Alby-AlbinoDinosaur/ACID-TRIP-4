@@ -542,6 +542,7 @@ MonoBehaviour:
   fleeButton: {fileID: 4248803358585376821}
   turnOrderButton: {fileID: 4248803359295635775}
   currentBattle: 2
+  fade: {fileID: 43269420007444714}
   pauseBattle: 0
 --- !u!4 &563079676
 Transform:

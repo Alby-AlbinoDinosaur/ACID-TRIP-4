@@ -23,6 +23,7 @@ public class BattleManager : MonoBehaviour
     public Button turnOrderButton;
 
     public int currentBattle = 0;
+    public FadeImage fade;
 
 
     public bool pauseBattle = false;
@@ -236,27 +237,38 @@ public class BattleManager : MonoBehaviour
         {
             case 0:
                 //.stop();
-                AudioManager.instance.Stop("battle_music_1");
-                AudioManager.instance.Stop("beatsong");
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Scene1-2");
+                //AudioManager.instance.Stop("battle_music_1");
+                //AudioManager.instance.Stop("beatsong");
+                StartCoroutine(transition("Scene1-2"));
                 break;
             case 2:
                 //AudioManager.stop();
-                AudioManager.instance.Stop("battle_music_1");
-                AudioManager.instance.Stop("beatsong");
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Scene2-2");
+                //AudioManager.instance.Stop("battle_music_1");
+                //AudioManager.instance.Stop("beatsong");
+                StartCoroutine(transition("Scene2-2"));
                 break;
             case 3:
                 //AudioManager.stop();
-                AudioManager.instance.Stop("battle_music_1");
-                AudioManager.instance.Stop("beatsong");
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Scene3-2");
+                //AudioManager.instance.Stop("battle_music_1");
+                //AudioManager.instance.Stop("beatsong");
+                StartCoroutine(transition("Scene3-2"));
                 break;
             default:
                 battleDialogue.WriteLine("ERR.NEXT_SCENE_MISSING");
                 break;
 
         }
+    }
+    IEnumerator transition(string nextScene){
+        if(fade){
+            fade.fadeSmooth = 0.01f;
+            fade.fadeInterval= 0.01f;
+            fade.FadeToBlack(true);
+        }
+        yield return new WaitForSeconds(1.5f);
+        AudioManager.instance.Stop("battle_music_1");
+        AudioManager.instance.Stop("beatsong");
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
     }
 
     void SetMenuInteractivity(bool b)
