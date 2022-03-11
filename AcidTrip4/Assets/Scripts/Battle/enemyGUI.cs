@@ -15,6 +15,7 @@ public class enemyGUI : MonoBehaviour
     public Button selector;
     public GameObject damagePrefab;
     public GameObject healingPrefab;
+    public Image statusImage;
 
     
 
@@ -59,6 +60,7 @@ public class enemyGUI : MonoBehaviour
 
     void updateGUI()
     {
+        
         if(maxHp != 0)
         {
             //Debug.Log("CALLED CURRENHP = " + currentHp + "ENEMY HP: " + enemyEntity.health_stat + "MAX HP: " + maxHp);
@@ -80,6 +82,7 @@ public class enemyGUI : MonoBehaviour
                         deathAnimator.SetBool("Dead",true);
                     }
                     dead = true;
+                    
                 }
                 else if(enemyEntity.health_stat > 0){
                     if(hit_sound.Length > 0){
@@ -104,6 +107,7 @@ public class enemyGUI : MonoBehaviour
             currentHp = enemyEntity.health_stat;
             
         }
+        updateStatus();
         
     }
 
@@ -115,6 +119,31 @@ public class enemyGUI : MonoBehaviour
         BattleEventManager.OnGUIUpdate-= updateGUI;
 
     }
+    void updateStatus()
+    {
+        
+        if(enemyEntity.thinnerstacks > 0 && statusImage && !dead)
+        {
+            //Debug.Log("AL CHEESED");
 
+            /* I tried to get this done, but the lambdas dont have enough info to differentiate status effects
+            foreach(var effect in playerEntity.thisTurnEffects)
+            {
+                Debug.Log(effect.GetType());
+            }
+            */
+
+            //statusAnimator.SetBool("Cheese Touched",true);
+            statusImage.color = new UnityEngine.Color(1,1,1,1);
+
+        }
+        else
+        {
+            //Debug.Log("SEEET");
+            //statusAnimator.SetBool("Cheese Touched",false);
+            statusImage.color = new UnityEngine.Color(1,1,1,0);
+        }
+        
+    }
     
 }
