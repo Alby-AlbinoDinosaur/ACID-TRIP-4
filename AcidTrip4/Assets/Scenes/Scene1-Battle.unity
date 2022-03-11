@@ -1931,6 +1931,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: cancelEnemySelector
       objectReference: {fileID: 0}
+    - target: {fileID: 897174968537879005, guid: 80654ff3cf5b5064f9e7a90aca89ef3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 897174968544794025, guid: 80654ff3cf5b5064f9e7a90aca89ef3b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2277,7 +2281,7 @@ PrefabInstance:
       objectReference: {fileID: 1149130969}
     - target: {fileID: 4128156644648143749, guid: c39ba4a76dbb5264892ff26a547062ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: hideEnemySelector
+      value: cancelEnemySelector
       objectReference: {fileID: 0}
     - target: {fileID: 4128156645151425660, guid: c39ba4a76dbb5264892ff26a547062ce, type: 3}
       propertyPath: m_Navigation.m_SelectOnRight

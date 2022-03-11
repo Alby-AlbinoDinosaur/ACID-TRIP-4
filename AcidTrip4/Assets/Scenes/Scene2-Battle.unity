@@ -2315,7 +2315,7 @@ PrefabInstance:
       objectReference: {fileID: 1149130969}
     - target: {fileID: 4128156644648143749, guid: c39ba4a76dbb5264892ff26a547062ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: hideEnemySelector
+      value: cancelEnemySelector
       objectReference: {fileID: 0}
     - target: {fileID: 4128156645151425660, guid: c39ba4a76dbb5264892ff26a547062ce, type: 3}
       propertyPath: m_Navigation.m_SelectOnRight

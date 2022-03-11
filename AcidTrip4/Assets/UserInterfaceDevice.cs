@@ -44,10 +44,12 @@ public class UserInterfaceDevice : MonoBehaviour
         //Try to use event system's first selected, else try to use the initialSelectedObject of this script
         if (EventSystem.current.firstSelectedGameObject != null)
         {
+            mouseMode = false;
             selectedObj = EventSystem.current.firstSelectedGameObject;
         }
         else
         {
+            mouseMode = true;
             selectedObj = initialSelectedObj;
         }
     }
