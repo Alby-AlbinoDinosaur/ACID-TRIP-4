@@ -31,7 +31,7 @@ public class UndersnailEnemy : Entity
 
         base.nextMove = 0;
         base.selectedTarget = this;
-        base.name = "Mans";
+        base.name = "Mans Undersnail";
         enemyMover.addEnemy(this);
 
     }
@@ -89,7 +89,7 @@ public class UndersnailEnemy : Entity
                     me.ability_stat -= 30;
                     return me.name + "'s buff wears off.";
                 });
-                return self.name + "is buffed up!";
+                return self.name + " is buffed up!";
             });
         }
     }
