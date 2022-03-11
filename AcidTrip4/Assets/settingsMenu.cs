@@ -27,6 +27,19 @@ public class settingsMenu : MonoBehaviour
         //AudioManager.instance.Stop("title");
         SceneManager.LoadScene(sceneNo);
     }
+    public void loadSceneStr(string sceneNa)
+    {
+
+        //SceneManager.LoadScene(sceneNo);
+        StartCoroutine(transitionStr(sceneNa));
+    }
+    IEnumerator transitionStr(string sceneNa)
+    {
+
+        yield return new WaitForSeconds(1.1f);
+        //AudioManager.instance.Stop("title");
+        SceneManager.LoadScene(sceneNa);
+    }
     void Update()
     {
         
