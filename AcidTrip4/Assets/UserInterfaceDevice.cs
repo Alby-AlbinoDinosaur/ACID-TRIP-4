@@ -7,14 +7,20 @@ using UnityEngine.UI;
 public class UserInterfaceDevice : MonoBehaviour
 {
     public static UserInterfaceDevice instance;
-    private bool mouseMode = false; //true: mouse mode for ui buttons; false: controller or keyboard mode for ui buttons
+    private bool mouseMode = true; //true: mouse mode for ui buttons; false: controller or keyboard mode for ui buttons
 
-    private GameObject selectedObj; //The last thing that was selected by SetSelectedUI()
+    private GameObject selectedObj; //The last thing that was selected by SetSelectedUI().
 
     //Priority list for player selection once returning to main battle menu state (ex: after picking an attack)
     //Should have all the players in the battle but in order of highest selection priority (top = highest)
     [SerializeField]
     private List<Entity> playerSelectionPriority;
+
+    //Give an initial item to last selected (default to mousemode)
+    //To have an initial selection in controller mode, give the EventSystem firstSelectedObject a value
+    //Important: EventSystem firstSelectedObject if not null, will override this value
+    [SerializeField]
+    private GameObject initialSelectedObj; 
 
     void Awake()
     {
@@ -35,8 +41,15 @@ public class UserInterfaceDevice : MonoBehaviour
 
     private void Start()
     {
-        //When a scene starts
-        selectedObj = EventSystem.current.firstSelectedGameObject;
+        //Try to use event system's first selected, else try to use the initialSelectedObject of this script
+        if (EventSystem.current.firstSelectedGameObject != null)
+        {
+            selectedObj = EventSystem.current.firstSelectedGameObject;
+        }
+        else
+        {
+            selectedObj = initialSelectedObj;
+        }
     }
 
     void Update()
@@ -165,6 +178,12 @@ public class UserInterfaceDevice : MonoBehaviour
     public GameObject GetLastSelected()
     {
         return selectedObj;
+    }
+
+    //Set a gameobject to be selected once entered controller mode
+    public void SetLastSelected(GameObject obj)
+    {
+        selectedObj = obj;
     }
 
 }
