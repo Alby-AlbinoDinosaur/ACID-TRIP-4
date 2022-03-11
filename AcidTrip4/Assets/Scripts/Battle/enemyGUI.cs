@@ -14,6 +14,7 @@ public class enemyGUI : MonoBehaviour
     
     public Button selector;
     public GameObject damagePrefab;
+    public GameObject healingPrefab;
 
     
 
@@ -88,6 +89,13 @@ public class enemyGUI : MonoBehaviour
 
                 }
             }
+            else if(enemyEntity.health_stat>currentHp ){
+                GameObject canvas = Instantiate(healingPrefab, gameObject.transform.position, Quaternion.identity);
+                //canvas.transform.parent = gameObject.transform;
+                TextMeshProUGUI text = canvas.transform.GetChild(0).gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
+                text.text = "+"+(enemyEntity.health_stat -currentHp).ToString();
+            }
+            
             currentHp = enemyEntity.health_stat;
             
         }

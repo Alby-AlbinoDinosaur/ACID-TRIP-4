@@ -379,6 +379,10 @@ PrefabInstance:
       propertyPath: death_sound
       value: conch_death
       objectReference: {fileID: 0}
+    - target: {fileID: 6061990248912279693, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
+      propertyPath: healingPrefab
+      value: 
+      objectReference: {fileID: 7336206743859831411, guid: 7fb2d1adc24520442aa10085c83deae4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
 --- !u!114 &1324684862204028601 stripped
