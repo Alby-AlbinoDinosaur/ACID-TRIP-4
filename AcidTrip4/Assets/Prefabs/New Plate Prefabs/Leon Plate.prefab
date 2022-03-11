@@ -3820,6 +3820,7 @@ MonoBehaviour:
   nextText: {fileID: 7480857249086069924}
   damagePrefab: {fileID: 2068579485654271215, guid: f50b3e611edfd384c8e351a86482ce16, type: 3}
   healPrefab: {fileID: 2068579485654271215, guid: 3bb91f1afc86f144595dcfacde69db49, type: 3}
+  ppPrefab: {fileID: 5976424454068309382, guid: d1f852700b3125f448cdc65a908c498a, type: 3}
   attackButton: {fileID: 125459170060071020}
   itemsButton: {fileID: 125459170109416568}
   abilitiesButton: {fileID: 125459169208219403}
@@ -3855,6 +3856,8 @@ MonoBehaviour:
   max_pp: 0
   currentBattle: 0
   isCheesed: 0
+  isAttacking: 0
+  thinnerstacks: 0
   nextMove: -1
   selectedTarget: {fileID: 0}
   nextMoveHasAlreadyBeenRun: 1

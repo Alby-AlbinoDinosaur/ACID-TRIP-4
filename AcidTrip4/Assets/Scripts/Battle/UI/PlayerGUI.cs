@@ -16,6 +16,7 @@ public class PlayerGUI : MonoBehaviour
     public TextMeshProUGUI nextText;
     public GameObject damagePrefab;
     public GameObject healPrefab;
+    public GameObject ppPrefab;
     
 
     public Button attackButton;
@@ -34,6 +35,7 @@ public class PlayerGUI : MonoBehaviour
     private int maxHp = 0;
     private int maxPpl = 0;
     private int currentHp = 0;
+    private int currentPp = 0;
     private int maxPp = 0;
 
 
@@ -47,6 +49,7 @@ public class PlayerGUI : MonoBehaviour
         maxHp = playerEntity.health_stat;
         
         currentHp = maxHp;
+        currentPp = playerEntity.power_points;
         
         //Debug.Log("maxHp set to " + maxHp);
         maxPp = playerEntity.power_points;
@@ -190,6 +193,23 @@ public class PlayerGUI : MonoBehaviour
         if(maxPp != 0)
         {
             ppBar.fillAmount = (float)playerEntity.power_points/maxPp;
+
+            if(playerEntity.power_points > currentPp){
+                GameObject canvas = Instantiate(ppPrefab, ppBar.transform.position, Quaternion.identity);
+                canvas.transform.SetParent(gameObject.transform);
+                //Debug.Log(hpBar.transform.parent.name.transform.position);
+                    
+                RectTransform rect = canvas.transform.GetChild(0).GetComponent<RectTransform>();
+                RectTransform targetRect = ppBar.transform.parent.parent.GetComponent<RectTransform>();
+                rect.localScale = targetRect.localScale;
+                    
+                    
+                TextMeshProUGUI text = canvas.transform.GetChild(0).gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
+                    
+                text.text = "+" + (playerEntity.power_points-currentPp).ToString();
+            }
+
+            currentPp = playerEntity.power_points;
         }
         updateText();
 
