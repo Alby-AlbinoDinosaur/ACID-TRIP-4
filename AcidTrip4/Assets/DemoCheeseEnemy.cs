@@ -31,7 +31,7 @@ public class DemoCheeseEnemy : Entity
 
         base.nextMove = 0;
         base.selectedTarget = this;
-        base.name = "Shreddar";
+        base.name = "Shredder";
         enemyMover.addEnemy(this);
 
     }
@@ -93,7 +93,7 @@ public class DemoCheeseEnemy : Entity
                 {
                     self.nextTurnEffects.Enqueue(action);
                     self.health_stat -= (damage);
-                    return self.name + " takes " + (damage) + " from the Cheese Touch!";
+                    return self.name + " takes " + (damage) + " damage from the Cheese Touch!";
                 }
 
             };
@@ -105,7 +105,7 @@ public class DemoCheeseEnemy : Entity
             {
                 int damage = this.ability_stat * Random.Range(1, 4);
                 self.health_stat -= (damage);
-                return self.name + " takes " + (damage) + " from the Cheese Touch!";
+                return self.name + " takes " + (damage) + " damage from the Cheese Touch!";
             };
 
             target.nextTurnEffects.Enqueue(action);
