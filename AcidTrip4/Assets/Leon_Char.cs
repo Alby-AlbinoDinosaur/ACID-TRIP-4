@@ -90,7 +90,7 @@ public class Leon_Char : Entity
         target.beforeMoveEffects.Enqueue((Entity self) =>
         {
             self.defense_stat -= 20;
-            return self.name + "'s defense wears off.";
+            return self.name + "'s defense returns to normal.";
         });
     }
 
@@ -104,8 +104,8 @@ public class Leon_Char : Entity
         switch (context)
         {
             case 0: return "Guard";
-            case 1: return "Guard: protects oneself from physical attacks.";
-            case 2: return base.name + " moves to defend!";
+            case 1: return "Guard: protect yourself from physical attacks.";
+            case 2: return base.name + " defends!";
         }
         return "uh oh move broke";
     }

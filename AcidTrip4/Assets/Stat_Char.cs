@@ -75,7 +75,7 @@ public class Stat_Char : Entity
         {
             case 0: return "Attack";
             case 1: return "Attack: Does a basic physical attack to the target.";
-            case 2: return base.name + " moves to attack " + base.selectedTarget.name + " !";
+            case 2: return base.name + " attacks " + base.selectedTarget.name + " !";
         }
         return "uh oh move broke";
     }
@@ -89,7 +89,7 @@ public class Stat_Char : Entity
         target.beforeMoveEffects.Enqueue((Entity self) =>
         {
             self.defense_stat -= 20;
-            return self.name + "'s defense wears off.";
+            return self.name + "'s defense returns to normal.";
         });
     }
 
@@ -103,8 +103,8 @@ public class Stat_Char : Entity
         switch (context)
         {
             case 0: return "Guard";
-            case 1: return "Guard: protects oneself from physical attacks .";
-            case 2: return base.name + " moves to defend!";
+            case 1: return "Guard: protect yourself from physical attacks.";
+            case 2: return base.name + " defends!";
         }
         return "uh oh move broke";
     }
