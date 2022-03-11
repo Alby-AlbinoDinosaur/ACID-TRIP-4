@@ -52,7 +52,7 @@ public class UndersnailEnemy : Entity
             // Calculate damage however here
             enemy.health_stat -= damage;
         }
-        int recoil = Mathf.Max((int)((base.attack_stat * 2) - target.defense_stat), 0);
+        int recoil = Mathf.Max((int)((base.attack_stat) - target.defense_stat), 0);
         // Calculate damage however here
         target.health_stat -= recoil;
     }
@@ -60,7 +60,7 @@ public class UndersnailEnemy : Entity
 
     private bool BonesTargets(Entity target)
     {
-        return target != this;
+        return target != this && !target.IsDefeated();
     }
 
     private string BonesText(int context)
@@ -86,7 +86,7 @@ public class UndersnailEnemy : Entity
                 self.nextTurnEffects.Enqueue((Entity me) =>
                 {
                     me.attack_stat -= 30;
-                    me.ability_stat -= 30;
+                    me.ability_stat -= 10;
                     return me.name + "'s buff wears off.";
                 });
                 return self.name + " is buffed up!";
@@ -119,7 +119,7 @@ public class UndersnailEnemy : Entity
         //set selected targets and next move
         int moveCount = base.moveExecuteList.Count;
         base.selectedTarget = this;
-        base.nextMove = 1;
+        base.nextMove = 0;
         while (!base.moveTargetList[base.nextMove](base.selectedTarget))
         {
             base.nextMove = Random.Range(0, moveCount);
@@ -133,7 +133,7 @@ public class UndersnailEnemy : Entity
             }
             else
             {
-                int nextTarget = Random.Range(0, 2);
+                int nextTarget = Random.Range(0, 3);
 
                 base.selectedTarget = enemyMover.playerMover.playerList[nextTarget];
                 print("Enemy selected target");

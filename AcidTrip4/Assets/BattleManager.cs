@@ -90,15 +90,18 @@ public class BattleManager : MonoBehaviour
 
 
                     if (!current.IsDefeated())
-                    { current.Run(); }
-                    // With the BDM set up, entities can also actually say text within the move itself.
-                    // TODO: make current do an animation
-                    battleDialogue.WriteLine(current.moveTextList[current.nextMove](2));
-                    battleEventManager.updateGUIS();
+                    {
+                        current.Run();
+                        // With the BDM set up, entities can also actually say text within the move itself.
+                        // TODO: make current do an animation
+                        battleDialogue.WriteLine(current.moveTextList[current.nextMove](2));
+                        battleEventManager.updateGUIS();
 
-                    yield return new WaitForSeconds(0.2f);
-                    yield return new WaitUntil(() => (Input.GetMouseButtonDown(0) ||
-                                                     Input.GetButtonDown("Jump")) && !pauseBattle);
+                        yield return new WaitForSeconds(0.2f);
+                        yield return new WaitUntil(() => (Input.GetMouseButtonDown(0) ||
+                                                         Input.GetButtonDown("Jump")) && !pauseBattle);
+
+                    }
                 }
 
                 //This second loop is for debug, this is not the right way to do this

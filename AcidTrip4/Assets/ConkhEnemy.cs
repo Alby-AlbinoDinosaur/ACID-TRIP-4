@@ -25,7 +25,7 @@ public class ConkhEnemy : Entity
         base.attack_stat = 30;
         base.ability_stat = 25;
         base.power_points = 20;
-        base.speed_stat = 5;
+        base.speed_stat = 25;
 
 
         base.nextMove = 0;
@@ -64,7 +64,7 @@ public class ConkhEnemy : Entity
 
     private bool BashTargets(Entity target)
     {
-        return target != this;
+        return target != this && !target.IsDefeated();
     }
 
     private string BashText(int context)

@@ -51,12 +51,24 @@ public abstract class Entity : MonoBehaviour
 
     public void Run()
     {
-        
-        moveExecuteList[nextMove](selectedTarget);
-        if(attackPrefab && isAttacking){
-            GameObject vfx = Instantiate(attackPrefab, selectedTarget.transform.position, Quaternion.identity);
-            vfx.transform.SetParent(selectedTarget.transform);
-            isAttacking = false;
+        if (!IsDefeated())
+        {
+            moveExecuteList[nextMove](selectedTarget);
+            if (attackPrefab && isAttacking)
+            {
+                if (selectedTarget != this)
+                {
+                    GameObject vfx = Instantiate(attackPrefab, selectedTarget.transform.position, Quaternion.identity);
+                    vfx.transform.SetParent(selectedTarget.transform);
+                    isAttacking = false;
+                }
+                else
+                {
+                    GameObject vfx = Instantiate(attackPrefab, Vector3.zero, Quaternion.identity);
+                    //vfx.transform.SetParent(this.transform);
+                    isAttacking = false;
+                }
+            }
         }
 
         nextMoveHasAlreadyBeenRun = true;

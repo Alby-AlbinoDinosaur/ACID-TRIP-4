@@ -173,16 +173,15 @@ public class Leon_Char : Entity
     //Ability_2 -----------------------------------------------------------------------------
     private void Ability_2(Entity target)
     {
+        healTarget = target;
         base.power_points -= 10;
         foreach (Entity current in playerMover.playerList)
         {
-            if (current.max_health - current.health_stat >target.max_health - target.health_stat)
-            { target = current; }
+            if (current.max_health - current.health_stat >healTarget.max_health - healTarget.health_stat)
+            { healTarget = current; }
         }
-
-        healTarget = target;
         int healAmount = Random.Range(1, 4);
-        healTarget.health_stat = Mathf.Min(target.health_stat + this.ability_stat * healAmount, target.max_health);
+        healTarget.health_stat = Mathf.Min(healTarget.health_stat + this.ability_stat * healAmount, healTarget.max_health);
 
     }
 

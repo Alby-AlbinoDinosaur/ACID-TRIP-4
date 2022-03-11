@@ -55,7 +55,7 @@ public class DemoCheeseEnemy : Entity
 
     private bool ScratchTargets(Entity target)
     {
-        return target != this;
+        return target != this && !target.IsDefeated();
     }
 
     private string ScratchText(int context)
@@ -117,7 +117,7 @@ public class DemoCheeseEnemy : Entity
 
     private bool BiteTargets(Entity target)
     {
-        return (!target.isCheesed && this.power_points >= 5 && target != this);
+        return (!target.isCheesed && this.power_points >= 5 && target != this && !target.IsDefeated());
     }
 
     private string BiteText(int context)
