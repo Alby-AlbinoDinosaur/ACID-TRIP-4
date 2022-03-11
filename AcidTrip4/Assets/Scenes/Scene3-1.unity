@@ -1448,7 +1448,7 @@ MonoBehaviour:
     sentences:
     - "Please don\u2019t do that. I don\u2019t want to clean up this place more than
       I have to."
-  - name: Mans Reveal
+  - name: Mans Undersnail
     sentences:
     - "Ugh! Fine! I\u2019ll beat you guys up, and then save Conche ASMR! Shredders,
       help me!"
@@ -1456,17 +1456,23 @@ MonoBehaviour:
     sentences:
     - "Don\u2019t count me out! I can\u2019t let my top Snailchat supporter fight
       three people by himself!\r\n"
-  - name: Mans2
+  - name: Mans Undersnail
     sentences:
     - Wait, Conche ASMR, helping me? This is a dream come true!
   - name: Snail
     sentences:
     - Can we just take this outside please?
-  - name: Mans2
+  - name: Mans Undersnail
     sentences:
     - No.
     - Because right now, I will be showing my TRUE FORM! Prepare yourselves for my
       TRUE POWER!
+  - name: playsound drama
+    sentences:
+    - Oh for fu-
+  - name: Mans Reveal
+    sentences:
+    - HA!
   - name: Snail Sad
     sentences:
     - Oh for fu-
