@@ -268,7 +268,7 @@ public class BattleManager : MonoBehaviour
             fade.fadeInterval= 0.01f;
             fade.FadeToBlack(true);
         }
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
         AudioManager.instance.Stop("battle_music_1");
         AudioManager.instance.Stop("beatsong");
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
