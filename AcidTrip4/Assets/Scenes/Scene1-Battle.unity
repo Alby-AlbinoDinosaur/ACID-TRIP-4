@@ -3218,21 +3218,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversation:
-  - name: 
+  - name: Snail Buff
     sentences:
-    - How to play
-    - How to play 2
-    - How to play 3
+    - So, uh... how do we do the whole RPG battle thing?
+  - name: HOW TO PLAY GUY
+    sentences:
+    - 'There are 2 ways to play ACID TRIP 4:'
+    - 1) Navigate menus by point-and-clicking your way through.
+    - 2) Navigate with WASD/ARROW KEYS and select with SPACE or ENTER.
+    - 'Now here''s what every stat and ability does: first there''s-'
   - name: Leon Bradley
     sentences:
-    - These instructions are obscuring my vision! I already know how to fight. I
-      had perfected the art of war long ago.
-  - name: Statistician
-    sentences:
-    - says math related  pun or something witty
+    - Alright alright, I think we get the picture.
   - name: Snail
     sentences:
-    - Nooooo too much cheeese
+    - Wait! That actually sounded important.
+  - name: Statistician
+    sentences:
+    - Oh Snail, RPGs are just thinly veiled math problems ready to be solved with
+      violence.
+  - name: HOW TO PLAY GUY
+    sentences:
+    - Yeah basically.
+    - (Also if you all die we'll just pretend nothing happened and keep on with the
+      story.)
+  - name: Leon Bradley
+    sentences:
+    - That's not going to happen though.
+  - name: HOW TO PLAY GUY
+    sentences:
+    - Right...
+    - Anyway goodluck baiii~
+  - name: playsound explosion
+    sentences: []
+  - name: 
+    sentences:
+    - HOW TO PLAY GUY explodes
+  - name: Snail
+    sentences:
+    - Who was that guy anyway?
+  - name: Leon Bradley
+    sentences:
+    - I dunno.
 --- !u!4 &2984436190137082077
 Transform:
   m_ObjectHideFlags: 0
