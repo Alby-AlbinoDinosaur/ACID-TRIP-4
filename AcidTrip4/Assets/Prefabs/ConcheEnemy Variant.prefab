@@ -11,6 +11,22 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6061990247781813346, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 442.1145
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061990247781813346, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 383.385
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061990247781813346, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0764
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061990247781813346, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0022
+      objectReference: {fileID: 0}
     - target: {fileID: 6061990247781813349, guid: 52b8af5f459087144a99a49f3d189e67, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
