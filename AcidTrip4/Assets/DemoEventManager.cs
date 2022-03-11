@@ -91,7 +91,7 @@ public class DemoEventManager : MonoBehaviour
 
     IEnumerator transition(){
 
-        yield return new WaitForSeconds(1.1f);
+        yield return new WaitForSeconds(1.5f);
         if(isBattleNext)
         {
             AudioManager.instance.Stop("field_theme");

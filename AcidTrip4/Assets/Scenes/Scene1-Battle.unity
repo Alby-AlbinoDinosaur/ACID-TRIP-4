@@ -1395,7 +1395,7 @@ MonoBehaviour:
   fadeMaxAlpha: 1
   fadeSmooth: 0.1
   fadeInterval: 0.01
-  fadeOnStart: 0
+  fadeOnStart: 1
 --- !u!114 &43269420007444715
 MonoBehaviour:
   m_ObjectHideFlags: 0

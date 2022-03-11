@@ -27,7 +27,7 @@ public class LoadDemo : MonoBehaviour
 
     IEnumerator transition(string scene){
 
-        yield return new WaitForSeconds(1.1f);
+        yield return new WaitForSeconds(1.5f);
         AudioManager.instance.Stop("title");
         SceneManager.LoadScene(scene);
     }
