@@ -48,7 +48,7 @@ public class UndersnailEnemy : Entity
         foreach (Entity enemy in enemyMover.playerMover.playerList)
         {
 
-            int damage = Mathf.Max((int)((base.ability_stat * 2) * (float)(100 - enemy.spdefense_stat) / 100f), 0);
+            int damage = Mathf.Max((int)((base.ability_stat) * (float)(100 - enemy.spdefense_stat) / 100f), 0);
             // Calculate damage however here
             enemy.health_stat -= damage;
         }
@@ -80,7 +80,7 @@ public class UndersnailEnemy : Entity
         {
             base.power_points -= 5;
             target.attack_stat += 30;
-            target.ability_stat += 30;
+            target.ability_stat += 10;
             target.nextTurnEffects.Enqueue((Entity self) =>
             {
                 self.nextTurnEffects.Enqueue((Entity me) =>
