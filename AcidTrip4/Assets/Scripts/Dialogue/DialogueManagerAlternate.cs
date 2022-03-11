@@ -97,9 +97,17 @@ public class DialogueManagerAlternate : MonoBehaviour {
 	{
 		//Invoke onConversationBegin events
 		onConversationBegin.Invoke();
+		StartCoroutine(BeginConvCoroutine(converse));
+	}
 
+	//Because bruh moment because gameobject setactives dont actually activate gameobjects this frame
+	private IEnumerator BeginConvCoroutine(Conversation converse)
+    {
 		dialogueCanvas.SetActive(true);
 		actor.gameObject.SetActive(true);
+
+		//wait a frame for objects to activate
+		yield return new WaitForEndOfFrame();
 
 		if (isInBattleDialogue)
 		{
@@ -110,7 +118,7 @@ public class DialogueManagerAlternate : MonoBehaviour {
 		StartDialogue(conversation[0]);
 	}
 
-//Begins displaying diaglog parameter
+	//Begins displaying diaglog parameter
 	private void StartDialogue (Dialogue dialogue)
 	{
 		finished = false;
