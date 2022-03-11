@@ -30,7 +30,7 @@ public class ConkhEnemy : Entity
 
         base.nextMove = 0;
         base.selectedTarget = this;
-        base.name = "Conkhe";
+        base.name = "Conche";
         enemyMover.addEnemy(this);
 
     }
